@@ -1,0 +1,70 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.gym {
+  width: 80vw;
+  height: 80vh;
+  border: 1px dashed magenta;
+}
+
+.gymFloor {
+  background: #E0CCB1;
+  width: 100%;
+  height: 100%;
+}
+
+.courtBorderLine {
+  border: 1rem solid navy;
+  width: 80%;
+  height: 80%;
+}
+
+.courtOuterGameLine {
+  box-shadow: inset 0 0 0 0.25rem coral;
+  width: 100%;
+  height: 100%;
+}
+
+.courtFloor {
+  background: tan;
+  width: calc(100% - 0.25rem);
+  height: calc(100% - 0.25rem);
+}
+
+.centerCircle {
+  border: 0.25rem solid coral;
+  border-radius: 50%;
+  min-width: 5rem;
+  height: 5rem;
+}
+
+.centerCourtLine {
+  background: coral;
+  width: 0.25rem;
+  height: 100%;
+}

@@ -1,26 +1,60 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+      <section className="container center">
+
+        <section className="gym center">
+
+          <section className="gymFloor center">
+
+            <section className="courtBorderLine center">
+
+            {/*
+              container to hold left game area
+                three point gameline and area
+                free throw lane gameline and area
+                key gameline and area
+                hash marks gameline and area
+                baseket ball rim and dashed line
+            */}
+
+              <section className="courtOuterGameLine center">
+
+                <section className="courtFloor center">
+
+                  <section className="centerCourtLine center">
+
+                    <section className="centerCircle center">
+
+                    </section>
+
+                  </section>
+
+                </section>
+
+              </section>
+
+              {/*
+                container to hold right game area
+                  three point gameline and area
+                  free throw lane gameline and area
+                  key gameline and area
+                  hash marks gameline and area
+                  baseket ball rim and dashed line
+              */}
+
+            </section>
+
+          </section>
+
+        </section>
+
+      </section>
+
     );
   }
 }
