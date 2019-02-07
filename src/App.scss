@@ -10,9 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ul {
+  list-style: none;
 }
 
 .center {
@@ -21,13 +20,37 @@ code {
   justify-content: center;
 }
 
-.container {
-  min-width: 100vw;
+.header {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+}
+
+.main {
+  display: flex;
+}
+
+.menu {
+  min-width: 20vw;
+}
+
+.borderColor {
+  margin: 0 1rem;
+}
+
+.courtContainer {
+  min-width: 80vw;
   min-height: 100vh;
 }
 
 .gym {
-  width: 80vw;
+  width: 70vw;
   height: 80vh;
   border: 1px dashed magenta;
 }
@@ -39,32 +62,127 @@ code {
 }
 
 .courtBorderLine {
-  border: 1rem solid navy;
+  border-left: 2rem solid white;
+  border-right: 2rem solid white;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
+  border-color: maroon;
   width: 80%;
   height: 80%;
 }
 
 .courtOuterGameLine {
-  box-shadow: inset 0 0 0 0.25rem coral;
+  box-shadow: inset 0 0 0 0.25rem black;
   width: 100%;
   height: 100%;
 }
 
 .courtFloor {
-  background: tan;
+  background: #E0CCB1;
+  display: flex;
+  justify-content: flex-start;
   width: calc(100% - 0.25rem);
   height: calc(100% - 0.25rem);
 }
 
+.leftCourtArea {
+  background: #E0CCB1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftLaneArea {
+  background: #E0CCB1;
+  border: 1px solid black;
+  border-left: none;
+  height: 20%;
+  width: 35%;
+}
+
+.leftKeyArea {
+  background: #E0CCB1;
+  align-self: center;
+  height: 20%;
+  width: 10%;
+  border-left: none;
+  border: 1px solid black;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.leftThreePointArea {
+  background: transparent;
+  align-self: center;
+  height: 80%;
+  width: 46%;
+  border-left: none;
+  border: 1px solid black;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  top: 0;
+  left: -46%;
+}
+
 .centerCircle {
-  border: 0.25rem solid coral;
+  border: 0.0625rem solid black;
   border-radius: 50%;
-  min-width: 5rem;
-  height: 5rem;
+  min-width: 4rem;
+  height: 4rem;
+  position: relative;
+  z-index: 0;
 }
 
 .centerCourtLine {
-  background: coral;
-  width: 0.25rem;
+  background: black;
+  width: 0.003125rem;
   height: 100%;
+}
+
+.rightCourtArea {
+  background: #E0CCB1;
+  border: 1px solid black;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.rightLaneArea {
+  background: #E0CCB1;
+  border: 1px solid black;
+  border-right: none;
+  height: 20%;
+  width: 35%;
+}
+
+.rightKeyArea {
+  background: #E0CCB1;
+  align-self: center;
+  height: 20%;
+  width: 10%;
+  border-left: none;
+  border: 1px solid black;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.rightThreePointArea {
+  background: transparent;
+  align-self: center;
+  height: 80%;
+  width: 46%;
+  border-left: none;
+  border: 1px solid black;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+  top: 0;
+  right: -46%;
 }

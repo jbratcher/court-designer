@@ -1,57 +1,80 @@
 import React, { Component } from 'react';
+import Court from './Court';
 import './App.scss';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      borderColor: null
+    }
+  }
+
+  handleInputChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+    console.log(e.target.name);
+    console.log(e.target.value);
+  }
+
   render() {
+
+    const {borderColor} = this.state;
+
+
     return (
 
-      <section className="container center">
+      <section className="appContainer">
 
-        <section className="gym center">
+        <header className="header">
 
-          <section className="gymFloor center">
+          <h1 className="title">
+            Court Designer
+          </h1>
 
-            <section className="courtBorderLine center">
+          <p className="headline">
+            Design your own basketball court
+          </p>
 
-            {/*
-              container to hold left game area
-                three point gameline and area
-                free throw lane gameline and area
-                key gameline and area
-                hash marks gameline and area
-                baseket ball rim and dashed line
-            */}
+        </header>
 
-              <section className="courtOuterGameLine center">
+        <section className="main">
 
-                <section className="courtFloor center">
+          <section className="menu">
 
-                  <section className="centerCourtLine center">
+            <nav className="menuNav">
 
-                    <section className="centerCircle center">
+              <ul className="menuNavList">
 
-                    </section>
+                <li className="menuNavListItem">
 
-                  </section>
+                  <label>Border Color:
+                    <input
+                      className="borderColor"
+                      name="borderColor"
+                      onChange={this.handleInputChange}
+                      type="color">
+                    </input>
+                  </label>
 
-                </section>
+                </li>
 
-              </section>
+              </ul>
 
-              {/*
-                container to hold right game area
-                  three point gameline and area
-                  free throw lane gameline and area
-                  key gameline and area
-                  hash marks gameline and area
-                  baseket ball rim and dashed line
-              */}
-
-            </section>
+            </nav>
 
           </section>
 
+          <Court
+            borderColor={borderColor}
+          />
+
         </section>
+
+        <footer></footer>
 
       </section>
 
