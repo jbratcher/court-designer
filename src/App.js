@@ -5,11 +5,17 @@ import './App.scss';
 class App extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      borderColor: null
-    }
+      borderColor: "black",
+      borderEndSize: 2,
+      borderSideSize: 2
+    };
+  }
+  
+  componentDidMount() {
+    
   }
 
   handleInputChange = e => {
@@ -22,7 +28,11 @@ class App extends Component {
 
   render() {
 
-    const {borderColor} = this.state;
+    const {
+      borderColor,
+      borderEndSize,
+      borderSideSize
+    } = this.state;
 
 
     return (
@@ -61,6 +71,32 @@ class App extends Component {
                   </label>
 
                 </li>
+                
+                <li className="menuNavListItem">
+                
+                  <label>End Border Size:
+                    <input
+                      className="borderEndSize"
+                      name="borderEndSize"
+                      onChange={this.handleInputChange}
+                      type="number">
+                    </input>
+                  </label>
+                  
+                </li>
+                
+                <li className="menuNavListItem">
+                  
+                  <label>Side Border Size:
+                    <input
+                      className="borderSideSize"
+                      name="borderSideSize"
+                      onChange={this.handleInputChange}
+                      type="number">
+                    </input>
+                  </label>
+                  
+                </li>
 
               </ul>
 
@@ -70,6 +106,8 @@ class App extends Component {
 
           <Court
             borderColor={borderColor}
+            borderEndSize={borderEndSize}
+            borderSideSize={borderSideSize}
           />
 
         </section>
