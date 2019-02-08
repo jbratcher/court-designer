@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Features
 
 * border size and color
+* main game line color
 
 ### Todo
 
@@ -14,7 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * volleyball court line color
 * lane markings
 * side court coach and check in boxes
-* main game line color
 * side volleyball court
 * side basketball court
 * side volleyball line color

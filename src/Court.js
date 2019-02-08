@@ -7,7 +7,8 @@ class Court extends Component {
     const {
       borderColor,
       borderEndSize,
-      borderSideSize
+      borderSideSize,
+      mainGameLineColor
     } = this.props;
 
     return (
@@ -30,23 +31,38 @@ class Court extends Component {
               }}
             >
 
-              <section className="courtOuterGameLine center">
+              <section 
+                className="courtOuterGameLine center"
+                style={{boxShadow: `inset 0 0 0 0.25rem ${mainGameLineColor}`}}
+              >
 
                 <section className="courtFloor center">
 
                   {/* Left Court Area */}
 
-                  <section className="leftCourtArea center fill">
+                  <section 
+                    className="leftCourtArea center fill"
+                    style={{borderColor: mainGameLineColor}}
+                  >
 
-                    <section className="leftLaneArea">
+                    <section 
+                      className="leftLaneArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
-                    <section className="leftKeyArea">
+                    <section 
+                      className="leftKeyArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
-                    <section className="leftThreePointArea">
+                    <section 
+                      className="leftThreePointArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
@@ -54,9 +70,15 @@ class Court extends Component {
 
                   {/* Center Court Area */}
 
-                  <section className="centerCourtLine center">
+                  <section 
+                    className="centerCourtLine center"
+                    style={{borderColor: mainGameLineColor}}
+                  >
 
-                    <section className="centerCircle center">
+                    <section 
+                      className="centerCircle center"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
@@ -64,17 +86,29 @@ class Court extends Component {
 
                   {/* Right Court Area */}
 
-                  <section className="rightCourtArea center fill">
+                  <section 
+                    className="rightCourtArea center fill"
+                    style={{borderColor: mainGameLineColor}}
+                  >
 
-                    <section className="rightThreePointArea">
+                    <section 
+                      className="rightThreePointArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
-                    <section className="rightKeyArea">
+                    <section 
+                      className="rightKeyArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
-                    <section className="rightLaneArea">
+                    <section 
+                      className="rightLaneArea"
+                      style={{borderColor: mainGameLineColor}}
+                    >
 
                     </section>
 
@@ -83,15 +117,6 @@ class Court extends Component {
                 </section>
 
               </section>
-
-              {/*
-                container to hold right game area
-                  three point gameline and area
-                  free throw lane gameline and area
-                  key gameline and area
-                  hash marks gameline and area
-                  baseket ball rim and dashed line
-              */}
 
             </section>
 

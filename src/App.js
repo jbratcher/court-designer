@@ -10,7 +10,8 @@ class App extends Component {
     this.state = {
       borderColor: "#B71C1C",
       borderEndSize: 4,
-      borderSideSize: 2
+      borderSideSize: 2,
+      mainGameLineColor: "black"
     };
   }
 
@@ -31,7 +32,8 @@ class App extends Component {
     const {
       borderColor,
       borderEndSize,
-      borderSideSize
+      borderSideSize,
+      mainGameLineColor
     } = this.state;
 
 
@@ -97,6 +99,19 @@ class App extends Component {
                   </label>
 
                 </li>
+                
+                <li className="menuNavListItem">
+                  
+                  <label>Main Gameline:
+                    <input
+                      className="mainGameLineColor"
+                      name="mainGameLineColor"
+                      onChange={this.handleInputChange}
+                      type="color">
+                    </input>
+                  </label>
+                  
+                </li>
 
               </ul>
 
@@ -108,6 +123,7 @@ class App extends Component {
             borderColor={borderColor}
             borderEndSize={borderEndSize}
             borderSideSize={borderSideSize}
+            mainGameLineColor={mainGameLineColor}
           />
 
         </section>
