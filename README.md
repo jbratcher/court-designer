@@ -4,6 +4,25 @@ A layout tool for basketball courts built with React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Features
+
+* border size and color
+
+### Todo
+
+* vollyball court lines
+* volleyball court line color
+* lane markings
+* side court coach and check in boxes
+* main game line color
+* side volleyball court
+* side basketball court
+* side volleyball line color
+* side basketball line color
+* image upload
+* image placement
+* "sockets" at center circle, side courts, and keys for image placement and rotation
+
 ## Available Scripts
 
 In the project directory, you can run:
