@@ -8,14 +8,14 @@ class App extends Component {
     super(props);
 
     this.state = {
-      borderColor: "black",
-      borderEndSize: 2,
+      borderColor: "#B71C1C",
+      borderEndSize: 4,
       borderSideSize: 2
     };
   }
-  
+
   componentDidMount() {
-    
+
   }
 
   handleInputChange = e => {
@@ -71,9 +71,9 @@ class App extends Component {
                   </label>
 
                 </li>
-                
+
                 <li className="menuNavListItem">
-                
+
                   <label>End Border Size:
                     <input
                       className="borderEndSize"
@@ -82,11 +82,11 @@ class App extends Component {
                       type="number">
                     </input>
                   </label>
-                  
+
                 </li>
-                
+
                 <li className="menuNavListItem">
-                  
+
                   <label>Side Border Size:
                     <input
                       className="borderSideSize"
@@ -95,7 +95,7 @@ class App extends Component {
                       type="number">
                     </input>
                   </label>
-                  
+
                 </li>
 
               </ul>
@@ -112,7 +112,13 @@ class App extends Component {
 
         </section>
 
-        <footer></footer>
+        <footer>
+
+          <p>Court Designer 2019</p>
+          <p>Built with React</p>
+          <p>Powered by Github</p>
+
+        </footer>
 
       </section>
 
