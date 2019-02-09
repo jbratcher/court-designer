@@ -40,7 +40,7 @@ class Court extends Component {
                   {/* Left Court Area */}
 
                   <section
-                    className="leftCourtArea center fill"
+                    className="leftCourtArea center"
                     style={{
                       borderColor: mainGameLineColor,
                       width: `calc(378px + ${borderEndSize/2})`
@@ -89,7 +89,7 @@ class Court extends Component {
                   {/* Right Court Area */}
 
                   <section
-                    className="rightCourtArea center fill"
+                    className="rightCourtArea center"
                     style={{
                       borderColor: mainGameLineColor,
                       width: `calc(378px + ${borderEndSize/2})`
