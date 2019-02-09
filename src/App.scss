@@ -34,21 +34,13 @@ ul {
     }
 }
 
-.main {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 3rem;
-}
-
 .menu {
   margin-right: 3rem;
 }
 
 .menuNavList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
 .menuNavListItem {
@@ -66,8 +58,8 @@ ul {
 }
 
 .courtContainer {
-  margin-right: 2rem;
-  max-width: 75vw;
+  margin: 2rem auto;
+  max-width: 95vw;
 }
 
 .gym {
@@ -134,7 +126,7 @@ ul {
 .leftThreePointArea {
   background: transparent;
   align-self: center;
-  height: 80%;
+  height: 70%;
   width: 46%;
   border-left: none;
   border: 1px solid black;
@@ -142,7 +134,7 @@ ul {
   border-top-right-radius: 50%;
   position: relative;
   top: 0;
-  left: -46%;
+  left: -45%;
 }
 
 .centerCircle {
@@ -193,7 +185,7 @@ ul {
 .rightThreePointArea {
   background: transparent;
   align-self: center;
-  height: 80%;
+  height: 70%;
   width: 46%;
   border-left: none;
   border: 1px solid black;
@@ -201,7 +193,7 @@ ul {
   border-top-left-radius: 50%;
   position: relative;
   top: 0;
-  right: -46%;
+  right: -45%;
 }
 
 footer {

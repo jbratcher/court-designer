@@ -53,80 +53,76 @@ class App extends Component {
 
         </header>
 
-        <section className="main">
+        <section className="menu">
 
-          <section className="menu">
+          <nav className="menuNav">
 
-            <nav className="menuNav">
+            <ul className="menuNavList">
 
-              <ul className="menuNavList">
+              <li className="menuNavListItem">
 
-                <li className="menuNavListItem">
+                <label>Border Color:
+                  <input
+                    className="borderColor"
+                    name="borderColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
 
-                  <label>Border Color:
-                    <input
-                      className="borderColor"
-                      name="borderColor"
-                      onChange={this.handleInputChange}
-                      type="color">
-                    </input>
-                  </label>
+              </li>
 
-                </li>
+              <li className="menuNavListItem">
 
-                <li className="menuNavListItem">
+                <label>End Border Size:
+                  <input
+                    className="borderEndSize"
+                    name="borderEndSize"
+                    onChange={this.handleInputChange}
+                    type="number">
+                  </input>
+                </label>
 
-                  <label>End Border Size:
-                    <input
-                      className="borderEndSize"
-                      name="borderEndSize"
-                      onChange={this.handleInputChange}
-                      type="number">
-                    </input>
-                  </label>
+              </li>
 
-                </li>
+              <li className="menuNavListItem">
 
-                <li className="menuNavListItem">
+                <label>Side Border Size:
+                  <input
+                    className="borderSideSize"
+                    name="borderSideSize"
+                    onChange={this.handleInputChange}
+                    type="number">
+                  </input>
+                </label>
 
-                  <label>Side Border Size:
-                    <input
-                      className="borderSideSize"
-                      name="borderSideSize"
-                      onChange={this.handleInputChange}
-                      type="number">
-                    </input>
-                  </label>
-
-                </li>
+              </li>
+              
+              <li className="menuNavListItem">
                 
-                <li className="menuNavListItem">
-                  
-                  <label>Main Gameline:
-                    <input
-                      className="mainGameLineColor"
-                      name="mainGameLineColor"
-                      onChange={this.handleInputChange}
-                      type="color">
-                    </input>
-                  </label>
-                  
-                </li>
+                <label>Main Gameline:
+                  <input
+                    className="mainGameLineColor"
+                    name="mainGameLineColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+              </li>
 
-              </ul>
+            </ul>
 
-            </nav>
-
-          </section>
-
-          <Court
-            borderColor={borderColor}
-            borderEndSize={borderEndSize}
-            borderSideSize={borderSideSize}
-            mainGameLineColor={mainGameLineColor}
-          />
+          </nav>
 
         </section>
+
+        <Court
+          borderColor={borderColor}
+          borderEndSize={borderEndSize}
+          borderSideSize={borderSideSize}
+          mainGameLineColor={mainGameLineColor}
+        />
 
         <footer>
 
