@@ -5,11 +5,10 @@
 }
 
 body {
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 ul {
@@ -38,12 +37,11 @@ ul {
 .main {
   display: flex;
   justify-content: flex-end;
-  max-width: 100vw;
   margin-bottom: 3rem;
 }
 
 .menu {
-  margin: 0 auto;
+  margin-right: 3rem;
 }
 
 .menuNavList {
@@ -69,28 +67,20 @@ ul {
 
 .courtContainer {
   margin-right: 2rem;
+  max-width: 75vw;
 }
 
 .gym {
-  width: 75vw;
-  height: 80vh;
-  border: 1px dashed magenta;
-}
-
-.gymFloor {
   background: #E0CCB1;
-  width: 100%;
-  height: 100%;
+  border: 1px dashed magenta;
+  min-width: 75vw;
+  height: 80vh;
+
 }
 
 .courtBorderLine {
-  border-left: 2rem solid;
-  border-right: 2rem solid;
-  border-top: 1rem solid;
-  border-bottom: 1rem solid;
   border-color: maroon;
-  width: 80%;
-  height: 80%;
+  min-width: 80%;
 }
 
 .courtOuterGameLine {
@@ -102,9 +92,9 @@ ul {
 .courtFloor {
   background: #E0CCB1;
   display: flex;
-  justify-content: flex-start;
-  width: calc(100% - 0.25rem);
-  height: calc(100% - 0.25rem);
+  justify-content: stretch;
+  width: 100%;
+  height: 450px;
 }
 
 .leftCourtArea {
@@ -113,6 +103,7 @@ ul {
   display: flex;
   justify-content: flex-start;
   width: 50%;
+  min-width: 378px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -171,6 +162,7 @@ ul {
   border: 1px solid black;
   justify-content: flex-end;
   width: 50%;
+  min-width: 378px;
   height: 100%;
   margin: 0;
   padding: 0;

@@ -17,8 +17,6 @@ class Court extends Component {
 
         <section className="gym center">
 
-          <section className="gymFloor center">
-
             <section
               className="courtBorderLine center"
               style={{
@@ -27,39 +25,43 @@ class Court extends Component {
                 borderBottom: `${borderSideSize}rem solid ${borderColor}`,
                 borderLeft: `${borderEndSize}rem solid ${borderColor}`,
                 borderRight: `${borderEndSize}rem solid ${borderColor}`,
-                
               }}
             >
 
-              <section 
+              <section
                 className="courtOuterGameLine center"
                 style={{boxShadow: `inset 0 0 0 0.25rem ${mainGameLineColor}`}}
               >
 
-                <section className="courtFloor center">
+                <section
+                  className="courtFloor"
+                >
 
                   {/* Left Court Area */}
 
-                  <section 
+                  <section
                     className="leftCourtArea center fill"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      borderColor: mainGameLineColor,
+                      width: `calc(378px + ${borderEndSize/2})`
+                    }}
                   >
 
-                    <section 
+                    <section
                       className="leftLaneArea"
                       style={{borderColor: mainGameLineColor}}
                     >
 
                     </section>
 
-                    <section 
+                    <section
                       className="leftKeyArea"
                       style={{borderColor: mainGameLineColor}}
                     >
 
                     </section>
 
-                    <section 
+                    <section
                       className="leftThreePointArea"
                       style={{borderColor: mainGameLineColor}}
                     >
@@ -70,12 +72,12 @@ class Court extends Component {
 
                   {/* Center Court Area */}
 
-                  <section 
+                  <section
                     className="centerCourtLine center"
                     style={{borderColor: mainGameLineColor}}
                   >
 
-                    <section 
+                    <section
                       className="centerCircle center"
                       style={{borderColor: mainGameLineColor}}
                     >
@@ -86,26 +88,29 @@ class Court extends Component {
 
                   {/* Right Court Area */}
 
-                  <section 
+                  <section
                     className="rightCourtArea center fill"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      borderColor: mainGameLineColor,
+                      width: `calc(378px + ${borderEndSize/2})`
+                    }}
                   >
 
-                    <section 
+                    <section
                       className="rightThreePointArea"
                       style={{borderColor: mainGameLineColor}}
                     >
 
                     </section>
 
-                    <section 
+                    <section
                       className="rightKeyArea"
                       style={{borderColor: mainGameLineColor}}
                     >
 
                     </section>
 
-                    <section 
+                    <section
                       className="rightLaneArea"
                       style={{borderColor: mainGameLineColor}}
                     >
@@ -119,8 +124,6 @@ class Court extends Component {
               </section>
 
             </section>
-
-          </section>
 
         </section>
 
