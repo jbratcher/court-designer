@@ -51,24 +51,32 @@ class Court extends Component {
                       className="leftLaneArea"
                       style={{borderColor: mainGameLineColor}}
                     >
-                    
+
                       <ul className="leftLaneMarkingContainer">
-                      
+
                         <li className="leftLaneTopMarkings"></li>
                         <li className="leftLaneTopMarkings"></li>
                         <li className="leftLaneTopMarkings"></li>
                         <li className="leftLaneTopMarkings"></li>
-                        
+
                       </ul>
-                      
+
                       <ul className="leftLaneMarkingContainer">
-                      
+
                         <li className="leftLaneBottomMarkings"></li>
                         <li className="leftLaneBottomMarkings"></li>
                         <li className="leftLaneBottomMarkings"></li>
                         <li className="leftLaneBottomMarkings"></li>
-                        
+
                       </ul>
+
+                      <section className="leftGoalContainer">
+
+                        <section className="leftGoalBackboard"></section>
+                        <section className="leftGoalMount"></section>
+                        <section className="leftGoalRim"></section>
+
+                      </section>
 
                     </section>
 
@@ -132,24 +140,32 @@ class Court extends Component {
                       className="rightLaneArea"
                       style={{borderColor: mainGameLineColor}}
                     >
-                    
+
                       <ul className="rightLaneMarkingContainer">
-                      
+
                         <li className="rightLaneTopMarkings"></li>
                         <li className="rightLaneTopMarkings"></li>
                         <li className="rightLaneTopMarkings"></li>
                         <li className="rightLaneTopMarkings"></li>
-                        
+
                       </ul>
-                      
+
                       <ul className="rightLaneMarkingContainer">
-                      
+
                         <li className="rightLaneBottomMarkings"></li>
                         <li className="rightLaneBottomMarkings"></li>
                         <li className="rightLaneBottomMarkings"></li>
                         <li className="rightLaneBottomMarkings"></li>
-                        
+
                       </ul>
+
+                      <section className="rightGoalContainer">
+
+                        <section className="rightGoalRim"></section>
+                        <section className="rightGoalMount"></section>
+                        <section className="rightGoalBackboard"></section>
+
+                      </section>
 
                     </section>
 

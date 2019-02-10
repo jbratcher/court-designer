@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * border size and color
 * main game line color
 * lane markings
+* basketball goal
 
 ### Todo
 
