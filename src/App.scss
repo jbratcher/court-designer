@@ -63,7 +63,7 @@ ul {
 }
 
 .gym {
-  background: #E0CCB1;
+  background: #DFBB85;
   border: 1px dashed magenta;
   min-width: 75vw;
   min-height: 80vh;
@@ -86,7 +86,7 @@ ul {
 }
 
 .courtFloor {
-  background: #E0CCB1;
+  background: #DFBB85;
   display: flex;
   justify-content: stretch;
   width: 100%;
@@ -95,7 +95,7 @@ ul {
 }
 
 .leftCourtArea {
-  background: #E0CCB1;
+  background: #DFBB85;
   border: 2px solid black;
   display: flex;
   justify-content: flex-start;
@@ -106,15 +106,39 @@ ul {
   padding: 0;
 
   .leftLaneArea {
-    background: #E0CCB1;
+    background: #DFBB85;
     border: 2px solid black;
     border-left: none;
     height: 20%;
     min-width: 175px;
+    
+    .leftLaneMarkingContainer, .rightLaneMarkingContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .leftLaneTopMarkings, .leftLaneBottomMarkings {
+      background: black;
+      width: 2px;
+      height: 0.5rem;
+      position: relative;
+      top: -0.5rem;
+      
+      &:first-of-type {
+        margin-left: 2.5rem;
+        width: 12px;
+      }
+      
+    }
+    
+    .leftLaneBottomMarkings {
+      top: 5rem;
+    }
+    
   }
 
   .leftKeyArea {
-    background: #E0CCB1;
+    background: #DFBB85;
     align-self: center;
     height: 20%;
     min-width: 50px;
@@ -156,7 +180,7 @@ ul {
 }
 
 .rightCourtArea {
-  background: #E0CCB1;
+  background: #DFBB85;
   border: 2px solid black;
   justify-content: flex-end;
   width: 50%;
@@ -166,15 +190,34 @@ ul {
   padding: 0;
 
   .rightLaneArea {
-    background: #E0CCB1;
+    background: #DFBB85;
     border: 2px solid black;
     border-right: none;
     height: 20%;
     min-width: 175px;
+    
+    .rightLaneTopMarkings, .rightLaneBottomMarkings {
+      background: black;
+      width: 2px;
+      height: 0.5rem;
+      position: relative;
+      top: -0.5rem;
+      
+      &:last-of-type {
+        margin-right: 2.5rem;
+        width: 12px;
+      }
+      
+    }
+    
+    .rightLaneBottomMarkings {
+      top: 5rem;
+    }
+    
   }
 
   .rightKeyArea {
-    background: #E0CCB1;
+    background: #DFBB85;
     align-self: center;
     height: 20%;
     min-width: 50px;

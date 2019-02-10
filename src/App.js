@@ -77,6 +77,8 @@ class App extends Component {
                 <label>End Border Size:
                   <input
                     className="borderEndSize"
+                    min="0"
+                    max="10"
                     name="borderEndSize"
                     onChange={this.handleInputChange}
                     type="number">
@@ -90,6 +92,8 @@ class App extends Component {
                 <label>Side Border Size:
                   <input
                     className="borderSideSize"
+                    min="0"
+                    max="10"
                     name="borderSideSize"
                     onChange={this.handleInputChange}
                     type="number">
