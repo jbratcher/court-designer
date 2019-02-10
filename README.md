@@ -8,13 +8,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * border size and color
 * main game line color
+* lane markings
 
 ### Todo
 
 * refine size and shape of court to make it more realistic
 * volleyball court lines
 * volleyball court line color
-* lane markings
 * side court coach and check in boxes
 * side volleyball court
 * side basketball court

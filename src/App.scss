@@ -111,30 +111,30 @@ ul {
     border-left: none;
     height: 20%;
     min-width: 175px;
-    
-    .leftLaneMarkingContainer, .rightLaneMarkingContainer {
+
+    .leftLaneMarkingContainer {
       display: flex;
       justify-content: space-around;
     }
-    
+
     .leftLaneTopMarkings, .leftLaneBottomMarkings {
       background: black;
       width: 2px;
       height: 0.5rem;
       position: relative;
       top: -0.5rem;
-      
+
       &:first-of-type {
         margin-left: 2.5rem;
         width: 12px;
       }
-      
+
     }
-    
+
     .leftLaneBottomMarkings {
       top: 5rem;
     }
-    
+
   }
 
   .leftKeyArea {
@@ -195,25 +195,30 @@ ul {
     border-right: none;
     height: 20%;
     min-width: 175px;
-    
+
+    .rightLaneMarkingContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+
     .rightLaneTopMarkings, .rightLaneBottomMarkings {
       background: black;
       width: 2px;
       height: 0.5rem;
       position: relative;
       top: -0.5rem;
-      
+
       &:last-of-type {
         margin-right: 2.5rem;
         width: 12px;
       }
-      
+
     }
-    
+
     .rightLaneBottomMarkings {
       top: 5rem;
     }
-    
+
   }
 
   .rightKeyArea {
