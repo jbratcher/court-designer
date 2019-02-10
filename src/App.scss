@@ -65,9 +65,7 @@ ul {
 .gym {
   background: #DFBB85;
   border: 1px dashed magenta;
-  min-width: 75vw;
-  min-height: 80vh;
-
+  min-width: 90vw;
 }
 
 .courtBorderLine {
@@ -96,7 +94,8 @@ ul {
 
 .leftCourtArea {
   background: #DFBB85;
-  border: 2px solid black;
+  border: 3px solid black;
+  border-right: none;
   display: flex;
   justify-content: flex-start;
   width: 50%;
@@ -107,9 +106,11 @@ ul {
 
   .leftLaneArea {
     background: #DFBB85;
-    border: 2px solid black;
+    border: 3px solid black;
+    border-right: none;
     border-left: none;
     height: 20%;
+    min-height: 90px;
     min-width: 175px;
 
     .leftLaneMarkingContainer {
@@ -119,7 +120,7 @@ ul {
 
     .leftLaneTopMarkings, .leftLaneBottomMarkings {
       background: black;
-      width: 2px;
+      width: 3px;
       height: 0.5rem;
       position: relative;
       top: -0.5rem;
@@ -132,7 +133,7 @@ ul {
     }
 
     .leftLaneBottomMarkings {
-      top: 5rem;
+      top: 4.8rem;
     }
 
   }
@@ -141,9 +142,10 @@ ul {
     background: #DFBB85;
     align-self: center;
     height: 20%;
+    min-height: 90px;
     min-width: 50px;
     border-left: none;
-    border: 2px solid black;
+    border: 3px solid black;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
   }
@@ -151,9 +153,9 @@ ul {
   .leftThreePointArea {
     background: transparent;
     align-self: center;
-    height: 70%;
+    height: 85%;
     min-width: 225px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-left: none;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
@@ -165,7 +167,7 @@ ul {
 }
 
 .centerCircle {
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 50%;
   min-width: 6rem;
   height: 6rem;
@@ -175,13 +177,14 @@ ul {
 
 .centerCourtLine {
   background: black;
-  width: 0.003125rem;
+  width: 3px;
   height: 100%;
 }
 
 .rightCourtArea {
   background: #DFBB85;
-  border: 2px solid black;
+  border: 3px solid black;
+  border-left: none;
   justify-content: flex-end;
   width: 50%;
   min-width: 378px;
@@ -191,9 +194,11 @@ ul {
 
   .rightLaneArea {
     background: #DFBB85;
-    border: 2px solid black;
+    border: 3px solid black;
+    border-left: none;
     border-right: none;
     height: 20%;
+    min-height: 90px;
     min-width: 175px;
 
     .rightLaneMarkingContainer {
@@ -203,7 +208,7 @@ ul {
 
     .rightLaneTopMarkings, .rightLaneBottomMarkings {
       background: black;
-      width: 2px;
+      width: 3px;
       height: 0.5rem;
       position: relative;
       top: -0.5rem;
@@ -216,7 +221,7 @@ ul {
     }
 
     .rightLaneBottomMarkings {
-      top: 5rem;
+      top: 4.8rem;
     }
 
   }
@@ -225,9 +230,10 @@ ul {
     background: #DFBB85;
     align-self: center;
     height: 20%;
+    min-height: 90px;
     min-width: 50px;
     border-left: none;
-    border: 2px solid black;
+    border: 3px solid black;
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
   }
@@ -235,9 +241,9 @@ ul {
   .rightThreePointArea {
     background: transparent;
     align-self: center;
-    height: 70%;
+    height: 85%;
     min-width: 225px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-right: none;
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
