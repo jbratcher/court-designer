@@ -71,15 +71,13 @@ ul {
 .courtBorderLine {
   border-color: maroon;
   margin: 1rem 0;
-  min-width: 71.2%;
-  max-width: 100%;
+  min-width: 756px;
   max-height: 100%;
 }
 
 .courtOuterGameLine {
   box-shadow: inset 0 0 0 0.25rem black;
   width: 100%;
-  max-width: 756px;
   height: 100%;
 }
 
@@ -88,7 +86,7 @@ ul {
   display: flex;
   justify-content: stretch;
   width: 100%;
-  max-width: 756px;
+  min-width: 756px;
   height: 450px;
 }
 
@@ -140,7 +138,7 @@ ul {
       display: flex;
 
       .leftGoalBackboard {
-        background: #FA8320;
+        background: black;
         width: 3px;
         height: 45px;
         margin-left: 36px;
@@ -188,7 +186,7 @@ ul {
     border-top-right-radius: 50%;
     position: relative;
     top: 0;
-    left: -60%;
+    left: -50%;
   }
 
 }
@@ -256,7 +254,7 @@ ul {
       justify-content: flex-end;
 
       .rightGoalBackboard {
-        background: #FA8320;
+        background: black;
         width: 3px;
         height: 45px;
         margin-right: 36px;
@@ -296,6 +294,7 @@ ul {
   .rightThreePointArea {
     background: transparent;
     align-self: center;
+    justify-content: flex-start;
     height: 85%;
     min-width: 225px;
     border: 3px solid black;
@@ -303,8 +302,7 @@ ul {
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
     position: relative;
-    top: 0;
-    right: -60%;
+    right: -50%;
   }
 
 }

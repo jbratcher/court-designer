@@ -43,7 +43,7 @@ class Court extends Component {
                     className="leftCourtArea center"
                     style={{
                       borderColor: mainGameLineColor,
-                      width: `calc(378px + ${borderEndSize/2})`
+                      width: `calc(378px + ${borderEndSize})`
                     }}
                   >
 
@@ -54,19 +54,43 @@ class Court extends Component {
 
                       <ul className="leftLaneMarkingContainer">
 
-                        <li className="leftLaneTopMarkings"></li>
-                        <li className="leftLaneTopMarkings"></li>
-                        <li className="leftLaneTopMarkings"></li>
-                        <li className="leftLaneTopMarkings"></li>
+                        <li 
+                          className="leftLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
 
                       </ul>
 
                       <ul className="leftLaneMarkingContainer">
 
-                        <li className="leftLaneBottomMarkings"></li>
-                        <li className="leftLaneBottomMarkings"></li>
-                        <li className="leftLaneBottomMarkings"></li>
-                        <li className="leftLaneBottomMarkings"></li>
+                        <li 
+                          className="leftLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="leftLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
 
                       </ul>
 
@@ -118,7 +142,7 @@ class Court extends Component {
                     className="rightCourtArea center"
                     style={{
                       borderColor: mainGameLineColor,
-                      width: `calc(378px + ${borderEndSize/2})`
+                      width: `calc(378px + ${borderEndSize})`
                     }}
                   >
 
@@ -141,21 +165,47 @@ class Court extends Component {
                       style={{borderColor: mainGameLineColor}}
                     >
 
-                      <ul className="rightLaneMarkingContainer">
+                      <ul 
+                        className="rightLaneMarkingContainer"
+                      >
 
-                        <li className="rightLaneTopMarkings"></li>
-                        <li className="rightLaneTopMarkings"></li>
-                        <li className="rightLaneTopMarkings"></li>
-                        <li className="rightLaneTopMarkings"></li>
+                        <li 
+                          className="rightLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneTopMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
 
                       </ul>
 
                       <ul className="rightLaneMarkingContainer">
 
-                        <li className="rightLaneBottomMarkings"></li>
-                        <li className="rightLaneBottomMarkings"></li>
-                        <li className="rightLaneBottomMarkings"></li>
-                        <li className="rightLaneBottomMarkings"></li>
+                        <li 
+                          className="rightLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
+                        <li 
+                          className="rightLaneBottomMarkings"
+                          style={{background: mainGameLineColor}}
+                        ></li>
 
                       </ul>
 
