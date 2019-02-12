@@ -67,7 +67,29 @@ ul {
   border: 1px dashed magenta;
   min-width: 1000px;
   max-width: 90vw;
+  position: relative;
 }
+
+.leftEndBorderLettering {
+  
+  border: 1px dashed magenta;
+  position: absolute;
+  left: 16px;
+  
+  span {
+    border: 1px dashed teal;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Graduate', cursive;
+    letter-spacing: 1rem;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+    
+}
+
 
 .courtBorderLine {
   box-sizing: content-box;
