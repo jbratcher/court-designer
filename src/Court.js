@@ -9,7 +9,8 @@ class Court extends Component {
       borderEndSize,
       borderSideSize,
       leftEndBorderText,
-      mainGameLineColor
+      mainGameLineColor,
+      rightEndBorderText
     } = this.props;
 
     return (
@@ -21,6 +22,12 @@ class Court extends Component {
             <section className="leftEndBorderLettering">
               
                 <span>{leftEndBorderText}</span>
+              
+            </section>
+            
+            <section className="rightEndBorderLettering">
+              
+                <span>{rightEndBorderText}</span>
               
             </section>
 

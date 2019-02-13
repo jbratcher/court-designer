@@ -65,19 +65,16 @@ ul {
 .gym {
   background: #DFBB85;
   border: 1px dashed magenta;
-  min-width: 1000px;
+  min-width: 1200px;
   max-width: 90vw;
   position: relative;
 }
 
 .leftEndBorderLettering {
-  
-  border: 1px dashed magenta;
   position: absolute;
-  left: 16px;
+  left: 100px;
   
   span {
-    border: 1px dashed teal;
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -90,6 +87,21 @@ ul {
     
 }
 
+.rightEndBorderLettering {
+  position: absolute;
+  right: 100px;
+  
+  span {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Graduate', cursive;
+    letter-spacing: 1rem;
+    text-align: center;
+    writing-mode: vertical-lr;
+  }
+    
+}
 
 .courtBorderLine {
   box-sizing: content-box;

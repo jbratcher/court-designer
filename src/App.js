@@ -12,6 +12,7 @@ class App extends Component {
       borderEndSize: 4,
       borderSideSize: 2,
       leftEndBorderText: "",
+      rightEndBorderText: "",
       mainGameLineColor: "black"
     };
   }
@@ -35,7 +36,8 @@ class App extends Component {
       borderEndSize,
       borderSideSize,
       leftEndBorderText,
-      mainGameLineColor
+      mainGameLineColor,
+      rightEndBorderText
     } = this.state;
 
 
@@ -129,6 +131,19 @@ class App extends Component {
                 </label>
                 
               </li>
+              
+              <li className="menuNavListItem">
+                
+                <label>Right End Border Lettering:
+                  <input
+                    className="rightEndBorderText"
+                    name="rightEndBorderText"
+                    onChange={this.handleInputChange}
+                    type="text">
+                  </input>
+                </label>
+                
+              </li>
 
             </ul>
 
@@ -142,6 +157,7 @@ class App extends Component {
           borderSideSize={borderSideSize}
           leftEndBorderText={leftEndBorderText}
           mainGameLineColor={mainGameLineColor}
+          rightEndBorderText={rightEndBorderText}
         />
 
         <footer>
