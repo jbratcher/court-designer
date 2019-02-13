@@ -8,6 +8,7 @@ class Court extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
+      endBorderTextColor,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText
@@ -21,13 +22,21 @@ class Court extends Component {
         
             <section className="leftEndBorderLettering">
               
-                <span>{leftEndBorderText}</span>
+                <span
+                  style={{color: endBorderTextColor}}
+                >
+                  {leftEndBorderText}
+                </span>
               
             </section>
             
             <section className="rightEndBorderLettering">
               
-                <span>{rightEndBorderText}</span>
+                <span
+                  style={{color: endBorderTextColor}}
+                >
+                  {rightEndBorderText}
+                </span>
               
             </section>
 
