@@ -71,46 +71,15 @@ ul {
 
 .leftEndBorderLettering {
   margin-left: -15px;
-
-
-  span {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Graduate', sans-serif;
-    letter-spacing: 1rem;
-    text-align: center;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-  }
-
-}
-
-.rightEndBorderLettering {
-  margin-right: 35px;
-
-  span {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Graduate', cursive;
-    letter-spacing: 1rem;
-    text-align: center;
-    writing-mode: vertical-lr;
-  }
-
-}
-
-.leftEndBorderLettering {
   position: absolute;
   left: 100px;
+  top: 0;
+  bottom: 10px;
+
 
   span {
-    color: white;
-    font-size: 2rem;
     font-weight: bold;
     font-family: 'Graduate', sans-serif;
-    letter-spacing: 1rem;
     text-align: center;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -120,14 +89,14 @@ ul {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 100px;
+  margin-right: 35px;
+  right: 50px;
+  top: 10px;
+  bottom: 0;
 
   span {
-    color: white;
-    font-size: 2rem;
     font-weight: bold;
     font-family: 'Graduate', cursive;
-    letter-spacing: 1rem;
     text-align: center;
     writing-mode: vertical-lr;
   }

@@ -11,6 +11,7 @@ class App extends Component {
       borderColor: "black",
       borderEndSize: 0,
       borderSideSize: 0,
+      endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
       leftEndBorderText: "",
@@ -37,6 +38,7 @@ class App extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
+      endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
       leftEndBorderText,
@@ -183,6 +185,21 @@ class App extends Component {
                 </label>
 
               </li>
+              
+              <li className="menuNavListItem">
+
+                <label>End Border Letter Spacing:
+                  <input
+                    className="endBorderLetterSpacing"
+                    min="0"
+                    name="endBorderLetterSpacing"
+                    onChange={this.handleInputChange}
+                    type="number">
+                  </input>
+                  (inches)
+                </label>
+
+              </li>
 
             </ul>
 
@@ -194,6 +211,7 @@ class App extends Component {
           borderColor={borderColor}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
+          endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
           endBorderTextSize={endBorderTextSize}
           leftEndBorderText={leftEndBorderText}
