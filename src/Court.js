@@ -20,9 +20,9 @@ class Court extends Component {
       <section className="courtContainer center">
 
         <section className="gym center">
-        
+
             <section className="leftEndBorderLettering center">
-              
+
                 <span
                   style={{
                     color: endBorderTextColor,
@@ -31,11 +31,11 @@ class Court extends Component {
                 >
                   {leftEndBorderText}
                 </span>
-              
+
             </section>
-            
+
             <section className="rightEndBorderLettering center">
-              
+
                 <span
                   style={{
                     color: endBorderTextColor,
@@ -44,7 +44,7 @@ class Court extends Component {
                 >
                   {rightEndBorderText}
                 </span>
-              
+
             </section>
 
             <section
@@ -84,19 +84,19 @@ class Court extends Component {
 
                       <ul className="leftLaneMarkingContainer">
 
-                        <li 
+                        <li
                           className="leftLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
@@ -105,19 +105,19 @@ class Court extends Component {
 
                       <ul className="leftLaneMarkingContainer">
 
-                        <li 
+                        <li
                           className="leftLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="leftLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
@@ -154,7 +154,7 @@ class Court extends Component {
 
                   <section
                     className="centerCourtLine center"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{background: mainGameLineColor}}
                   >
 
                     <section
@@ -195,23 +195,23 @@ class Court extends Component {
                       style={{borderColor: mainGameLineColor}}
                     >
 
-                      <ul 
+                      <ul
                         className="rightLaneMarkingContainer"
                       >
 
-                        <li 
+                        <li
                           className="rightLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneTopMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
@@ -220,19 +220,19 @@ class Court extends Component {
 
                       <ul className="rightLaneMarkingContainer">
 
-                        <li 
+                        <li
                           className="rightLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>
-                        <li 
+                        <li
                           className="rightLaneBottomMarkings"
                           style={{background: mainGameLineColor}}
                         ></li>

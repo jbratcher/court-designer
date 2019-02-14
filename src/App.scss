@@ -64,16 +64,15 @@ ul {
 
 .gym {
   background: #DFBB85;
-  border: 1px dashed magenta;
   min-width: 1200px;
   max-width: 90vw;
   position: relative;
 }
 
 .leftEndBorderLettering {
-  position: absolute;
-  left: 100px;
-  
+  margin-left: -15px;
+
+
   span {
     color: white;
     font-size: 2rem;
@@ -84,13 +83,12 @@ ul {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
   }
-    
+
 }
 
 .rightEndBorderLettering {
-  position: absolute;
-  right: 100px;
-  
+  margin-right: 35px;
+
   span {
     color: white;
     font-size: 2rem;
@@ -100,13 +98,13 @@ ul {
     text-align: center;
     writing-mode: vertical-lr;
   }
-    
+
 }
 
 .leftEndBorderLettering {
   position: absolute;
   left: 100px;
-  
+
   span {
     color: white;
     font-size: 2rem;
@@ -117,13 +115,13 @@ ul {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
   }
-    
+
 }
 
 .rightEndBorderLettering {
   position: absolute;
   right: 100px;
-  
+
   span {
     color: white;
     font-size: 2rem;
@@ -133,7 +131,7 @@ ul {
     text-align: center;
     writing-mode: vertical-lr;
   }
-    
+
 }
 
 .courtBorderLine {
@@ -207,7 +205,7 @@ ul {
       display: flex;
 
       .leftGoalBackboard {
-        background: black;
+        background: #FA8320;
         width: 3px;
         height: 45px;
         margin-left: 36px;
@@ -323,7 +321,7 @@ ul {
       justify-content: flex-end;
 
       .rightGoalBackboard {
-        background: black;
+        background: #FA8320;
         width: 3px;
         height: 45px;
         margin-right: 36px;

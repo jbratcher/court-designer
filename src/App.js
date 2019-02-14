@@ -8,9 +8,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      borderColor: "#B71C1C",
-      borderEndSize: 4,
-      borderSideSize: 2,
+      borderColor: "",
+      borderEndSize: 0,
+      borderSideSize: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
       leftEndBorderText: "",
@@ -109,9 +109,9 @@ class App extends Component {
                 </label>
 
               </li>
-              
+
               <li className="menuNavListItem">
-                
+
                 <label>Main Gameline:
                   <input
                     className="mainGameLineColor"
@@ -120,15 +120,15 @@ class App extends Component {
                     type="color">
                   </input>
                 </label>
-                
+
               </li>
 
             </ul>
-            
+
             <ul className="menuNavList">
-            
+
               <li className="menuNavListItem">
-                
+
                 <label>Left End Border Lettering:
                   <input
                     className="leftEndBorderText"
@@ -137,11 +137,11 @@ class App extends Component {
                     type="text">
                   </input>
                 </label>
-                
+
               </li>
-              
+
               <li className="menuNavListItem">
-                
+
                 <label>Right End Border Lettering:
                   <input
                     className="rightEndBorderText"
@@ -150,11 +150,11 @@ class App extends Component {
                     type="text">
                   </input>
                 </label>
-              
+
               </li>
-                
+
               <li className="menuNavListItem">
-              
+
                 <label>End Border Text Color:
                   <input
                     className="endBorderTextColor"
@@ -163,11 +163,11 @@ class App extends Component {
                     type="color">
                   </input>
                 </label>
-                
+
               </li>
-              
+
               <li className="menuNavListItem">
-              
+
                 <label>End Border Text Size:
                   <input
                     className="endBorderTextSize"
@@ -178,15 +178,15 @@ class App extends Component {
                     type="number">
                   </input>
                 </label>
-                
+
               </li>
-                
+
             </ul>
 
           </nav>
 
         </section>
-        
+
         <Court
           borderColor={borderColor}
           borderEndSize={borderEndSize}
