@@ -8,7 +8,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      borderColor: "",
+      borderColor: "black",
       borderEndSize: 0,
       borderSideSize: 0,
       endBorderTextColor: "white",
@@ -86,11 +86,12 @@ class App extends Component {
                   <input
                     className="borderEndSize"
                     min="0"
-                    max="10"
+                    max="120"
                     name="borderEndSize"
                     onChange={this.handleInputChange}
                     type="number">
                   </input>
+                   (inches)
                 </label>
 
               </li>
@@ -101,11 +102,12 @@ class App extends Component {
                   <input
                     className="borderSideSize"
                     min="0"
-                    max="10"
+                    max="72"
                     name="borderSideSize"
                     onChange={this.handleInputChange}
                     type="number">
                   </input>
+                  (inches)
                 </label>
 
               </li>
@@ -177,6 +179,7 @@ class App extends Component {
                     onChange={this.handleInputChange}
                     type="number">
                   </input>
+                  (inches)
                 </label>
 
               </li>

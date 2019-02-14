@@ -51,10 +51,10 @@ class Court extends Component {
               className="courtBorderLine center"
               style={{
                 borderColor: borderColor,
-                borderTop: `${borderSideSize}rem solid ${borderColor}`,
-                borderBottom: `${borderSideSize}rem solid ${borderColor}`,
-                borderLeft: `${borderEndSize}rem solid ${borderColor}`,
-                borderRight: `${borderEndSize}rem solid ${borderColor}`,
+                borderTop: `${borderSideSize}px solid ${borderColor}`,
+                borderBottom: `${borderSideSize}px solid ${borderColor}`,
+                borderLeft: `${borderEndSize}px solid ${borderColor}`,
+                borderRight: `${borderEndSize}px solid ${borderColor}`,
               }}
             >
 
