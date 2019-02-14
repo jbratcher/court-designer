@@ -35,7 +35,7 @@ ul {
 }
 
 .menu {
-  margin-right: 3rem;
+
 }
 
 .menuNavList {
@@ -78,7 +78,40 @@ ul {
     color: white;
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Graduate', sans-serif;
+    letter-spacing: 1rem;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+    
+}
+
+.rightEndBorderLettering {
+  position: absolute;
+  right: 100px;
+  
+  span {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
     font-family: 'Graduate', cursive;
+    letter-spacing: 1rem;
+    text-align: center;
+    writing-mode: vertical-lr;
+  }
+    
+}
+
+.leftEndBorderLettering {
+  position: absolute;
+  left: 100px;
+  
+  span {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Graduate', sans-serif;
     letter-spacing: 1rem;
     text-align: center;
     writing-mode: vertical-lr;

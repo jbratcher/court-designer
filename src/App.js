@@ -12,6 +12,7 @@ class App extends Component {
       borderEndSize: 4,
       borderSideSize: 2,
       endBorderTextColor: "white",
+      endBorderTextSize: 48,
       leftEndBorderText: "",
       rightEndBorderText: "",
       mainGameLineColor: "black"
@@ -37,6 +38,7 @@ class App extends Component {
       borderEndSize,
       borderSideSize,
       endBorderTextColor,
+      endBorderTextSize,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText
@@ -148,33 +150,49 @@ class App extends Component {
                     type="text">
                   </input>
                 </label>
+              
+              </li>
                 
-                <li className="menuNavListItem">
-                
-                  <label>End Border Text Color:
-                    <input
-                      className="endBorderTextColor"
-                      name="endBorderTextColor"
-                      onChange={this.handleInputChange}
-                      type="color">
-                    </input>
-                  </label>
-                  
-                </li>
+              <li className="menuNavListItem">
+              
+                <label>End Border Text Color:
+                  <input
+                    className="endBorderTextColor"
+                    name="endBorderTextColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
                 
               </li>
-            
+              
+              <li className="menuNavListItem">
+              
+                <label>End Border Text Size:
+                  <input
+                    className="endBorderTextSize"
+                    min="12"
+                    max="60"
+                    name="endBorderTextSize"
+                    onChange={this.handleInputChange}
+                    type="number">
+                  </input>
+                </label>
+                
+              </li>
+                
             </ul>
 
           </nav>
 
         </section>
-
+        
         <Court
           borderColor={borderColor}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
           endBorderTextColor={endBorderTextColor}
+          endBorderTextSize={endBorderTextSize}
           leftEndBorderText={leftEndBorderText}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}
