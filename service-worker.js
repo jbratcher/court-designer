@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/court-designer/precache-manifest.3b5b82764d826a97c5547e2b771c90b1.js"
+  "/court-designer/precache-manifest.f0ac89c5b038f02f734f902c4445ae9c.js"
 );
 
 workbox.clientsClaim();
