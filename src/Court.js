@@ -33,7 +33,7 @@ class Court extends Component {
                 borderRight: `${borderEndSize}px solid ${borderColor}`,
               }}
             >
-            
+
             <section className="leftEndBorderLettering center">
 
                 <span
@@ -56,6 +56,21 @@ class Court extends Component {
               <section
                 className="courtFloor"
               >
+
+
+                {/* Main Volleyball */}
+
+                <section className="mainVolleyball">
+
+                </section>
+
+                <section className="mainVolleyballAttackLines">
+
+                </section>
+
+                <section className="mainVolleyballCenterLine">
+
+                </section>
 
                 {/* Left Court Area */}
 
@@ -150,7 +165,7 @@ class Court extends Component {
                   <section
                     className="centerCircle center"
                     style={{
-                      background: centerCircleBgColor, 
+                      background: centerCircleBgColor,
                       borderColor: mainGameLineColor
                     }}
                   >
@@ -249,7 +264,7 @@ class Court extends Component {
             </section>
 
           </section>
-          
+
           <section className="rightEndBorderLettering center">
 
             <span

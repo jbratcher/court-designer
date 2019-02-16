@@ -131,6 +131,36 @@ ul {
   min-width: 756px;
   max-width: 756px;
   height: 450px;
+  position: relative;
+}
+
+.mainVolleyball {
+  border: 3px solid white;
+  width: 540px;
+  height: 270px;
+  left: 108px;
+  top: 90px;
+  position: absolute;
+  z-index: 0;
+}
+
+.mainVolleyballAttackLines {
+  border: 3px solid white;
+  width: 180px;
+  height: 270px;
+  position: absolute;
+  top: 90px;
+  left: 288px;
+}
+
+.mainVolleyballCenterLine {
+  background: white;
+  height:  270px;
+  width: 3px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  z-index: -1;
 }
 
 .leftCourtArea {
@@ -146,13 +176,14 @@ ul {
   padding: 0;
 
   .leftLaneArea {
-    background: #DFBB85;
+    background: transparent;
     border: 3px solid black;
     border-right: none;
     border-left: none;
     height: 20%;
     min-height: 90px;
     min-width: 175px;
+    position: relative;
 
     .leftLaneMarkingContainer {
       display: flex;
@@ -248,6 +279,7 @@ ul {
   background: black;
   width: 3px;
   height: 100%;
+  position: relative;
 }
 
 .rightCourtArea {
@@ -262,13 +294,14 @@ ul {
   padding: 0;
 
   .rightLaneArea {
-    background: #DFBB85;
+    background: transparent;
     border: 3px solid black;
     border-left: none;
     border-right: none;
     height: 20%;
     min-height: 90px;
     min-width: 175px;
+    position: relative;
 
     .rightLaneMarkingContainer {
       display: flex;
