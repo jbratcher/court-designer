@@ -73,8 +73,7 @@ ul {
 
 .gym {
   background: #DFBB85;
-  min-width: 1200px;
-  max-width: 90vw;
+  width: 1200px;
   position: relative;
 }
 
@@ -97,7 +96,7 @@ ul {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 225px;
+  right: 223px;
   top: 10px;
   bottom: 0;
 
@@ -236,6 +235,7 @@ ul {
 }
 
 .centerCircle {
+  background: magenta;
   border: 3px solid black;
   border-radius: 50%;
   min-width: 6rem;

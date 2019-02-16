@@ -11,6 +11,7 @@ class App extends Component {
       borderColor: "black",
       borderEndSize: 0,
       borderSideSize: 0,
+      centerCircleBgColor: "transparent",
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
@@ -31,6 +32,13 @@ class App extends Component {
     console.log(e.target.name);
     console.log(e.target.value);
   }
+  
+  handleReset = e => {
+    this.setState({
+      centerCircleBgColor: "transparent"
+    });
+    console.log("Reset color to clear");
+  }
 
   render() {
 
@@ -38,6 +46,7 @@ class App extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
+      centerCircleBgColor,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
@@ -202,6 +211,32 @@ class App extends Component {
               </li>
 
             </ul>
+            
+            <ul className="menuNavList">
+            
+              <li className="menuNavListItem">
+
+                <label>Center Circle Paint Color:
+                  <input
+                    className="centerCircleBgColor"
+                    name="centerCircleBgColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+                <button 
+                  className="centerCirlceResetColor"
+                  name="centerCirlceResetColor"
+                  type="button"
+                  onClick={this.handleReset}
+                >
+                  Reset
+                </button>
+
+              </li>
+            
+            </ul>
 
           </nav>
 
@@ -211,6 +246,7 @@ class App extends Component {
           borderColor={borderColor}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
+          centerCircleBgColor={centerCircleBgColor}
           endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
           endBorderTextSize={endBorderTextSize}

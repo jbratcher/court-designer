@@ -8,6 +8,7 @@ class Court extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
+      centerCircleBgColor,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
@@ -43,20 +44,6 @@ class Court extends Component {
                   }}
                 >
                   {leftEndBorderText}
-                </span>
-
-            </section>
-            
-            <section className="rightEndBorderLettering center">
-
-                <span
-                  style={{
-                    color: endBorderTextColor,
-                    fontSize: `${endBorderTextSize}px`,
-                    letterSpacing: `${endBorderLetterSpacing}px`
-                  }}
-                >
-                  {rightEndBorderText}
                 </span>
 
             </section>
@@ -162,7 +149,10 @@ class Court extends Component {
 
                   <section
                     className="centerCircle center"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      background: centerCircleBgColor, 
+                      borderColor: mainGameLineColor
+                    }}
                   >
 
                   </section>
@@ -257,6 +247,20 @@ class Court extends Component {
               </section>
 
             </section>
+
+          </section>
+          
+          <section className="rightEndBorderLettering center">
+
+            <span
+              style={{
+                color: endBorderTextColor,
+                fontSize: `${endBorderTextSize}px`,
+                letterSpacing: `${endBorderLetterSpacing}px`
+              }}
+            >
+              {rightEndBorderText}
+            </span>
 
           </section>
 
