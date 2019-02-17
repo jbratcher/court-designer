@@ -12,6 +12,7 @@ class Court extends Component {
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
+      laneColor,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
@@ -59,7 +60,6 @@ class Court extends Component {
                 className="courtFloor"
               >
 
-
                 {/* Main Volleyball */}
                 
                 {volleyballShown ?
@@ -100,7 +100,10 @@ class Court extends Component {
 
                   <section
                     className="leftLaneArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      backgroundColor: laneColor,
+                      borderColor: mainGameLineColor
+                    }}
                   >
 
                     <ul className="leftLaneMarkingContainer">
@@ -216,7 +219,10 @@ class Court extends Component {
 
                   <section
                     className="rightLaneArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      backgroundColor: laneColor,
+                      borderColor: mainGameLineColor
+                    }}
                   >
 
                     <ul

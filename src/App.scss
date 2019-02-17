@@ -1,3 +1,5 @@
+// Global Styles
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +23,8 @@ ul {
   justify-content: center;
 }
 
+// Header
+
 .header {
   margin: 1rem 0 2rem;
   text-align: center;
@@ -34,9 +38,7 @@ ul {
     }
 }
 
-.menu {
-
-}
+// Menu
 
 .menuNavList {
   display: flex;
@@ -65,6 +67,12 @@ ul {
 .borderColor {
   margin: 0 1rem;
 }
+
+.volleyballLineColor {
+  margin-right: 1rem;
+}
+
+//  Court
 
 .courtContainer {
   margin: 2rem auto;
@@ -384,11 +392,7 @@ ul {
 
 }
 
-
-.volleyballLineColor {
-  margin-right: 1rem;
-}
-
+// Footer
 
 footer {
   background: #607d8b;

@@ -15,6 +15,7 @@ class App extends Component {
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
+      laneColor: "transparent",
       leftEndBorderText: "",
       rightEndBorderText: "",
       mainGameLineColor: "black",
@@ -31,22 +32,18 @@ class App extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-    console.log(e.target.name);
-    console.log(e.target.value);
   }
   
-  handleReset = e => {
+  handleColorReset = e => {
     this.setState({
-      centerCircleBgColor: "transparent"
+      [e.target.previousSibling.firstElementChild.name]: "transparent"
     });
-    console.log("Reset color to clear");
   }
   
   handleShow = e => {
     this.setState({
       volleyballShown: !this.state.volleyballShown
     });
-    console.log("Shown: ", this.state.volleyballShown);
   }
 
   render() {
@@ -59,6 +56,7 @@ class App extends Component {
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
+      laneColor,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
@@ -220,6 +218,28 @@ class App extends Component {
                 </label>
 
               </li>
+              
+              <li className="menuNavListItem">
+
+                <label>Lane Color:
+                  <input
+                    className="laneColor"
+                    name="laneColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+                <button 
+                  className="laneResetColor"
+                  name="laneResetColor"
+                  type="button"
+                  onClick={this.handleColorReset}
+                >
+                  Reset
+                </button>
+
+              </li>
 
             </ul>
             
@@ -240,7 +260,7 @@ class App extends Component {
                   className="centerCirlceResetColor"
                   name="centerCirlceResetColor"
                   type="button"
-                  onClick={this.handleReset}
+                  onClick={this.handleColorReset}
                 >
                   Reset
                 </button>
@@ -287,6 +307,7 @@ class App extends Component {
           endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
           endBorderTextSize={endBorderTextSize}
+          laneColor={laneColor}
           leftEndBorderText={leftEndBorderText}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}

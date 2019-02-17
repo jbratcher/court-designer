@@ -13,9 +13,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * center circle fill color
 * volleyball court lines
 * volleyball courl line color
+* toggle show of main volleyball court
+* lane paint
 
 ### Todo
 
+* key and 3 point paint/stain options
 * "sockets" at center circle, side courts, and keys for image placement and rotation
 * scale 3 point area by increasing rounding
 * side court coach and check in boxes
