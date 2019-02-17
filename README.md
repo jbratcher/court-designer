@@ -10,12 +10,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * main game line color
 * lane markings
 * basketball goal
+* center circle fill color
+* volleyball court lines
+* volleyball courl line color
 
 ### Todo
 
-* refine size and shape of court to make it more realistic
-* volleyball court lines
-* volleyball court line color
+* "sockets" at center circle, side courts, and keys for image placement and rotation
+* scale 3 point area by increasing rounding
 * side court coach and check in boxes
 * side volleyball court
 * side basketball court
@@ -23,7 +25,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * side basketball line color
 * image upload
 * image placement
-* "sockets" at center circle, side courts, and keys for image placement and rotation
 
 ## Available Scripts
 

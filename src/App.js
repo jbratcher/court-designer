@@ -17,7 +17,9 @@ class App extends Component {
       endBorderTextSize: 48,
       leftEndBorderText: "",
       rightEndBorderText: "",
-      mainGameLineColor: "black"
+      mainGameLineColor: "black",
+      volleyballLineColor: "white",
+      volleyballShown: true
     };
   }
 
@@ -39,6 +41,13 @@ class App extends Component {
     });
     console.log("Reset color to clear");
   }
+  
+  handleShow = e => {
+    this.setState({
+      volleyballShown: !this.state.volleyballShown
+    });
+    console.log("Shown: ", this.state.volleyballShown);
+  }
 
   render() {
 
@@ -52,7 +61,9 @@ class App extends Component {
       endBorderTextSize,
       leftEndBorderText,
       mainGameLineColor,
-      rightEndBorderText
+      rightEndBorderText,
+      volleyballLineColor,
+      volleyballShown
     } = this.state;
 
 
@@ -237,6 +248,32 @@ class App extends Component {
               </li>
             
             </ul>
+            
+            <ul className="menuNavList">
+            
+              <li className="menuNavListItem">
+
+                <label>Volleyball Line Color:
+                  <input
+                    className="volleyballLineColor"
+                    name="volleyballLineColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+                <label>Show
+                  <input 
+                    className="volleyballShown"
+                    type="checkbox"
+                    onChange={this.handleShow}
+                  >
+                  </input>
+                </label>
+
+              </li>
+            
+            </ul>
 
           </nav>
 
@@ -253,6 +290,8 @@ class App extends Component {
           leftEndBorderText={leftEndBorderText}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}
+          volleyballLineColor={volleyballLineColor}
+          volleyballShown={volleyballShown}
         />
 
         <footer>

@@ -14,7 +14,9 @@ class Court extends Component {
       endBorderTextSize,
       leftEndBorderText,
       mainGameLineColor,
-      rightEndBorderText
+      rightEndBorderText,
+      volleyballLineColor,
+      volleyballShown
     } = this.props;
 
     return (
@@ -59,18 +61,32 @@ class Court extends Component {
 
 
                 {/* Main Volleyball */}
+                
+                {volleyballShown ?
+                
+                <React.Fragment>
 
-                <section className="mainVolleyball">
-
-                </section>
-
-                <section className="mainVolleyballAttackLines">
-
-                </section>
-
-                <section className="mainVolleyballCenterLine">
-
-                </section>
+                  <section 
+                    className="mainVolleyball"
+                    style={{borderColor: volleyballLineColor}}
+                  >
+                  </section>
+  
+                  <section 
+                    className="mainVolleyballAttackLines"
+                    style={{borderColor: volleyballLineColor}}
+                  >
+                  </section>
+  
+                  <section 
+                    className="mainVolleyballCenterLine"
+                    style={{borderColor: volleyballLineColor}}
+                  >
+                  </section>
+                
+                </React.Fragment>
+                
+                : null}
 
                 {/* Left Court Area */}
 
