@@ -14,11 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * volleyball court lines
 * volleyball courl line color
 * toggle show of main volleyball court
-* lane paint
+* lane, key and 3 point paint options
 
 ### Todo
 
-* key and 3 point paint/stain options
+* lane, key and 3 point stain options
 * "sockets" at center circle, side courts, and keys for image placement and rotation
 * scale 3 point area by increasing rounding
 * side court coach and check in boxes
@@ -28,6 +28,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * side basketball line color
 * image upload
 * image placement
+
+### Bugs
+
+* Volleyball court line under paint inside 3 point areas
 
 ## Available Scripts
 

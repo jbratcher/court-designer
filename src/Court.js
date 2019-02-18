@@ -17,6 +17,7 @@ class Court extends Component {
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
+      threePointAreaColor,
       volleyballLineColor,
       volleyballShown
     } = this.props;
@@ -172,6 +173,13 @@ class Court extends Component {
                     className="leftThreePointArea"
                     style={{borderColor: mainGameLineColor}}
                   >
+                  
+                    <section
+                      className="leftThreePointAreaInner"
+                      style={{backgroundColor: threePointAreaColor}}
+                    >
+                    </section>
+                    
                   </section>
 
                 </section>
@@ -208,6 +216,13 @@ class Court extends Component {
                     className="rightThreePointArea"
                     style={{borderColor: mainGameLineColor}}
                   >
+                    
+                    <section
+                      className="rightThreePointAreaInner"
+                      style={{backgroundColor: threePointAreaColor}}
+                    >
+                    </section>
+                    
                   </section>
 
                   <section

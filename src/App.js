@@ -11,15 +11,16 @@ class App extends Component {
       borderColor: "black",
       borderEndSize: 0,
       borderSideSize: 0,
-      centerCircleBgColor: "transparent",
+      centerCircleBgColor: "#DFBB85",
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
-      laneColor: "transparent",
+      laneColor: "#DFBB85",
       leftEndBorderText: "",
-      keyColor: "transparent",
+      keyColor: "#DFBB85",
       rightEndBorderText: "",
       mainGameLineColor: "black",
+      threePointAreaColor: "#DFBB85",
       volleyballLineColor: "white",
       volleyballShown: true
     };
@@ -62,6 +63,7 @@ class App extends Component {
       keyColor,
       mainGameLineColor,
       rightEndBorderText,
+      threePointAreaColor,
       volleyballLineColor,
       volleyballShown
     } = this.state;
@@ -264,6 +266,28 @@ class App extends Component {
                 </button>
 
               </li>
+              
+              <li className="menuNavListItem">
+
+                <label>3 Point Area Color:
+                  <input
+                    className="threePointAreaColor"
+                    name="threePointAreaColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+                <button 
+                  className="threePointAreaResetColor"
+                  name="threePointAreaResetColor"
+                  type="button"
+                  onClick={this.handleColorReset}
+                >
+                  Reset
+                </button>
+
+              </li>
 
             </ul>
             
@@ -336,6 +360,7 @@ class App extends Component {
           keyColor={keyColor}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}
+          threePointAreaColor={threePointAreaColor}
           volleyballLineColor={volleyballLineColor}
           volleyballShown={volleyballShown}
         />
