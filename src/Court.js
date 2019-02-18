@@ -12,6 +12,7 @@ class Court extends Component {
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
+      keyColor,
       laneColor,
       leftEndBorderText,
       mainGameLineColor,
@@ -160,16 +161,17 @@ class Court extends Component {
 
                   <section
                     className="leftKeyArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      backgroundColor: keyColor,
+                      borderColor: mainGameLineColor
+                    }}
                   >
-
                   </section>
 
                   <section
                     className="leftThreePointArea"
                     style={{borderColor: mainGameLineColor}}
                   >
-
                   </section>
 
                 </section>
@@ -188,7 +190,6 @@ class Court extends Component {
                       borderColor: mainGameLineColor
                     }}
                   >
-
                   </section>
 
                 </section>
@@ -207,14 +208,15 @@ class Court extends Component {
                     className="rightThreePointArea"
                     style={{borderColor: mainGameLineColor}}
                   >
-
                   </section>
 
                   <section
                     className="rightKeyArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{
+                      backgroundColor: keyColor,
+                      borderColor: mainGameLineColor
+                    }}
                   >
-
                   </section>
 
                   <section

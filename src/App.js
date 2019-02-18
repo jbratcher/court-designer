@@ -17,6 +17,7 @@ class App extends Component {
       endBorderTextSize: 48,
       laneColor: "transparent",
       leftEndBorderText: "",
+      keyColor: "transparent",
       rightEndBorderText: "",
       mainGameLineColor: "black",
       volleyballLineColor: "white",
@@ -58,6 +59,7 @@ class App extends Component {
       endBorderTextSize,
       laneColor,
       leftEndBorderText,
+      keyColor,
       mainGameLineColor,
       rightEndBorderText,
       volleyballLineColor,
@@ -240,6 +242,28 @@ class App extends Component {
                 </button>
 
               </li>
+              
+              <li className="menuNavListItem">
+
+                <label>Key Color:
+                  <input
+                    className="keyColor"
+                    name="keyColor"
+                    onChange={this.handleInputChange}
+                    type="color">
+                  </input>
+                </label>
+                
+                <button 
+                  className="keyResetColor"
+                  name="keyResetColor"
+                  type="button"
+                  onClick={this.handleColorReset}
+                >
+                  Reset
+                </button>
+
+              </li>
 
             </ul>
             
@@ -309,6 +333,7 @@ class App extends Component {
           endBorderTextSize={endBorderTextSize}
           laneColor={laneColor}
           leftEndBorderText={leftEndBorderText}
+          keyColor={keyColor}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}
           volleyballLineColor={volleyballLineColor}
