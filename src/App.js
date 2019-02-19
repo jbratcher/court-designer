@@ -22,7 +22,7 @@ class App extends Component {
       mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
       volleyballLineColor: "white",
-      volleyballShown: true
+      volleyballShown: false
     };
   }
 
@@ -38,7 +38,7 @@ class App extends Component {
   
   handleColorReset = e => {
     this.setState({
-      [e.target.previousSibling.firstElementChild.name]: "transparent"
+      [e.target.previousSibling.firstElementChild.name]: "#DFBB85"
     });
   }
   
