@@ -13,11 +13,13 @@ class Court extends Component {
       endBorderTextColor,
       endBorderTextSize,
       keyColor,
+      keyColorOpacity,
       laneColor,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
       threePointAreaColor,
+      threePointAreaColorOpacity,
       volleyballLineColor,
       volleyballShown
     } = this.props;
@@ -162,11 +164,18 @@ class Court extends Component {
 
                   <section
                     className="leftKeyArea"
-                    style={{
-                      backgroundColor: keyColor,
-                      borderColor: mainGameLineColor
-                    }}
+                    style={{borderColor: mainGameLineColor}}
                   >
+                  
+                    <section 
+                      className="leftKeyAreaInner"
+                      style={{
+                        backgroundColor: keyColor,
+                        opacity: keyColorOpacity
+                      }}
+                    >
+                    </section>
+                  
                   </section>
 
                   <section
@@ -176,7 +185,10 @@ class Court extends Component {
                   
                     <section
                       className="leftThreePointAreaInner"
-                      style={{backgroundColor: threePointAreaColor}}
+                      style={{
+                        backgroundColor: threePointAreaColor,
+                        opacity: threePointAreaColorOpacity
+                      }}
                     >
                     </section>
                     
@@ -219,7 +231,10 @@ class Court extends Component {
                     
                     <section
                       className="rightThreePointAreaInner"
-                      style={{backgroundColor: threePointAreaColor}}
+                      style={{
+                        backgroundColor: threePointAreaColor,
+                        opacity: threePointAreaColorOpacity
+                      }}
                     >
                     </section>
                     
@@ -227,11 +242,18 @@ class Court extends Component {
 
                   <section
                     className="rightKeyArea"
-                    style={{
-                      backgroundColor: keyColor,
-                      borderColor: mainGameLineColor
-                    }}
+                    style={{borderColor: mainGameLineColor}}
                   >
+                  
+                    <section 
+                      className="rightKeyAreaInner"
+                      style={{
+                        backgroundColor: keyColor,
+                        opacity: keyColorOpacity
+                      }}
+                    >
+                    </section>
+                  
                   </section>
 
                   <section

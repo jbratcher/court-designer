@@ -18,9 +18,11 @@ class App extends Component {
       laneColor: "#DFBB85",
       leftEndBorderText: "",
       keyColor: "#DFBB85",
+      keyColorOpacity: 1,
       rightEndBorderText: "",
       mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
+      threePointAreaColorOpacity: 1,
       volleyballLineColor: "white",
       volleyballShown: false
     };
@@ -37,8 +39,16 @@ class App extends Component {
   }
   
   handleColorReset = e => {
+    let property = e.target.parentElement.firstElementChild.firstElementChild.name;
     this.setState({
-      [e.target.previousSibling.firstElementChild.name]: "#DFBB85"
+      [property]: "#DFBB85"
+    });
+  }
+  
+  handleColorStain = e => {
+    let property = `${e.target.parentElement.firstElementChild.name}Opacity`;
+    this.setState({
+      [property]: e.target.value
     });
   }
   
@@ -61,9 +71,11 @@ class App extends Component {
       laneColor,
       leftEndBorderText,
       keyColor,
+      keyColorOpacity,
       mainGameLineColor,
       rightEndBorderText,
       threePointAreaColor,
+      threePointAreaColorOpacity,
       volleyballLineColor,
       volleyballShown
     } = this.state;
@@ -256,6 +268,18 @@ class App extends Component {
                   </input>
                 </label>
                 
+                <label>Stain:
+                  <input
+                    className="keyStain"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="keyColor"
+                    onChange={this.handleColorStain}
+                    type="number">
+                  </input>
+                </label>
+                
                 <button 
                   className="keyResetColor"
                   name="keyResetColor"
@@ -275,6 +299,18 @@ class App extends Component {
                     name="threePointAreaColor"
                     onChange={this.handleInputChange}
                     type="color">
+                  </input>
+                </label>
+                
+                <label>Stain:
+                  <input
+                    className="threePointStain"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="threePointAreaColor"
+                    onChange={this.handleColorStain}
+                    type="number">
                   </input>
                 </label>
                 
@@ -358,9 +394,11 @@ class App extends Component {
           laneColor={laneColor}
           leftEndBorderText={leftEndBorderText}
           keyColor={keyColor}
+          keyColorOpacity={keyColorOpacity}
           mainGameLineColor={mainGameLineColor}
           rightEndBorderText={rightEndBorderText}
           threePointAreaColor={threePointAreaColor}
+          threePointAreaColorOpacity={threePointAreaColorOpacity}
           volleyballLineColor={volleyballLineColor}
           volleyballShown={volleyballShown}
         />

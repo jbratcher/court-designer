@@ -260,6 +260,14 @@ ul {
     border-top-right-radius: 50%;
     position: relative;
     z-index: 1;
+    
+    .leftKeyAreaInner {
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        height: 100%;
+        width: 100%;
+      }
+      
   }
 
   .leftThreePointArea {
@@ -390,6 +398,14 @@ ul {
     border-top-left-radius: 50%;
     position: relative;
     z-index: 1;
+    
+      .rightKeyAreaInner {
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        height: 100%;
+        width: 100%;
+      }
+      
   }
 
   .rightThreePointArea {
