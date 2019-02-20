@@ -8,7 +8,8 @@ class Court extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
-      centerCircleBgColor,
+      centerCircleColor,
+      centerCircleColorOpacity,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
@@ -215,10 +216,19 @@ class Court extends Component {
                   <section
                     className="centerCircle center"
                     style={{
-                      background: centerCircleBgColor,
                       borderColor: mainGameLineColor
                     }}
                   >
+                  
+                    <section
+                      className="centerCirlceInner"
+                      style={{
+                        background: centerCircleColor,
+                        opacity: centerCircleColorOpacity
+                      }}
+                      >
+                      </section>
+                  
                   </section>
 
                 </section>

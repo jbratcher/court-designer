@@ -11,7 +11,8 @@ class App extends Component {
       borderColor: "black",
       borderEndSize: 0,
       borderSideSize: 0,
-      centerCircleBgColor: "#DFBB85",
+      centerCircleColor: "#DFBB85",
+      centerCircleColorOpacity: 1,
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextSize: 48,
@@ -67,7 +68,8 @@ class App extends Component {
       borderColor,
       borderEndSize,
       borderSideSize,
-      centerCircleBgColor,
+      centerCircleColor,
+      centerCircleColorOpacity,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextSize,
@@ -349,10 +351,22 @@ class App extends Component {
 
                 <label>Center Circle Paint Color:
                   <input
-                    className="centerCircleBgColor"
-                    name="centerCircleBgColor"
+                    className="centerCircleColor"
+                    name="centerCircleColor"
                     onChange={this.handleInputChange}
                     type="color">
+                  </input>
+                </label>
+                
+                <label>Stain:
+                  <input
+                    className="centerCircleStain"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="centerCircleColor"
+                    onChange={this.handleColorStain}
+                    type="number">
                   </input>
                 </label>
                 
@@ -403,7 +417,8 @@ class App extends Component {
           borderColor={borderColor}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
-          centerCircleBgColor={centerCircleBgColor}
+          centerCircleColor={centerCircleColor}
+          centerCircleColorOpacity={centerCircleColorOpacity}
           endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
           endBorderTextSize={endBorderTextSize}

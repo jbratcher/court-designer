@@ -1,24 +1,23 @@
 # Court Designer
 
-A layout tool for basketball courts built with React.
+A layout tool for basketball courts built with React.  Created for hobbists and professionals alike.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Features
 
-* border size and color
-* main game line color
-* lane markings
-* basketball goal
-* center circle fill color
-* volleyball court lines
-* volleyball courl line color
-* toggle show of main volleyball court
-* lane, key and 3 point paint options
+* Border size and color
+* Main gameline color
+* Paint and stain center circle, 3-point area, key, and lane
+* Show/hide main volleyball court
+* Main volleyball court line color
 
 ### Todo
 
-* lane, key and 3 point stain options
+* refactor menu ui for ease of use, minimize unused space
+* refactor components for more managability
+* border stain
+* stained and natural border lettering
 * "sockets" at center circle, side courts, and keys for image placement and rotation
 * scale 3 point area by increasing rounding
 * side court coach and check in boxes
@@ -31,7 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Bugs
 
-* Volleyball court line under paint inside 3 point areas
+* Main volleyball court lines on top of main game lines
 
 ## Available Scripts
 
