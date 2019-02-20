@@ -16,6 +16,7 @@ class App extends Component {
       endBorderTextColor: "white",
       endBorderTextSize: 48,
       laneColor: "#DFBB85",
+      laneColorOpacity: 1,
       leftEndBorderText: "",
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
@@ -39,9 +40,11 @@ class App extends Component {
   }
   
   handleColorReset = e => {
-    let property = e.target.parentElement.firstElementChild.firstElementChild.name;
+    let propertyNameColor = e.target.parentElement.firstElementChild.firstElementChild.name;
+    let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
     this.setState({
-      [property]: "#DFBB85"
+      [propertyNameColor]: "#DFBB85",
+      [propertyNameOpacity]: 1
     });
   }
   
@@ -69,6 +72,7 @@ class App extends Component {
       endBorderTextColor,
       endBorderTextSize,
       laneColor,
+      laneColorOpacity,
       leftEndBorderText,
       keyColor,
       keyColorOpacity,
@@ -246,6 +250,18 @@ class App extends Component {
                   </input>
                 </label>
                 
+                <label>Stain:
+                  <input
+                    className="laneColorOpacity"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="laneColor"
+                    onChange={this.handleColorStain}
+                    type="number">
+                  </input>
+                </label>
+                
                 <button 
                   className="laneResetColor"
                   name="laneResetColor"
@@ -392,6 +408,7 @@ class App extends Component {
           endBorderTextColor={endBorderTextColor}
           endBorderTextSize={endBorderTextSize}
           laneColor={laneColor}
+          laneColorOpacity={laneColorOpacity}
           leftEndBorderText={leftEndBorderText}
           keyColor={keyColor}
           keyColorOpacity={keyColorOpacity}

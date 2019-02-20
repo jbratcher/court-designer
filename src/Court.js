@@ -15,6 +15,7 @@ class Court extends Component {
       keyColor,
       keyColorOpacity,
       laneColor,
+      laneColorOpacity,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
@@ -105,10 +106,18 @@ class Court extends Component {
                   <section
                     className="leftLaneArea"
                     style={{
-                      backgroundColor: laneColor,
                       borderColor: mainGameLineColor
                     }}
                   >
+                    
+                    <section 
+                      className="leftLaneAreaInner"
+                      style={{
+                        backgroundColor: laneColor,
+                        opacity: laneColorOpacity
+                      }}
+                      >
+                    </section>
 
                     <ul className="leftLaneMarkingContainer">
 
@@ -259,10 +268,18 @@ class Court extends Component {
                   <section
                     className="rightLaneArea"
                     style={{
-                      backgroundColor: laneColor,
                       borderColor: mainGameLineColor
                     }}
                   >
+                  
+                    <section 
+                      className="rightLaneAreaInner"
+                      style={{
+                        backgroundColor: laneColor,
+                        opacity: laneColorOpacity
+                      }}
+                      >
+                    </section>
 
                     <ul
                       className="rightLaneMarkingContainer"
