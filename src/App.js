@@ -9,6 +9,7 @@ class App extends Component {
 
     this.state = {
       borderColor: "black",
+      borderColorOpacity: 1,
       borderEndSize: 0,
       borderSideSize: 0,
       centerCircleColor: "#DFBB85",
@@ -31,7 +32,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-
+    console.log(this.hexToRgb(this.state.borderColor));
   }
 
   handleInputChange = e => {
@@ -61,11 +62,21 @@ class App extends Component {
       volleyballShown: !this.state.volleyballShown
     });
   }
+  
+  hexToRgb = (hex) => {
+    let combinedInt = parseInt(hex, 16);
+    let r = (combinedInt >> 16) & 255;
+    let g = (combinedInt >> 8) & 255;
+    let b = combinedInt & 255;
+
+    return r + "," + g + "," + b + ",1";
+  }
 
   render() {
 
     const {
       borderColor,
+      borderColorOpacity,
       borderEndSize,
       borderSideSize,
       centerCircleColor,
@@ -119,6 +130,27 @@ class App extends Component {
                     type="color">
                   </input>
                 </label>
+                
+                <label>Stain:
+                  <input
+                    className="borderColorOpacity"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="borderColor"
+                    onChange={this.handleColorStain}
+                    type="number">
+                  </input>
+                </label>
+                
+                <button 
+                  className="borderResetColor"
+                  name="borderResetColor"
+                  type="button"
+                  onClick={this.handleColorReset}
+                >
+                  Reset
+                </button>
 
               </li>
 
@@ -415,6 +447,7 @@ class App extends Component {
 
         <Court
           borderColor={borderColor}
+          borderColorOpacity={borderColorOpacity}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
           centerCircleColor={centerCircleColor}

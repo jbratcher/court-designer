@@ -6,6 +6,7 @@ class Court extends Component {
 
     const {
       borderColor,
+      borderColorOpacity,
       borderEndSize,
       borderSideSize,
       centerCircleColor,
@@ -36,6 +37,7 @@ class Court extends Component {
               className="courtBorderLine center"
               style={{
                 borderColor: borderColor,
+                opacity: borderColorOpacity,
                 borderTop: `${borderSideSize}px solid ${borderColor}`,
                 borderBottom: `${borderSideSize}px solid ${borderColor}`,
                 borderLeft: `${borderEndSize}px solid ${borderColor}`,

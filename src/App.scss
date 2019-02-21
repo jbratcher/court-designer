@@ -118,8 +118,6 @@ ul {
 }
 
 .courtBorderLine {
-  box-sizing: content-box;
-  border-color: maroon;
   margin: 1rem 0;
   min-width: 756px;
   max-height: 100%;
@@ -132,7 +130,6 @@ ul {
 }
 
 .courtFloor {
-  background: #DFBB85;
   display: flex;
   justify-content: stretch;
   width: 100%;
