@@ -8,13 +8,14 @@ class App extends Component {
     super(props);
 
     this.state = {
-      borderColor: "#000000",
-      borderEndSize: 48,
-      borderSideSize: 48,
+      borderColor: "black",
+      borderColorOpacity: 1,
+      borderEndSize: 0,
+      borderSideSize: 0,
       centerCircleColor: "#DFBB85",
       centerCircleColorOpacity: 1,
       endBorderLetterSpacing: 0,
-      endBorderTextColor: "#ffffff",
+      endBorderTextColor: "white",
       endBorderTextSize: 48,
       laneColor: "#DFBB85",
       laneColorOpacity: 1,
@@ -22,15 +23,16 @@ class App extends Component {
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
       rightEndBorderText: "",
-      mainGameLineColor: "#000000",
+      mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
       threePointAreaColorOpacity: 1,
-      volleyballLineColor: "#ffffff",
+      volleyballLineColor: "white",
       volleyballShown: false
     };
   }
 
   componentDidMount() {
+    console.log(this.hexToRgb(this.state.borderColor));
   }
 
   handleInputChange = e => {
@@ -55,47 +57,26 @@ class App extends Component {
     });
   }
   
-  handleBorderColorStain = e => {
-    const {borderColor} = this.state;
-    let rgbColor = borderColor;
-    let opacity = e.target.value;
-    // convert border color hex to rgba
-    if(borderColor.indexOf("#") > -1) {
-      rgbColor = this.hexToRgba(borderColor);
-      let rgbaColor = `${rgbColor},${opacity}`;
-      console.log(rgbaColor);
-      this.setState({
-        borderColor: rgbaColor
-      });
-    } else {
-      let splitStr = rgbColor.split(",");
-      console.log(splitStr);
-    }
-    
-  }
-  
   handleShow = e => {
     this.setState({
       volleyballShown: !this.state.volleyballShown
     });
   }
   
-  hexToRgba = (hex) => {
-    let strippedHex = hex.replace(/^.*#/, '');
-    console.log(strippedHex);
-    let combinedInt = parseInt(strippedHex, 16);
+  hexToRgb = (hex) => {
+    let combinedInt = parseInt(hex, 16);
     let r = (combinedInt >> 16) & 255;
     let g = (combinedInt >> 8) & 255;
     let b = combinedInt & 255;
-    let rgbColor = r + "," + g + "," + b;
-    console.log(rgbColor);
-    return rgbColor;
+
+    return r + "," + g + "," + b + ",1";
   }
 
   render() {
 
     const {
       borderColor,
+      borderColorOpacity,
       borderEndSize,
       borderSideSize,
       centerCircleColor,
@@ -152,12 +133,12 @@ class App extends Component {
                 
                 <label>Stain:
                   <input
-                    className="borderColor"
+                    className="borderColorOpacity"
                     min="0.1"
                     max="1.0"
                     step="0.1"
                     name="borderColor"
-                    onChange={this.handleBorderColorStain}
+                    onChange={this.handleColorStain}
                     type="number">
                   </input>
                 </label>
@@ -466,6 +447,7 @@ class App extends Component {
 
         <Court
           borderColor={borderColor}
+          borderColorOpacity={borderColorOpacity}
           borderEndSize={borderEndSize}
           borderSideSize={borderSideSize}
           centerCircleColor={centerCircleColor}
