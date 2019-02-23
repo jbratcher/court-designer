@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.hexToRgb(this.state.borderColor));
+
   }
 
   handleInputChange = e => {
@@ -44,10 +44,18 @@ class App extends Component {
   handleColorReset = e => {
     let propertyNameColor = e.target.parentElement.firstElementChild.firstElementChild.name;
     let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
-    this.setState({
-      [propertyNameColor]: "#DFBB85",
-      [propertyNameOpacity]: 1
-    });
+    
+    if(propertyNameColor !== "borderColor") {
+      this.setState({
+        [propertyNameColor]: "#DFBB85",
+        [propertyNameOpacity]: 1
+      });
+    } else {
+      this.setState({
+        [propertyNameColor]: "black",
+        [propertyNameOpacity]: 1
+      });
+    }
   }
   
   handleColorStain = e => {
@@ -61,15 +69,6 @@ class App extends Component {
     this.setState({
       volleyballShown: !this.state.volleyballShown
     });
-  }
-  
-  hexToRgb = (hex) => {
-    let combinedInt = parseInt(hex, 16);
-    let r = (combinedInt >> 16) & 255;
-    let g = (combinedInt >> 8) & 255;
-    let b = combinedInt & 255;
-
-    return r + "," + g + "," + b + ",1";
   }
 
   render() {

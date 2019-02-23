@@ -35,6 +35,10 @@ class Court extends Component {
 
             <section
               className="courtBorderLine center"
+            >
+            
+            <section 
+              className="courtBorderLineInner"
               style={{
                 borderColor: borderColor,
                 opacity: borderColorOpacity,
@@ -44,6 +48,7 @@ class Court extends Component {
                 borderRight: `${borderEndSize}px solid ${borderColor}`,
               }}
             >
+            </section>
 
             <section className="leftEndBorderLettering center">
 
