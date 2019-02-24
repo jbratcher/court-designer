@@ -88,9 +88,10 @@ ul {
 
 .leftEndBorderLettering {
   position: absolute;
-  left: 169px;
+  left: 120px;
   top: 0;
   bottom: 10px;
+  z-index: 11;
 
 
   span {
@@ -105,9 +106,10 @@ ul {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 223px;
+  right: 120px;
   top: 10px;
   bottom: 0;
+  z-index: 1;
 
   span {
     font-weight: bold;

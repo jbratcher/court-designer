@@ -10,19 +10,20 @@ class App extends Component {
     this.state = {
       borderColor: "black",
       borderColorOpacity: 1,
-      borderEndSize: 0,
-      borderSideSize: 0,
+      borderEndSize: 48,
+      borderSideSize: 36,
       centerCircleColor: "#DFBB85",
       centerCircleColorOpacity: 1,
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
+      endBorderTextColorOpacity: 1,
       endBorderTextSize: 48,
       laneColor: "#DFBB85",
       laneColorOpacity: 1,
-      leftEndBorderText: "",
+      leftEndBorderText: "Fairmont",
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
-      rightEndBorderText: "",
+      rightEndBorderText: "Falcons",
       mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
       threePointAreaColorOpacity: 1,
@@ -50,16 +51,24 @@ class App extends Component {
         [propertyNameColor]: "#DFBB85",
         [propertyNameOpacity]: 1
       });
-    } else {
+    } else if(propertyNameColor === "borderColor") {
       this.setState({
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
       });
+    } else if(propertyNameColor === "endBorderTextColor") {
+      this.setState({
+        [propertyNameColor]: "white",
+        [propertyNameOpacity]: 1
+      });
+    } else {
+      return null;
     }
   }
   
   handleColorStain = e => {
     let property = `${e.target.parentElement.firstElementChild.name}Opacity`;
+    console.log(property);
     this.setState({
       [property]: e.target.value
     });
@@ -82,6 +91,7 @@ class App extends Component {
       centerCircleColorOpacity,
       endBorderLetterSpacing,
       endBorderTextColor,
+      endBorderTextColorOpacity,
       endBorderTextSize,
       laneColor,
       laneColorOpacity,
@@ -238,6 +248,27 @@ class App extends Component {
                     type="color">
                   </input>
                 </label>
+                
+                <label>Stain:
+                  <input
+                    className="endBorderTextColorOpacity"
+                    min="0.1"
+                    max="1.0"
+                    step="0.1"
+                    name="endBorderTextColor"
+                    onChange={this.handleColorStain}
+                    type="number">
+                  </input>
+                </label>
+                
+                <button 
+                  className="endBorderTextResetColor"
+                  name="endBorderTextResetColor"
+                  type="button"
+                  onClick={this.handleColorReset}
+                >
+                  Reset
+                </button>
 
               </li>
 
@@ -453,6 +484,7 @@ class App extends Component {
           centerCircleColorOpacity={centerCircleColorOpacity}
           endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
+          endBorderTextColorOpacity={endBorderTextColorOpacity}
           endBorderTextSize={endBorderTextSize}
           laneColor={laneColor}
           laneColorOpacity={laneColorOpacity}

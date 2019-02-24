@@ -13,6 +13,7 @@ class Court extends Component {
       centerCircleColorOpacity,
       endBorderLetterSpacing,
       endBorderTextColor,
+      endBorderTextColorOpacity,
       endBorderTextSize,
       keyColor,
       keyColorOpacity,
@@ -32,10 +33,25 @@ class Court extends Component {
       <section className="courtContainer center">
 
         <section className="gym center">
+        
+          <section className="leftEndBorderLettering center">
 
-            <section
-              className="courtBorderLine center"
+            <span
+              style={{
+                color: endBorderTextColor,
+                fontSize: `${endBorderTextSize}px`,
+                letterSpacing: `${endBorderLetterSpacing}px`,
+                opacity: endBorderTextColorOpacity
+              }}
             >
+              {leftEndBorderText}
+            </span>
+
+          </section>
+
+          <section
+            className="courtBorderLine center"
+          >
             
             <section 
               className="courtBorderLineInner"
@@ -48,20 +64,6 @@ class Court extends Component {
                 borderRight: `${borderEndSize}px solid ${borderColor}`,
               }}
             >
-            </section>
-
-            <section className="leftEndBorderLettering center">
-
-                <span
-                  style={{
-                    color: endBorderTextColor,
-                    fontSize: `${endBorderTextSize}px`,
-                    letterSpacing: `${endBorderLetterSpacing}px`
-                  }}
-                >
-                  {leftEndBorderText}
-                </span>
-
             </section>
 
             <section
@@ -366,7 +368,8 @@ class Court extends Component {
               style={{
                 color: endBorderTextColor,
                 fontSize: `${endBorderTextSize}px`,
-                letterSpacing: `${endBorderLetterSpacing}px`
+                letterSpacing: `${endBorderLetterSpacing}px`,
+                opacity: endBorderTextColorOpacity
               }}
             >
               {rightEndBorderText}
