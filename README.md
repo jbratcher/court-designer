@@ -8,7 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Border size and color
 * Main gameline color
-* Paint and stain center circle, border, 3-point area, key, and lane
+* Paint and stain: 
+    * center circle
+    * border and border lettering
+    * 3-point area
+    * key and lane
 * Show/hide main volleyball court
 * Main volleyball court line color
 
@@ -16,7 +20,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * refactor menu ui for ease of use, minimize unused space
 * refactor components for more managability
-* stained and natural border lettering
 * "sockets" at center circle, side courts, and keys for image placement and rotation
 * scale 3 point area by increasing rounding
 * side court coach and check in boxes
