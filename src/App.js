@@ -441,7 +441,7 @@ class App extends Component {
                   Reset
                 </button>
                 
-                <label for="centerCirlceImage"> Upload File
+                <label class="centerCirlceImage" for="centerCirlceImage"> Upload File
                   <input name="centerCirlceImage" type="file" accept="image/*"></input>
                 </label>
 
