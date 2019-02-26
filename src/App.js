@@ -14,6 +14,7 @@ class App extends Component {
       borderSideSize: 36,
       centerCircleColor: "#DFBB85",
       centerCircleColorOpacity: 1,
+      centerCirlceImage: null,
       endBorderLetterSpacing: 0,
       endBorderTextColor: "white",
       endBorderTextColorOpacity: 1,
@@ -33,7 +34,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-
+    console.log(this.state);
   }
 
   handleInputChange = e => {
@@ -74,6 +75,15 @@ class App extends Component {
     });
   }
   
+  handleImage = e => {
+    let image = e.target.files[0];
+    console.log(e.target.files);
+    console.log(image);
+    this.setState({
+      centerCirlceImage: window.URL.createObjectURL(image)
+    });
+}
+  
   handleShow = e => {
     this.setState({
       volleyballShown: !this.state.volleyballShown
@@ -89,6 +99,7 @@ class App extends Component {
       borderSideSize,
       centerCircleColor,
       centerCircleColorOpacity,
+      centerCirlceImage,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextColorOpacity,
@@ -441,8 +452,13 @@ class App extends Component {
                   Reset
                 </button>
                 
-                <label class="centerCirlceImage" for="centerCirlceImage"> Upload File
-                  <input name="centerCirlceImage" type="file" accept="image/*"></input>
+                <label className="centerCirlceImageInput"> Upload File
+                  <input 
+                    onChange={this.handleImage}
+                    name="centerCirlceImageInput" 
+                    type="file" 
+                    accept="image/*">
+                  </input>
                 </label>
 
               </li>
@@ -486,6 +502,7 @@ class App extends Component {
           borderSideSize={borderSideSize}
           centerCircleColor={centerCircleColor}
           centerCircleColorOpacity={centerCircleColorOpacity}
+          centerCirlceImage={centerCirlceImage}
           endBorderLetterSpacing={endBorderLetterSpacing}
           endBorderTextColor={endBorderTextColor}
           endBorderTextColorOpacity={endBorderTextColorOpacity}

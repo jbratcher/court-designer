@@ -11,6 +11,7 @@ class Court extends Component {
       borderSideSize,
       centerCircleColor,
       centerCircleColorOpacity,
+      centerCirlceImage,
       endBorderLetterSpacing,
       endBorderTextColor,
       endBorderTextColorOpacity,
@@ -235,8 +236,16 @@ class Court extends Component {
                         background: centerCircleColor,
                         opacity: centerCircleColorOpacity
                       }}
-                      >
-                      </section>
+                    >
+                      
+                      { centerCirlceImage ?
+                        <img
+                          className="centerCirlceImage"
+                          src={centerCirlceImage} 
+                          alt="Center Graphic"></img>
+                      : null}
+                      
+                    </section>
                   
                   </section>
 

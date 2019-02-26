@@ -75,7 +75,7 @@ button {
       padding: 0.25rem 0.5rem;
     }
     
-    .centerCirlceImage {
+    .centerCirlceImageInput {
       display: flex;
       margin-left: 1rem;
       
@@ -343,6 +343,13 @@ button {
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    
+    .centerCirlceImage {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+    
   }
   
 }
