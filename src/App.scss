@@ -125,7 +125,7 @@ button {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 120px;
+  right: 118px;
   top: 10px;
   bottom: 0;
   z-index: 1;
@@ -328,6 +328,24 @@ button {
         z-index: 0;
       }
   }
+  
+  .leftTopSideCourt {
+    border: 3px dashed magenta;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+  }
+  
+  .leftBottomSideCourt {
+    border: 3px dashed magenta;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+  }
 
 }
 
@@ -371,6 +389,24 @@ button {
   height: 100%;
   margin: 0;
   padding: 0;
+  
+  .rightTopSideCourt {
+    border: 3px dashed magenta;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50px;
+    right: 250px;
+  }
+  
+  .rightBottomSideCourt {
+    border: 3px dashed magenta;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 50px;
+    right: 250px;
+  }
 
   .rightLaneArea {
     background: transparent;

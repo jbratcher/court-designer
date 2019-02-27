@@ -213,6 +213,10 @@ class Court extends Component {
                     </section>
                     
                   </section>
+                  
+                  <section className="leftTopSideCourt"></section>
+                  
+                  <section className="leftBottomSideCourt"></section>
 
                 </section>
 
@@ -362,6 +366,10 @@ class Court extends Component {
                     </section>
 
                   </section>
+                  
+                  <section className="rightTopSideCourt"></section>
+                  
+                  <section className="rightBottomSideCourt"></section>
 
                 </section>
 

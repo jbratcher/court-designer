@@ -77,10 +77,8 @@ class App extends Component {
   
   handleImage = e => {
     let image = e.target.files[0];
-    console.log(e.target.files);
-    console.log(image);
     this.setState({
-      centerCirlceImage: window.URL.createObjectURL(image)
+      [e.target.name]: window.URL.createObjectURL(image)  // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
     });
 }
   
@@ -455,7 +453,7 @@ class App extends Component {
                 <label className="centerCirlceImageInput"> Upload File
                   <input 
                     onChange={this.handleImage}
-                    name="centerCirlceImageInput" 
+                    name="centerCirlceImage" 
                     type="file" 
                     accept="image/*">
                   </input>
