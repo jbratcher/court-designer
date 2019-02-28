@@ -22,9 +22,13 @@ class App extends Component {
       laneColor: "#DFBB85",
       laneColorOpacity: 1,
       leftEndBorderText: "Fairmont",
+      leftTopSideCourtImage: null,
+      leftBottomSideCourtImage: null,
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
       rightEndBorderText: "Falcons",
+      rightTopSideCourtImage: null,
+      rightBottomSideCourtImage: null,
       mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
       threePointAreaColorOpacity: 1,
@@ -105,10 +109,14 @@ class App extends Component {
       laneColor,
       laneColorOpacity,
       leftEndBorderText,
+      leftTopSideCourtImage,
+      leftBottomSideCourtImage,
       keyColor,
       keyColorOpacity,
       mainGameLineColor,
       rightEndBorderText,
+      rightTopSideCourtImage,
+      rightBottomSideCourtImage,
       threePointAreaColor,
       threePointAreaColorOpacity,
       volleyballLineColor,
@@ -460,6 +468,58 @@ class App extends Component {
                 </label>
 
               </li>
+              
+              <li className="menuNavListItem">
+              
+                <label className="leftTopSideCourtImageInput"> Upload File
+                  <input 
+                    onChange={this.handleImage}
+                    name="leftTopSideCourtImage" 
+                    type="file" 
+                    accept="image/*">
+                  </input>
+                </label>
+              
+              </li>
+              
+              <li className="menuNavListItem">
+              
+                <label className="leftBottomSideCourtImageInput"> Upload File
+                  <input 
+                    onChange={this.handleImage}
+                    name="leftBottomSideCourtImage" 
+                    type="file" 
+                    accept="image/*">
+                  </input>
+                </label>
+              
+              </li>
+              
+              <li className="menuNavListItem">
+              
+                <label className="rightTopSideCourtImageInput"> Upload File
+                  <input 
+                    onChange={this.handleImage}
+                    name="rightTopSideCourtImage" 
+                    type="file" 
+                    accept="image/*">
+                  </input>
+                </label>
+              
+              </li>
+              
+              <li className="menuNavListItem">
+              
+                <label className="rightBottomSideCourtImageInput"> Upload File
+                  <input 
+                    onChange={this.handleImage}
+                    name="rightBottomSideCourtImage" 
+                    type="file" 
+                    accept="image/*">
+                  </input>
+                </label>
+              
+              </li>
             
             </ul>
             
@@ -508,6 +568,10 @@ class App extends Component {
           laneColor={laneColor}
           laneColorOpacity={laneColorOpacity}
           leftEndBorderText={leftEndBorderText}
+          leftTopSideCourtImage={leftTopSideCourtImage}
+          leftBottomSideCourtImage={leftBottomSideCourtImage}
+          rightTopSideCourtImage={rightTopSideCourtImage}
+          rightBottomSideCourtImage={rightBottomSideCourtImage}
           keyColor={keyColor}
           keyColorOpacity={keyColorOpacity}
           mainGameLineColor={mainGameLineColor}

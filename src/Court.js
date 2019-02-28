@@ -20,9 +20,13 @@ class Court extends Component {
       keyColorOpacity,
       laneColor,
       laneColorOpacity,
+      leftTopSideCourtImage,
+      leftBottomSideCourtImage,
       leftEndBorderText,
       mainGameLineColor,
       rightEndBorderText,
+      rightTopSideCourtImage,
+      rightBottomSideCourtImage,
       threePointAreaColor,
       threePointAreaColorOpacity,
       volleyballLineColor,
@@ -214,9 +218,27 @@ class Court extends Component {
                     
                   </section>
                   
-                  <section className="leftTopSideCourt"></section>
+                  <section className="leftTopSideCourt">
+                    
+                    { leftTopSideCourtImage ?
+                      <img
+                        className="leftTopSideCourtImage"
+                        src={leftTopSideCourtImage} 
+                        alt="Left Top Side Court Graphic"></img>
+                    : null}
                   
-                  <section className="leftBottomSideCourt"></section>
+                  </section>
+                  
+                  <section className="leftBottomSideCourt">
+                    
+                    { leftBottomSideCourtImage ?
+                      <img
+                        className="leftBottomSideCourtImage"
+                        src={leftBottomSideCourtImage} 
+                        alt="Left Bottom Side Court Graphic"></img>
+                    : null}
+                  
+                  </section>
 
                 </section>
 
@@ -367,9 +389,27 @@ class Court extends Component {
 
                   </section>
                   
-                  <section className="rightTopSideCourt"></section>
+                  <section className="rightTopSideCourt">
                   
-                  <section className="rightBottomSideCourt"></section>
+                    { rightTopSideCourtImage ?
+                      <img
+                        className="rightTopSideCourtImage"
+                        src={rightTopSideCourtImage} 
+                        alt="Right Top Side Court Graphic"></img>
+                    : null}
+                  
+                  </section>
+                  
+                  <section className="rightBottomSideCourt">
+                  
+                    { rightBottomSideCourtImage ?
+                      <img
+                        className="rightBottomSideCourtImage"
+                        src={rightBottomSideCourtImage} 
+                        alt="Right Bottom Side Court Graphic"></img>
+                    : null}
+                  
+                  </section>
 
                 </section>
 
