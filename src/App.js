@@ -73,7 +73,6 @@ class App extends Component {
   
   handleColorStain = e => {
     let property = `${e.target.parentElement.firstElementChild.name}Opacity`;
-    console.log(property);
     this.setState({
       [property]: e.target.value
     });
@@ -471,7 +470,7 @@ class App extends Component {
               
               <li className="menuNavListItem">
               
-                <label className="leftTopSideCourtImageInput"> Upload File
+                <label className="leftTopSideCourtImageInput"> Left Top Side Court (Upload File)
                   <input 
                     onChange={this.handleImage}
                     name="leftTopSideCourtImage" 
@@ -484,7 +483,7 @@ class App extends Component {
               
               <li className="menuNavListItem">
               
-                <label className="leftBottomSideCourtImageInput"> Upload File
+                <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court (Upload File)
                   <input 
                     onChange={this.handleImage}
                     name="leftBottomSideCourtImage" 
@@ -497,7 +496,7 @@ class App extends Component {
               
               <li className="menuNavListItem">
               
-                <label className="rightTopSideCourtImageInput"> Upload File
+                <label className="rightTopSideCourtImageInput"> Right Top Side Court (Upload File)
                   <input 
                     onChange={this.handleImage}
                     name="rightTopSideCourtImage" 
@@ -510,7 +509,7 @@ class App extends Component {
               
               <li className="menuNavListItem">
               
-                <label className="rightBottomSideCourtImageInput"> Upload File
+                <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court (Upload File)
                   <input 
                     onChange={this.handleImage}
                     name="rightBottomSideCourtImage" 

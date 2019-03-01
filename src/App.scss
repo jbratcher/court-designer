@@ -27,6 +27,11 @@ button {
   border-radius: 0.5rem;
 }
 
+input[type = "file"] {
+  margin: 0 1rem;
+  width: 11rem;
+}
+
 // Header
 
 .header {
@@ -63,7 +68,6 @@ button {
     input {
       margin-left: 0.5rem;
       margin-right: 1rem;
-      width: 3rem;
     }
 
     input[type="text"] {
@@ -78,11 +82,6 @@ button {
     .centerCirlceImageInput {
       display: flex;
       margin-left: 1rem;
-      
-      input {
-        margin: 0 1rem;
-        width: 11rem;
-      }
     }
 
 }
@@ -330,7 +329,6 @@ button {
   }
   
   .leftTopSideCourt {
-    border: 3px dashed magenta;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -345,7 +343,6 @@ button {
   }
   
   .leftBottomSideCourt {
-    border: 3px dashed magenta;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -403,7 +400,6 @@ button {
   padding: 0;
   
   .rightTopSideCourt {
-    border: 3px dashed magenta;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -418,7 +414,6 @@ button {
   }
   
   .rightBottomSideCourt {
-    border: 3px dashed magenta;
     width: 54px;
     height: 54px;
     position: absolute;
