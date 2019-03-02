@@ -15,13 +15,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     * key and lane
 * Show/hide main volleyball court
 * Main volleyball court line color
-* Center circle image upload and placement
+* Center circle and side court image upload and placement
 
 ### Todo
 
 * refactor menu ui for ease of use, minimize unused space
 * refactor components for more managability
-* "sockets" side courts and keys for image placement and rotation
+* "sockets" in keys for image placement and rotation
 * scale 3 point area by increasing rounding
 * side court coach and check in boxes
 * side volleyball court

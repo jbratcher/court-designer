@@ -127,6 +127,13 @@ class App extends Component {
     return (
       
       <section className="appContainer">
+      
+        <header className="header">
+
+          <h1 className="title">Court Designer</h1>
+          <p className="headline">Design your own basketball court</p>
+
+        </header>
 
         <Menu
           handleColorReset={this.handleColorReset}

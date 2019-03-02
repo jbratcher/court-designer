@@ -3,38 +3,102 @@ import './App.scss';
 
 class Menu extends Component {
     
+    constructor(props) {
+      super(props);
+      
+      this.state = {
+        centerCircleOptions: false
+      };
+      
+    }
     
     componentDidMount() {
         console.log(this.props);
+    }
+    
+    handleClick = e => {
+      console.log(e.target.parentElement.parentElement.className);
+      let menuElementClass = e.target.parentElement.parentElement.className;
+      console.log(menuElementClass);
+      this.setState(prevState => ({
+        [menuElementClass]: !prevState[menuElementClass]
+      }));
+   
     }
     
     
   render() {
 
     const {
-        handleColorReset,
-        handleColorStain,
-        handleImage,
-        handleInputChange,
-        handleShow
+      handleColorReset,
+      handleColorStain,
+      handleImage,
+      handleInputChange,
+      handleShow
         
     } = this.props;
+    
+    const {
+      centerCircleOptions
+    } = this.state;
 
     return (
 
     <section className="menuContainer">
-
-        <header className="header">
-
-          <h1 className="title">
-            Court Designer
-          </h1>
-
-          <p className="headline">
-            Design your own basketball court
-          </p>
-
-        </header>
+    
+        <section className="newMenu">
+        
+          <nav className="newNav">
+            
+            <ul className="newMenuNavList">
+            
+              <li className="centerCircleOptions">
+                <span>Center Circle</span>
+                <a 
+                  className="menuOptionsLink"
+                  href="#centerCircleOptions"
+                  onClick={this.handleClick}
+                >
+                  <i className="fas fa-caret-down"></i>
+                </a>
+                
+                {centerCircleOptions ?
+                
+                  <section>Expanded Menu</section>
+                
+                : null}
+                
+              </li>
+              <li className="borderOptions">
+                <span>Border</span>
+                <a href="#borderOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              <li className="gamelineOptions">
+                <span>Game lines</span>
+                <a href="#gamelineOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              <li className="threePointOptions">
+                <span>3 Point Area</span>
+                <a href="#threePointOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              <li className="keyOptions">
+                <span>Keys</span>
+                <a href="#keyOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              <li className="laneOptions">
+                <span>Lanes</span>
+                <a href="#laneOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              <li className="sideCourtOptions">
+                <span>Side Courts</span>
+                <a href="#sideCourtOptions"><i className="fas fa-caret-down"></i></a>
+              </li>
+              
+            </ul>
+            
+          </nav>
+        
+        </section>
 
         <section className="menu">
 
