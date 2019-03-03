@@ -2,13 +2,15 @@
 
 A layout tool for basketball courts built with React.  Created for hobbists and professionals alike.
 
+[Demo](https://jbratcher.github.io/court-designer/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Features
 
 * Border size and color
 * Main gameline color
-* Paint and stain: 
+* Paint and stain:
     * center circle
     * border and border lettering
     * 3-point area
