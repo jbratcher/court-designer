@@ -17,6 +17,13 @@ ul {
   align-items: center;
   justify-content: center; }
 
+button {
+  border-radius: 0.5rem; }
+
+input[type="file"] {
+  margin: 0 1rem;
+  width: 11rem; }
+
 .header {
   margin: 1rem 0 2rem;
   text-align: center; }
@@ -24,6 +31,33 @@ ul {
     margin-bottom: 0.5rem; }
   .header p {
     margin-top: 0; }
+
+.newMenu nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+  margin-bottom: 20rem;
+  position: relative; }
+  .newMenu nav ul li {
+    background: #eee;
+    border: 1px solid #000;
+    flex: 1;
+    text-align: center; }
+    .newMenu nav ul li a {
+      margin-left: 0.5rem; }
+
+.expandedMenu {
+  background: #eee;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center; }
+  .expandedMenu button {
+    width: 50%;
+    align-self: center; }
+  .expandedMenu label {
+    margin: 0.5rem 1rem; }
 
 .menuNavList {
   display: flex;
@@ -34,16 +68,22 @@ ul {
   background: #ccc;
   border: 2px solid #ccc;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
   padding: 0.5rem;
   margin: 0.5rem;
   white-space: pre; }
   .menuNavListItem input {
-    width: 3rem; }
+    margin-left: 0.5rem;
+    margin-right: 1rem; }
   .menuNavListItem input[type="text"] {
     width: 6rem; }
-
-.borderColor {
-  margin: 0 1rem; }
+  .menuNavListItem button {
+    margin: 0 0.5rem;
+    padding: 0.25rem 0.5rem; }
+  .menuNavListItem .centerCirlceImageInput {
+    display: flex;
+    margin-left: 1rem; }
 
 .volleyballLineColor {
   margin-right: 1rem; }
@@ -54,14 +94,16 @@ ul {
 
 .gym {
   background: #DFBB85;
-  width: 1200px;
+  width: 1100px;
+  height: 650px;
   position: relative; }
 
 .leftEndBorderLettering {
   position: absolute;
-  left: 169px;
+  left: 120px;
   top: 0;
-  bottom: 10px; }
+  bottom: 10px;
+  z-index: 11; }
   .leftEndBorderLettering span {
     font-weight: bold;
     font-family: 'Graduate', sans-serif;
@@ -71,9 +113,10 @@ ul {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 223px;
+  right: 118px;
   top: 10px;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 1; }
   .rightEndBorderLettering span {
     font-weight: bold;
     font-family: 'Graduate', cursive;
@@ -81,11 +124,16 @@ ul {
     writing-mode: vertical-lr; }
 
 .courtBorderLine {
-  box-sizing: content-box;
-  border-color: maroon;
   margin: 1rem 0;
   min-width: 756px;
-  max-height: 100%; }
+  max-height: 100%;
+  position: relative; }
+  .courtBorderLine .courtBorderLineInner {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
 
 .courtOuterGameLine {
   box-shadow: inset 0 0 0 0.25rem black;
@@ -93,7 +141,6 @@ ul {
   height: 100%; }
 
 .courtFloor {
-  background: #DFBB85;
   display: flex;
   justify-content: stretch;
   width: 100%;
@@ -109,7 +156,7 @@ ul {
   left: 108px;
   top: 90px;
   position: absolute;
-  z-index: 0; }
+  z-index: 1; }
 
 .mainVolleyballAttackLines {
   border: 3px solid white;
@@ -117,7 +164,8 @@ ul {
   height: 270px;
   position: absolute;
   top: 90px;
-  left: 288px; }
+  left: 288px;
+  z-index: 1; }
 
 .mainVolleyballCenterLine {
   background: white;
@@ -138,7 +186,8 @@ ul {
   min-width: 378px;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 0; }
   .leftCourtArea .leftLaneArea {
     background: transparent;
     border: 3px solid black;
@@ -149,6 +198,11 @@ ul {
     min-width: 175px;
     position: relative;
     z-index: 1; }
+    .leftCourtArea .leftLaneArea .leftLaneAreaInner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1; }
     .leftCourtArea .leftLaneArea .leftLaneMarkingContainer {
       display: flex;
       justify-content: space-around; }
@@ -192,44 +246,65 @@ ul {
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
     position: relative;
-    z-index: auto; }
+    z-index: 1; }
+    .leftCourtArea .leftKeyArea .leftKeyAreaInner {
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 50%;
+      height: 100%;
+      width: 100%; }
   .leftCourtArea .leftThreePointArea {
-    display: flex;
     background: transparent;
     align-self: center;
-    height: 370px;
+    height: 85%;
     min-width: 225px;
     border: 3px solid black;
     border-left: none;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
     position: relative;
-    top: 135px;
-    right: 225px;
-    z-index: 0; }
-  .leftCourtArea .leftVolleyballOuter {
-    height: 270px;
-    width: 100%;
-    left: 105px;
-    align-self: center;
-    justify-self: flex-end;
-    position: relative; }
-  .leftCourtArea .leftThreePointAreaInner {
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 99; }
+    top: 0;
+    left: -60%; }
+    .leftCourtArea .leftThreePointArea .leftThreePointAreaInner {
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 50%;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 0; }
+  .leftCourtArea .leftTopSideCourt {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50px;
+    left: 250px; }
+    .leftCourtArea .leftTopSideCourt img {
+      width: 100%;
+      height: 100%; }
+  .leftCourtArea .leftBottomSideCourt {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 50px;
+    left: 250px; }
+    .leftCourtArea .leftBottomSideCourt img {
+      width: 100%;
+      height: 100%; }
 
 .centerCircle {
-  background: magenta;
   border: 3px solid black;
   border-radius: 50%;
   min-width: 6rem;
   height: 6rem;
   position: relative;
   z-index: 0; }
+  .centerCircle .centerCirlceInner {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%; }
+    .centerCircle .centerCirlceInner .centerCirlceImage {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%; }
 
 .centerCourtLine {
   background: black;
@@ -247,6 +322,24 @@ ul {
   height: 100%;
   margin: 0;
   padding: 0; }
+  .rightCourtArea .rightTopSideCourt {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50px;
+    right: 250px; }
+    .rightCourtArea .rightTopSideCourt img {
+      width: 100%;
+      height: 100%; }
+  .rightCourtArea .rightBottomSideCourt {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 50px;
+    right: 250px; }
+    .rightCourtArea .rightBottomSideCourt img {
+      width: 100%;
+      height: 100%; }
   .rightCourtArea .rightLaneArea {
     background: transparent;
     border: 3px solid black;
@@ -256,6 +349,11 @@ ul {
     min-height: 90px;
     min-width: 175px;
     position: relative; }
+    .rightCourtArea .rightLaneArea .rightLaneAreaInner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0; }
     .rightCourtArea .rightLaneArea .rightLaneMarkingContainer {
       display: flex;
       justify-content: space-around; }
@@ -272,7 +370,8 @@ ul {
       top: 4.8rem; }
     .rightCourtArea .rightLaneArea .rightGoalContainer {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      position: relative; }
       .rightCourtArea .rightLaneArea .rightGoalContainer .rightGoalBackboard {
         background: #FA8320;
         width: 3px;
@@ -301,6 +400,11 @@ ul {
     border-top-left-radius: 50%;
     position: relative;
     z-index: 1; }
+    .rightCourtArea .rightKeyArea .rightKeyAreaInner {
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      height: 100%;
+      width: 100%; }
   .rightCourtArea .rightThreePointArea {
     background: transparent;
     align-self: center;
@@ -313,13 +417,13 @@ ul {
     border-top-left-radius: 50%;
     position: relative;
     right: -60%; }
-  .rightCourtArea .rightThreePointAreaInner {
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 0; }
+    .rightCourtArea .rightThreePointArea .rightThreePointAreaInner {
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 0; }
 
 footer {
   background: #607d8b;

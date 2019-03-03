@@ -18,7 +18,7 @@ class Menu extends Component {
     
     handleClick = e => {
       console.log(e.target.parentElement.parentElement.className);
-      let menuElementClass = e.target.parentElement.parentElement.className;
+      let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
       console.log(menuElementClass);
       this.setState(prevState => ({
         [menuElementClass]: !prevState[menuElementClass]
@@ -53,18 +53,63 @@ class Menu extends Component {
             <ul className="newMenuNavList">
             
               <li className="centerCircleOptions">
-                <span>Center Circle</span>
-                <a 
-                  className="menuOptionsLink"
-                  href="#centerCircleOptions"
-                  onClick={this.handleClick}
-                >
-                  <i className="fas fa-caret-down"></i>
-                </a>
+              
+                <section>
+                  <span>Center Circle</span>
+                  <a 
+                    className="menuOptionsLink"
+                    href="#centerCircleOptions"
+                    onClick={this.handleClick}
+                  >
+                    <i className="fas fa-caret-down"></i>
+                  </a>
+                
+                </section>
                 
                 {centerCircleOptions ?
                 
-                  <section>Expanded Menu</section>
+                <section className="expandedMenu">
+
+                  <label>Center Circle Paint Color:
+                    <input
+                      className="centerCircleColor"
+                      name="centerCircleColor"
+                      onChange={handleInputChange}
+                      type="color">
+                    </input>
+                  </label>
+                  
+                  <label>Stain:
+                    <input
+                      className="centerCircleStain"
+                      min="0.1"
+                      max="1.0"
+                      step="0.1"
+                      name="centerCircleColor"
+                      onChange={handleColorStain}
+                      type="number">
+                    </input>
+                  </label>
+                  
+                  <label className="centerCirlceImageInput"> Upload File
+                    <input 
+                      onChange={handleImage}
+                      name="centerCirlceImage" 
+                      type="file" 
+                      accept="image/*">
+                    </input>
+                  </label>
+                  
+                  <button 
+                    className="centerCirlceResetColor"
+                    name="centerCirlceResetColor"
+                    type="button"
+                    onClick={handleColorReset}
+                  >
+                    Reset
+                  </button>
+  
+                </section>
                 
                 : null}
                 
