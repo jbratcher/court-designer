@@ -190,6 +190,7 @@ class Court extends Component {
                     className="leftKeyArea"
                     style={{borderColor: mainGameLineColor}}
                   >
+
                   
                     <section 
                       className="leftKeyAreaInner"

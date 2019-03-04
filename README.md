@@ -21,7 +21,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Todo
 
-* refactor menu ui for ease of use, minimize unused space
 * refactor components for more managability
 * "sockets" in keys for image placement and rotation
 * scale 3 point area by increasing rounding
@@ -35,6 +34,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Bugs
 
 * Main volleyball court lines on top of main game lines
+* Right end border letter seems to change location on initial load
 
 ## Available Scripts
 
