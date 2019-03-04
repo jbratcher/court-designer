@@ -27,6 +27,14 @@ button {
   border-radius: 0.5rem;
 }
 
+button[class*="Reset"] {
+  margin-bottom: 2rem;
+}
+
+input[type = "number"] {
+  width: 50px;
+}
+
 input[type = "file"] {
   margin: 0 1rem;
   width: 11rem;
@@ -95,6 +103,10 @@ input[type = "file"] {
   label {
     margin: 0.5rem 1rem;
   }
+  
+  label[class^="volley"] {
+    margin-top: 2rem;
+  }
 
 }
 
@@ -136,7 +148,7 @@ input[type = "file"] {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 114px;
+  right: 120px;
   top: 10px;
   bottom: 0;
   z-index: 1;

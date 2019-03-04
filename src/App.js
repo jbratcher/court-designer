@@ -13,7 +13,7 @@ class App extends Component {
       borderColorOpacity: 1,
       borderEndSize: 48,
       borderSideSize: 36,
-      centerCircleColor: "#DFBB85",
+      centerCircleColor: "transparent",
       centerCircleColorOpacity: 1,
       centerCirlceImage: null,
       endBorderLetterSpacing: 0,

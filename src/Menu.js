@@ -475,7 +475,7 @@ class Menu extends Component {
                 
                 <section className="expandedMenu">
                 
-                  <label className="leftTopSideCourtImageInput"> Left Top Side Court (Upload File)
+                  <label className="leftTopSideCourtImageInput"> Left Top Side Court
                     <input 
                       onChange={handleImage}
                       name="leftTopSideCourtImage" 
@@ -484,7 +484,7 @@ class Menu extends Component {
                     </input>
                   </label>
                 
-                  <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court (Upload File)
+                  <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court
                     <input 
                       onChange={handleImage}
                       name="leftBottomSideCourtImage" 
@@ -493,7 +493,7 @@ class Menu extends Component {
                     </input>
                   </label>
                 
-                  <label className="rightTopSideCourtImageInput"> Right Top Side Court (Upload File)
+                  <label className="rightTopSideCourtImageInput"> Right Top Side Court
                     <input 
                       onChange={handleImage}
                       name="rightTopSideCourtImage" 
@@ -503,7 +503,7 @@ class Menu extends Component {
                   </label>
                 
                 
-                  <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court (Upload File)
+                  <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court
                     <input 
                       onChange={handleImage}
                       name="rightBottomSideCourtImage" 
@@ -512,7 +512,7 @@ class Menu extends Component {
                     </input>
                   </label>
                   
-                  <label>Volleyball Line Color:
+                  <label class="volleyballSideCourt">Volleyball Line Color:
                     <input
                       className="volleyballLineColor"
                       name="volleyballLineColor"
