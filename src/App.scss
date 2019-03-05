@@ -121,19 +121,18 @@ input[type = "file"] {
 
 .courtContainer {
   margin: 2rem auto;
-  max-width: 95vw;
 }
 
 .gym {
   background: #DFBB85;
-  width: 1104px;
+  width: 1100px;
   height: 650px;
   position: relative;
 }
 
 .leftEndBorderLettering {
   position: absolute;
-  left: 120px;
+  left: -46px;
   top: 0;
   bottom: 10px;
   z-index: 11;
@@ -151,7 +150,7 @@ input[type = "file"] {
 
 .rightEndBorderLettering {
   position: absolute;
-  right: 120px;
+  right: -46px;
   top: 10px;
   bottom: 0;
   z-index: 11;
