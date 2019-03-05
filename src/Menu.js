@@ -237,15 +237,6 @@ class Menu extends Component {
                     </input>
                   </label>
                   
-                  <button 
-                    className="endBorderTextResetColor"
-                    name="endBorderTextResetColor"
-                    type="button"
-                    onClick={handleColorReset}
-                  >
-                    Reset
-                  </button>
-                  
                   <label>End Border Text Size:
                     <input
                       className="endBorderTextSize"
@@ -300,6 +291,27 @@ class Menu extends Component {
                         type="color">
                       </input>
                     </label>
+                    
+                    <label>Stain:
+                      <input
+                        className="mainGamelineStain"
+                        min="0.1"
+                        max="1.0"
+                        step="0.1"
+                        name="mainGameLineColor"
+                        onChange={handleColorStain}
+                        type="number">
+                      </input>
+                    </label>
+                    
+                    <button 
+                      className="mainGameLineResetColor"
+                      name="mainGameLineResetColor"
+                      type="button"
+                      onClick={handleColorReset}
+                    >
+                      Reset
+                    </button>
                     
                   </section>
                 

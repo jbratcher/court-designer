@@ -24,6 +24,7 @@ class Court extends Component {
       leftBottomSideCourtImage,
       leftEndBorderText,
       mainGameLineColor,
+      mainGamelineOpacity,
       rightEndBorderText,
       rightTopSideCourtImage,
       rightBottomSideCourtImage,
@@ -88,7 +89,10 @@ class Court extends Component {
 
             <section
               className="courtOuterGameLine center"
-              style={{boxShadow: `inset 0 0 0 0.25rem ${mainGameLineColor}`}}
+              style={{
+                boxShadow: `inset 0 0 0 0.25rem ${mainGameLineColor}`,
+                opacity: mainGamelineOpacity
+              }}
             >
 
               <section

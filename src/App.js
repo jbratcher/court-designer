@@ -27,10 +27,11 @@ class App extends Component {
       leftBottomSideCourtImage: null,
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
+      mainGameLineColor: "black",
+      mainGamelineOpacity: 1,
       rightEndBorderText: "Falcons",
       rightTopSideCourtImage: null,
       rightBottomSideCourtImage: null,
-      mainGameLineColor: "black",
       threePointAreaColor: "#DFBB85",
       threePointAreaColorOpacity: 1,
       volleyballLineColor: "white",
@@ -51,13 +52,9 @@ class App extends Component {
   handleColorReset = e => {
     let propertyNameColor = e.target.parentElement.firstElementChild.firstElementChild.name;
     let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
+    console.log(propertyNameColor);
     
-    if(propertyNameColor !== "borderColor") {
-      this.setState({
-        [propertyNameColor]: "#DFBB85",
-        [propertyNameOpacity]: 1
-      });
-    } else if(propertyNameColor === "borderColor") {
+    if(propertyNameColor === "borderColor") {
       this.setState({
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
@@ -65,6 +62,11 @@ class App extends Component {
     } else if(propertyNameColor === "endBorderTextColor") {
       this.setState({
         [propertyNameColor]: "white",
+        [propertyNameOpacity]: 1
+      });
+    } else if(propertyNameColor === "mainGameLineColor") {
+      this.setState({
+        [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
       });
     } else {
@@ -114,6 +116,7 @@ class App extends Component {
       keyColor,
       keyColorOpacity,
       mainGameLineColor,
+      mainGamelineOpacity,
       rightEndBorderText,
       rightTopSideCourtImage,
       rightBottomSideCourtImage,
@@ -165,6 +168,7 @@ class App extends Component {
           keyColor={keyColor}
           keyColorOpacity={keyColorOpacity}
           mainGameLineColor={mainGameLineColor}
+          mainGamelineOpacity={mainGamelineOpacity}
           rightEndBorderText={rightEndBorderText}
           threePointAreaColor={threePointAreaColor}
           threePointAreaColorOpacity={threePointAreaColorOpacity}
