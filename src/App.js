@@ -20,6 +20,7 @@ class App extends Component {
       endBorderTextColor: "white",
       endBorderTextColorOpacity: 1,
       endBorderTextSize: 48,
+      image: null,
       laneColor: "#DFBB85",
       laneColorOpacity: 1,
       leftEndBorderText: "Fairmont",
@@ -69,9 +70,18 @@ class App extends Component {
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
       });
+    } else if(propertyNameColor === "centerCircleColor") {
+      window.URL.revokeObjectURL(this.state.image);
+      this.setState({
+        [propertyNameColor]: "transparent",
+        [propertyNameOpacity]: 1,
+        centerCirlceImage: null,
+        image: null
+      });
     } else {
       return null;
     }
+    console.log(this.state.image);
   }
   
   handleColorStain = e => {
@@ -84,8 +94,11 @@ class App extends Component {
   handleImage = e => {
     let image = e.target.files[0];
     this.setState({
-      [e.target.name]: window.URL.createObjectURL(image)  // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
+      [e.target.name]: window.URL.createObjectURL(image),  // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
+      image: image
     });
+    console.log(e.target.name);
+    console.log(image);
 }
   
   handleShow = e => {
