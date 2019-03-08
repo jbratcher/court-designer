@@ -406,6 +406,15 @@ class Menu extends Component {
                       </input>
                     </label>
                     
+                    <label className="keyImageInput"> Upload File
+                      <input 
+                        onChange={handleImage}
+                        name="keyImage" 
+                        type="file" 
+                        accept="image/*">
+                      </input>
+                    </label>
+                    
                     <button 
                       className="keyResetColor"
                       name="keyResetColor"

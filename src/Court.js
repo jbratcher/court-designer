@@ -18,6 +18,7 @@ class Court extends Component {
       endBorderTextSize,
       keyColor,
       keyColorOpacity,
+      keyImage,
       laneColor,
       laneColorOpacity,
       leftTopSideCourtImage,
@@ -218,6 +219,14 @@ class Court extends Component {
                         opacity: keyColorOpacity
                       }}
                     >
+                    
+                      { keyImage ?
+                        <img
+                          className="keyImage"
+                          src={keyImage} 
+                          alt="Left Key Graphic"></img>
+                      : null}
+                    
                     </section>
                   
                   </section>
@@ -335,6 +344,14 @@ class Court extends Component {
                         opacity: keyColorOpacity
                       }}
                     >
+                    
+                      { keyImage ?
+                        <img
+                          className="keyImage"
+                          src={keyImage} 
+                          alt="Left Key Graphic"></img>
+                      : null}
+                    
                     </section>
                   
                   </section>

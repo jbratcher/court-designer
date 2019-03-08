@@ -338,6 +338,15 @@ input[type = "file"] {
         border-top-right-radius: 50%;
         height: 100%;
         width: 100%;
+        
+        .keyImage {
+          border-bottom-right-radius: 50%;
+          border-top-right-radius: 50%;
+          height: 100%;
+          width: 100%;
+          transform: rotate(90deg);
+        }
+      
       }
 
   }
@@ -553,6 +562,15 @@ input[type = "file"] {
         border-top-left-radius: 50%;
         height: 100%;
         width: 100%;
+        
+        .keyImage {
+          border-bottom-left-radius: 50%;
+          border-top-left-radius: 50%;
+          height: 100%;
+          width: 100%;
+          transform: rotate(270deg);
+        }
+      
       }
 
   }

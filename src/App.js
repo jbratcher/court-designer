@@ -29,6 +29,7 @@ class App extends Component {
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
       mainGameLineColor: "black",
+      keyImage: null,
       mainGamelineOpacity: 1,
       rightEndBorderText: "Falcons",
       rightTopSideCourtImage: null,
@@ -71,12 +72,16 @@ class App extends Component {
         [propertyNameOpacity]: 1
       });
     } else if(propertyNameColor === "centerCircleColor") {
-      window.URL.revokeObjectURL(this.state.image);
       this.setState({
         [propertyNameColor]: "transparent",
         [propertyNameOpacity]: 1,
-        centerCirlceImage: null,
-        image: null
+        centerCirlceImage: null
+      });
+    } else if(propertyNameColor === "keyColor") {
+      this.setState({
+        [propertyNameColor]: "transparent",
+        [propertyNameOpacity]: 1,
+        keyImage: null
       });
     } else {
       return null;
@@ -96,7 +101,7 @@ class App extends Component {
     this.setState({
       [e.target.name]: window.URL.createObjectURL(image),  // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
       image: image
-    });
+    }, e => window.URL.revokeObjectURL(image));
     console.log(e.target.name);
     console.log(image);
 }
@@ -128,6 +133,7 @@ class App extends Component {
       leftBottomSideCourtImage,
       keyColor,
       keyColorOpacity,
+      keyImage,
       mainGameLineColor,
       mainGamelineOpacity,
       rightEndBorderText,
@@ -180,6 +186,7 @@ class App extends Component {
           rightBottomSideCourtImage={rightBottomSideCourtImage}
           keyColor={keyColor}
           keyColorOpacity={keyColorOpacity}
+          keyImage={keyImage}
           mainGameLineColor={mainGameLineColor}
           mainGamelineOpacity={mainGamelineOpacity}
           rightEndBorderText={rightEndBorderText}
