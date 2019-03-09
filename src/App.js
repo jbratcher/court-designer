@@ -56,7 +56,7 @@ class App extends Component {
     let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
     console.log(propertyNameColor);
     
-    if(propertyNameColor === "borderColor") {
+    if(propertyNameColor === "borderColor" || propertyNameColor === "mainGameLineColor") {
       this.setState({
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
@@ -66,27 +66,21 @@ class App extends Component {
         [propertyNameColor]: "white",
         [propertyNameOpacity]: 1
       });
-    } else if(propertyNameColor === "mainGameLineColor") {
-      this.setState({
-        [propertyNameColor]: "black",
-        [propertyNameOpacity]: 1
-      });
-    } else if(propertyNameColor === "centerCircleColor") {
+    } else if(propertyNameColor === "centerCircleColor" || propertyNameColor === "threePointAreaColor") {
       this.setState({
         [propertyNameColor]: "transparent",
         [propertyNameOpacity]: 1,
         centerCirlceImage: null
       });
-    } else if(propertyNameColor === "keyColor") {
+    } else if(propertyNameColor === "keyColor" || propertyNameColor === "laneColor") {
       this.setState({
-        [propertyNameColor]: "transparent",
+        [propertyNameColor]: "#DFBB85",
         [propertyNameOpacity]: 1,
         keyImage: null
       });
     } else {
       return null;
     }
-    console.log(this.state.image);
   }
   
   handleColorStain = e => {
