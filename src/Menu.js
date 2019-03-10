@@ -494,7 +494,7 @@ class Menu extends Component {
                 
                 {sideCourtOptions ?
                 
-                <section className="expandedMenu">
+                <section className="expandedMenu lastMenuDropdown">
                 
                   <label className="leftTopSideCourtImageInput"> Left Top Side Court
                     <input 
