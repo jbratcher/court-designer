@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
 import Court from './Court';
-import './App.scss';
+import './styles/App.scss';
 
 class App extends Component {
 

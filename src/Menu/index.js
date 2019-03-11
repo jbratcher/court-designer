@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.scss';
+import '../styles/App.scss';
 
 class Menu extends Component {
     
@@ -50,6 +50,7 @@ class Menu extends Component {
       gamelineOptions,
       keyOptions,
       laneOptions,
+      practiceCourtOptions,
       sideCourtOptions,
       threePointOptions
     } = this.state;
@@ -318,6 +319,7 @@ class Menu extends Component {
                 : null}
                 
               </li>
+              
               <li className="threePointOptions">
                 <section>
                   <span>3 Point Area</span>
@@ -369,6 +371,7 @@ class Menu extends Component {
                 : null}
                 
               </li>
+              
               <li className="keyOptions">
                 <section>
                   <span>Keys</span>
@@ -429,6 +432,7 @@ class Menu extends Component {
                 : null}
                 
               </li>
+              
               <li className="laneOptions">
                 <section>
                   <span>Lanes</span>
@@ -480,6 +484,7 @@ class Menu extends Component {
                 : null}
                 
               </li>
+              
               <li className="sideCourtOptions">
                 <section>
                   <span>Side Courts</span>
@@ -494,7 +499,7 @@ class Menu extends Component {
                 
                 {sideCourtOptions ?
                 
-                <section className="expandedMenu lastMenuDropdown">
+                <section className="expandedMenu" id="sideCourtMenu">
                 
                   <label className="leftTopSideCourtImageInput"> Left Top Side Court
                     <input 
@@ -532,26 +537,49 @@ class Menu extends Component {
                       accept="image/*">
                     </input>
                   </label>
-                  
-                  <label class="volleyballSideCourt">Volleyball Line Color:
-                    <input
-                      className="volleyballLineColor"
-                      name="volleyballLineColor"
-                      onChange={handleInputChange}
-                      type="color">
-                    </input>
-                  </label>
-                  
-                  <label>Show
-                    <input 
-                      className="volleyballShown"
-                      type="checkbox"
-                      onChange={handleShow}
-                    >
-                    </input>
-                  </label>
                 
                 </section>
+                
+                : null}
+                
+              </li>
+              
+              <li className="practiceCourtOptions">
+              
+                <section>
+                  <span>Practice Courts</span>
+                  <a 
+                    className="menuOptionsLink"
+                    href="#practiceCourtOptions"
+                    onClick={this.handleClick}
+                  >
+                    <i className="fas fa-caret-down"></i>
+                  </a>
+                </section>
+                
+                {practiceCourtOptions ?
+                
+                  <section className="expandedMenu" id="practiceCourtMenu">
+                  
+                    <label class="volleyballSideCourt">Volleyball Line Color:
+                      <input
+                        className="volleyballLineColor"
+                        name="volleyballLineColor"
+                        onChange={handleInputChange}
+                        type="color">
+                      </input>
+                    </label>
+                    
+                    <label>Show
+                      <input 
+                        className="volleyballShown"
+                        type="checkbox"
+                        onChange={handleShow}
+                      >
+                      </input>
+                    </label>
+                    
+                  </section>
                 
                 : null}
                 
@@ -563,7 +591,7 @@ class Menu extends Component {
         
         </section>
         
-    </section>
+      </section>
 
     );
   }
