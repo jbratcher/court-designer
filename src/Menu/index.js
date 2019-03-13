@@ -23,7 +23,7 @@ class Menu extends Component {
         console.log(this.props);
     }
     
-    handleClick = e => {
+    handleMenuClick = e => {
       console.log(e.target.parentElement.parentElement.className);
       let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
       console.log(menuElementClass);
@@ -68,7 +68,7 @@ class Menu extends Component {
                 centerCircleOptions={centerCircleOptions}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
-                handleClick={this.handleClick}
+                handleMenuClick={this.handleMenuClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
               />

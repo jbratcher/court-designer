@@ -20,7 +20,7 @@ class CenterCircleOptions extends Component {
       centerCircleOptions,
       handleColorReset,
       handleColorStain,
-      handleClick,
+      handleMenuClick,
       handleImage,
       handleInputChange
     } = this.props;
@@ -34,7 +34,7 @@ class CenterCircleOptions extends Component {
             <a 
               className="menuOptionsLink"
               href="#centerCircleOptions"
-              onClick={handleClick}
+              onClick={handleMenuClick}
             >
               <i className="fas fa-caret-down"></i>
             </a>
