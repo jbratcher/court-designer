@@ -38,7 +38,6 @@ class Menu extends Component {
     const {
       handleColorReset,
       handleColorStain,
-      handleClick,
       handleImage,
       handleInputChange,
       handleShow
@@ -69,7 +68,7 @@ class Menu extends Component {
                 centerCircleOptions={centerCircleOptions}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
-                handleClick={handleClick}
+                handleClick={this.handleClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
               />

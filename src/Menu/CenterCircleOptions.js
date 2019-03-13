@@ -6,33 +6,24 @@ class CenterCircleOptions extends Component {
     constructor(props) {
       super(props);
       
-      this.state = {
-        centerCircleOptions: false
-      };
+      this.state = {};
       
     }
     
-    handleClick = e => {
-      console.log(e.target.parentElement.parentElement.className);
-      let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
-      console.log(menuElementClass);
-      this.setState(prevState => ({
-        [menuElementClass]: !prevState[menuElementClass]
-      }));
+    componentDidMount() {
+      console.log(this.props)
     }
-    
+  
   render() {
 
     const {
+      centerCircleOptions,
       handleColorReset,
       handleColorStain,
+      handleClick,
       handleImage,
       handleInputChange
     } = this.props;
-    
-    const {
-      centerCircleOptions
-    } = this.state;
 
     return (
             
@@ -43,7 +34,7 @@ class CenterCircleOptions extends Component {
             <a 
               className="menuOptionsLink"
               href="#centerCircleOptions"
-              onClick={this.handleClick}
+              onClick={handleClick}
             >
               <i className="fas fa-caret-down"></i>
             </a>

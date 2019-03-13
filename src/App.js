@@ -42,7 +42,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state);
+    console.log(this.props);
   }
 
   handleInputChange = e => {
