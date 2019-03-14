@@ -24,8 +24,8 @@ class Court extends Component {
       leftTopSideCourtImage,
       leftBottomSideCourtImage,
       leftEndBorderText,
-      mainGameLineColor,
-      mainGamelineOpacity,
+      mainGamelineColor,
+      mainGamelineColorOpacity,
       rightEndBorderText,
       rightTopSideCourtImage,
       rightBottomSideCourtImage,
@@ -91,8 +91,8 @@ class Court extends Component {
             <section
               className="courtOuterGameLine center"
               style={{
-                boxShadow: `inset 0 0 0 0.25rem ${mainGameLineColor}`,
-                opacity: mainGamelineOpacity
+                boxShadow: `inset 0 0 0 0.25rem ${mainGamelineColor}`,
+                opacity: mainGamelineColorOpacity
               }}
             >
 
@@ -133,7 +133,7 @@ class Court extends Component {
                 <section
                   className="leftCourtArea center"
                   style={{
-                    borderColor: mainGameLineColor,
+                    borderColor: mainGamelineColor,
                     width: `calc(378px + ${borderEndSize})`
                   }}
                 >
@@ -141,7 +141,7 @@ class Court extends Component {
                   <section
                     className="leftLaneArea"
                     style={{
-                      borderColor: mainGameLineColor
+                      borderColor: mainGamelineColor
                     }}
                   >
                     
@@ -158,19 +158,19 @@ class Court extends Component {
 
                       <li
                         className="leftLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
 
                     </ul>
@@ -179,19 +179,19 @@ class Court extends Component {
 
                       <li
                         className="leftLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="leftLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
 
                     </ul>
@@ -208,7 +208,7 @@ class Court extends Component {
 
                   <section
                     className="leftKeyArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{borderColor: mainGamelineColor}}
                   >
 
                   
@@ -233,7 +233,7 @@ class Court extends Component {
 
                   <section
                     className="leftThreePointArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{borderColor: mainGamelineColor}}
                   >
                   
                     <section
@@ -275,13 +275,13 @@ class Court extends Component {
 
                 <section
                   className="centerCourtLine center"
-                  style={{background: mainGameLineColor}}
+                  style={{background: mainGamelineColor}}
                 >
 
                   <section
                     className="centerCircle center"
                     style={{
-                      borderColor: mainGameLineColor
+                      borderColor: mainGamelineColor
                     }}
                   >
                   
@@ -311,14 +311,14 @@ class Court extends Component {
                 <section
                   className="rightCourtArea center"
                   style={{
-                    borderColor: mainGameLineColor,
+                    borderColor: mainGamelineColor,
                     width: `calc(378px + ${borderEndSize})`
                   }}
                 >
 
                   <section
                     className="rightThreePointArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{borderColor: mainGamelineColor}}
                   >
                     
                     <section
@@ -334,7 +334,7 @@ class Court extends Component {
 
                   <section
                     className="rightKeyArea"
-                    style={{borderColor: mainGameLineColor}}
+                    style={{borderColor: mainGamelineColor}}
                   >
                   
                     <section 
@@ -359,7 +359,7 @@ class Court extends Component {
                   <section
                     className="rightLaneArea"
                     style={{
-                      borderColor: mainGameLineColor
+                      borderColor: mainGamelineColor
                     }}
                   >
                   
@@ -378,19 +378,19 @@ class Court extends Component {
 
                       <li
                         className="rightLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneTopMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
 
                     </ul>
@@ -399,19 +399,19 @@ class Court extends Component {
 
                       <li
                         className="rightLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
                       <li
                         className="rightLaneBottomMarkings"
-                        style={{background: mainGameLineColor}}
+                        style={{background: mainGamelineColor}}
                       ></li>
 
                     </ul>

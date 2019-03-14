@@ -28,7 +28,8 @@ class App extends Component {
       leftBottomSideCourtImage: null,
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
-      mainGameLineColor: "black",
+      mainGamelineColor: "black",
+      mainGamelineColorOpacity: 1,
       keyImage: null,
       mainGamelineOpacity: 1,
       rightEndBorderText: "Falcons",
@@ -56,7 +57,7 @@ class App extends Component {
     let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
     console.log(propertyNameColor);
     
-    if(propertyNameColor === "borderColor" || propertyNameColor === "mainGameLineColor") {
+    if(propertyNameColor === "borderColor" || propertyNameColor === "mainGamelineColor") {
       this.setState({
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
@@ -128,8 +129,8 @@ class App extends Component {
       keyColor,
       keyColorOpacity,
       keyImage,
-      mainGameLineColor,
-      mainGamelineOpacity,
+      mainGamelineColor,
+      mainGamelineColorOpacity,
       rightEndBorderText,
       rightTopSideCourtImage,
       rightBottomSideCourtImage,
@@ -181,8 +182,8 @@ class App extends Component {
           keyColor={keyColor}
           keyColorOpacity={keyColorOpacity}
           keyImage={keyImage}
-          mainGameLineColor={mainGameLineColor}
-          mainGamelineOpacity={mainGamelineOpacity}
+          mainGamelineColor={mainGamelineColor}
+          mainGamelineColorOpacity={mainGamelineColorOpacity}
           rightEndBorderText={rightEndBorderText}
           threePointAreaColor={threePointAreaColor}
           threePointAreaColorOpacity={threePointAreaColorOpacity}
