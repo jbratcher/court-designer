@@ -3,6 +3,9 @@ import '../styles/App.scss';
 import CenterCircleOptions from './CenterCircleOptions';
 import BorderOptions from './BorderOptions';
 import GamelineOptions from './GamelineOptions';
+import ThreePointOptions from './ThreePointOptions';
+import KeyOptions from './KeyOptions';
+import LaneOptions from './LaneOptions'
 
 class Menu extends Component {
     
@@ -91,172 +94,31 @@ class Menu extends Component {
                 handleInputChange={handleInputChange}
               />
               
+              <ThreePointOptions 
+                threePointOptions={threePointOptions}
+                handleColorReset={handleColorReset}
+                handleColorStain={handleColorStain}
+                handleMenuClick={this.handleMenuClick}
+                handleInputChange={handleInputChange}
+              />
               
+              <KeyOptions 
+                keyOptions={keyOptions}
+                handleColorReset={handleColorReset}
+                handleColorStain={handleColorStain}
+                handleMenuClick={this.handleMenuClick}
+                handleImage={handleImage}
+                handleInputChange={handleInputChange}
+              />
               
-              <li className="threePointOptions">
-                <section>
-                  <span>3 Point Area</span>
-                  <a 
-                    className="menuOptionsLink"
-                    href="#threePointOptions"
-                    onClick={this.handleMenuClick}
-                  >
-                    <i className="fas fa-caret-down"></i>
-                  </a>
-                </section>
-                
-                {threePointOptions ?
-                
-                <section className="expandedMenu">
-                
-                  <label>3 Point Area Color:
-                    <input
-                      className="threePointAreaColor"
-                      name="threePointAreaColor"
-                      onChange={handleInputChange}
-                      type="color">
-                    </input>
-                  </label>
-                  
-                  <label>Stain:
-                    <input
-                      className="threePointStain"
-                      min="0.1"
-                      max="1.0"
-                      step="0.1"
-                      name="threePointAreaColor"
-                      onChange={handleColorStain}
-                      type="number">
-                    </input>
-                  </label>
-                  
-                  <button 
-                    className="threePointAreaResetColor"
-                    name="threePointAreaResetColor"
-                    type="button"
-                    onClick={handleColorReset}
-                  >
-                    Reset
-                  </button>
-                
-                </section>
-                
-                : null}
-                
-              </li>
-              
-              <li className="keyOptions">
-                <section>
-                  <span>Keys</span>
-                  <a 
-                    className="menuOptionsLink"
-                    href="#keyOptions"
-                    onClick={this.handleMenuClick}
-                  >
-                    <i className="fas fa-caret-down"></i>
-                  </a>
-                </section>
-                
-                {keyOptions ?
-                
-                  <section className="expandedMenu">
-                  
-                    <label>Key Color:
-                      <input
-                        className="keyColor"
-                        name="keyColor"
-                        onChange={handleInputChange}
-                        type="color">
-                      </input>
-                    </label>
-                    
-                    <label>Stain:
-                      <input
-                        className="keyStain"
-                        min="0.1"
-                        max="1.0"
-                        step="0.1"
-                        name="keyColor"
-                        onChange={handleColorStain}
-                        type="number">
-                      </input>
-                    </label>
-                    
-                    <label className="keyImageInput"> Upload File
-                      <input 
-                        onChange={handleImage}
-                        name="keyImage" 
-                        type="file" 
-                        accept="image/*">
-                      </input>
-                    </label>
-                    
-                    <button 
-                      className="keyResetColor"
-                      name="keyResetColor"
-                      type="button"
-                      onClick={handleColorReset}
-                    >
-                      Reset
-                    </button>
-                  
-                  </section>
-                
-                : null}
-                
-              </li>
-              
-              <li className="laneOptions">
-                <section>
-                  <span>Lanes</span>
-                  <a 
-                    className="menuOptionsLink"
-                    href="#laneOptions"
-                    onClick={this.handleMenuClick}
-                  >
-                    <i className="fas fa-caret-down"></i>
-                  </a>
-                </section>
-                
-                {laneOptions ?
-                
-                  <section className="expandedMenu">
-                  
-                    <label>Lane Color:
-                      <input
-                        className="laneColor"
-                        name="laneColor"
-                        onChange={handleInputChange}
-                        type="color">
-                      </input>
-                    </label>
-                    
-                    <label>Stain:
-                      <input
-                        className="laneColorOpacity"
-                        min="0.1"
-                        max="1.0"
-                        step="0.1"
-                        name="laneColor"
-                        onChange={handleColorStain}
-                        type="number">
-                      </input>
-                    </label>
-                    
-                    <button 
-                      className="laneResetColor"
-                      name="laneResetColor"
-                      type="button"
-                      onClick={handleColorReset}
-                    >
-                      Reset
-                    </button>
-                  
-                  </section>
-                  
-                : null}
-                
-              </li>
+              <LaneOptions 
+                laneOptions={laneOptions}
+                handleColorReset={handleColorReset}
+                handleColorStain={handleColorStain}
+                handleMenuClick={this.handleMenuClick}
+                handleImage={handleImage}
+                handleInputChange={handleInputChange}
+              />
               
               <li className="sideCourtOptions">
                 <section>

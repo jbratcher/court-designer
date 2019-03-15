@@ -32,6 +32,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Bugs
 
+* Main gameline opacity dims entire area, need to break into more elements
 * Main volleyball court lines on top of main game lines
 * Right end border letter seems to change location on initial load
 
