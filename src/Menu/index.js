@@ -5,7 +5,9 @@ import BorderOptions from './BorderOptions';
 import GamelineOptions from './GamelineOptions';
 import ThreePointOptions from './ThreePointOptions';
 import KeyOptions from './KeyOptions';
-import LaneOptions from './LaneOptions'
+import LaneOptions from './LaneOptions';
+import SideCourtOptions from './SideCourtOptions';
+import PracticeCourtOptions from './PracticeCourtOptions';
 
 class Menu extends Component {
     
@@ -28,10 +30,11 @@ class Menu extends Component {
         console.log(this.props);
     }
     
+    // when caret is clicked to open/close menu
     handleMenuClick = e => {
-      console.log(e.target.parentElement.parentElement.className);
+      // set state key name to container classname (type + "options")
       let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
-      console.log(menuElementClass);
+      // toggle state boolean tied to conditional rendering of menu options
       this.setState(prevState => ({
         [menuElementClass]: !prevState[menuElementClass]
       }));
@@ -61,8 +64,8 @@ class Menu extends Component {
 
     return (
 
-    <section className="menuContainer">
-    
+      <section className="menuContainer">
+      
         <section className="menu">
         
           <nav className="nav">
@@ -95,131 +98,44 @@ class Menu extends Component {
               />
               
               <ThreePointOptions 
-                threePointOptions={threePointOptions}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
                 handleInputChange={handleInputChange}
+                threePointOptions={threePointOptions}
               />
               
               <KeyOptions 
-                keyOptions={keyOptions}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
+                keyOptions={keyOptions}
               />
               
               <LaneOptions 
-                laneOptions={laneOptions}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
+                laneOptions={laneOptions}
               />
               
-              <li className="sideCourtOptions">
-                <section>
-                  <span>Side Courts</span>
-                  <a 
-                    className="menuOptionsLink"
-                    href="#sideCourtOptions"
-                    onClick={this.handleMenuClick}
-                  >
-                    <i className="fas fa-caret-down"></i>
-                  </a>
-                </section>
-                
-                {sideCourtOptions ?
-                
-                <section className="expandedMenu" id="sideCourtMenu">
-                
-                  <label className="leftTopSideCourtImageInput"> Left Top Side Court
-                    <input 
-                      onChange={handleImage}
-                      name="leftTopSideCourtImage" 
-                      type="file" 
-                      accept="image/*">
-                    </input>
-                  </label>
-                
-                  <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court
-                    <input 
-                      onChange={handleImage}
-                      name="leftBottomSideCourtImage" 
-                      type="file" 
-                      accept="image/*">
-                    </input>
-                  </label>
-                
-                  <label className="rightTopSideCourtImageInput"> Right Top Side Court
-                    <input 
-                      onChange={handleImage}
-                      name="rightTopSideCourtImage" 
-                      type="file" 
-                      accept="image/*">
-                    </input>
-                  </label>
-                
-                
-                  <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court
-                    <input 
-                      onChange={handleImage}
-                      name="rightBottomSideCourtImage" 
-                      type="file" 
-                      accept="image/*">
-                    </input>
-                  </label>
-                
-                </section>
-                
-                : null}
-                
-              </li>
+              <SideCourtOptions 
+                handleImage={handleImage}
+                handleMenuClick={this.handleMenuClick}
+                sideCourtOptions={sideCourtOptions}
+              / >
               
-              <li className="practiceCourtOptions">
-              
-                <section>
-                  <span>Practice Courts</span>
-                  <a 
-                    className="menuOptionsLink"
-                    href="#practiceCourtOptions"
-                    onClick={this.handleMenuClick}
-                  >
-                    <i className="fas fa-caret-down"></i>
-                  </a>
-                </section>
-                
-                {practiceCourtOptions ?
-                
-                  <section className="expandedMenu" id="practiceCourtMenu">
-                  
-                    <label class="volleyballSideCourt">Volleyball Line Color:
-                      <input
-                        className="volleyballLineColor"
-                        name="volleyballLineColor"
-                        onChange={handleInputChange}
-                        type="color">
-                      </input>
-                    </label>
-                    
-                    <label>Show
-                      <input 
-                        className="volleyballShown"
-                        type="checkbox"
-                        onChange={handleShow}
-                      >
-                      </input>
-                    </label>
-                    
-                  </section>
-                
-                : null}
-                
-              </li>
-              
+              <PracticeCourtOptions 
+                handleInputChange={handleInputChange}
+                handleMenuClick={this.handleMenuClick}
+                handleShow={handleShow}
+                practiceCourtOptions={practiceCourtOptions}
+              />
+          
             </ul>
             
           </nav>
