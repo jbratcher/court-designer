@@ -29,7 +29,6 @@ class App extends Component {
       keyColor: "#DFBB85",
       keyColorOpacity: 1,
       mainGamelineColor: "black",
-      mainGamelineColorOpacity: 1,
       keyImage: null,
       mainGamelineOpacity: 1,
       rightEndBorderText: "Falcons",

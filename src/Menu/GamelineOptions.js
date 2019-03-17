@@ -19,7 +19,6 @@ class GamelineOptions extends Component {
     const {
       gamelineOptions,
       handleColorReset,
-      handleColorStain,
       handleMenuClick,
       handleInputChange
     } = this.props;
@@ -49,18 +48,6 @@ class GamelineOptions extends Component {
                 name="mainGamelineColor"
                 onChange={handleInputChange}
                 type="color">
-              </input>
-            </label>
-            
-            <label>Stain:
-              <input
-                className="mainGamelineStain"
-                min="0.1"
-                max="1.0"
-                step="0.1"
-                name="mainGamelineColor"
-                onChange={handleColorStain}
-                type="number">
               </input>
             </label>
             

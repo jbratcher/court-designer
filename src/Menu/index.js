@@ -92,7 +92,6 @@ class Menu extends Component {
               <GamelineOptions 
                 gamelineOptions={gamelineOptions}
                 handleColorReset={handleColorReset}
-                handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
                 handleInputChange={handleInputChange}
               />
@@ -127,7 +126,7 @@ class Menu extends Component {
                 handleImage={handleImage}
                 handleMenuClick={this.handleMenuClick}
                 sideCourtOptions={sideCourtOptions}
-              / >
+              />
               
               <PracticeCourtOptions 
                 handleInputChange={handleInputChange}
