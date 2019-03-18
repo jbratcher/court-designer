@@ -58,34 +58,19 @@ class Court extends Component {
             >
             </section>
             
-              <section className="leftEndBorderLettering center">
+            <section className="leftEndBorderLettering center">
+
+              <span
+                style={{
+                  color: endBorderTextColor,
+                  fontSize: `${endBorderTextSize}px`,
+                  letterSpacing: `${endBorderLetterSpacing}px`,
+                  opacity: endBorderTextColorOpacity
+                }}
+              >
+                {leftEndBorderText}
+              </span>
   
-                <span
-                  style={{
-                    color: endBorderTextColor,
-                    fontSize: `${endBorderTextSize}px`,
-                    letterSpacing: `${endBorderLetterSpacing}px`,
-                    opacity: endBorderTextColorOpacity
-                  }}
-                >
-                  {leftEndBorderText}
-                </span>
-    
-              </section>
-              
-              <section className="rightEndBorderLettering center">
-    
-                <span
-                  style={{
-                    color: endBorderTextColor,
-                    fontSize: `${endBorderTextSize}px`,
-                    letterSpacing: `${endBorderLetterSpacing}px`,
-                    opacity: endBorderTextColorOpacity
-                  }}
-                >
-                  {rightEndBorderText}
-                </span>
-    
             </section>
 
             <section
@@ -456,7 +441,20 @@ class Court extends Component {
 
           </section>
 
-          
+          <section className="rightEndBorderLettering center">
+    
+            <span
+              style={{
+                color: endBorderTextColor,
+                fontSize: `${endBorderTextSize}px`,
+                letterSpacing: `${endBorderLetterSpacing}px`,
+                opacity: endBorderTextColorOpacity
+              }}
+            >
+              {rightEndBorderText}
+            </span>
+
+          </section>
 
         </section>
 
