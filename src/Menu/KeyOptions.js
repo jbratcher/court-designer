@@ -30,12 +30,12 @@ class KeyOptions extends Component {
       <li className="keyOptions">
       
         <section>
-          <span>Keys</span>
           <a 
             className="menuOptionsLink"
             href="#keyOptions"
             onClick={handleMenuClick}
           >
+            <span>Keys</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

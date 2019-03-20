@@ -29,12 +29,12 @@ class BorderOptions extends Component {
       <li className="borderOptions">
               
         <section>
-          <span>Border</span>
           <a 
             className="menuOptionsLink"
             href="#borderOptions"
             onClick={handleMenuClick}
           >
+            <span>Border</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

@@ -27,12 +27,12 @@ class SideCourtOptions extends Component {
       <li className="sideCourtOptions">
       
         <section>
-          <span>Side Courts</span>
           <a 
             className="menuOptionsLink"
             href="#sideCourtOptions"
             onClick={handleMenuClick}
           >
+            <span>Side Courts</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

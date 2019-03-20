@@ -20,6 +20,7 @@ class Menu extends Component {
         gamelineOptions: false,
         keyOptions: false,
         laneOptions: false,
+        menuIcon: "fas fa-caret-down",
         sideCourtOptions: false,
         threePointOptions: false
       };
@@ -32,17 +33,30 @@ class Menu extends Component {
     
     // when caret is clicked to open/close menu
     handleMenuClick = e => {
+      
       // set state key name to container classname (type + "options")
       let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
+      console.log(e.target.querySelector("i"));
       // toggle state boolean tied to conditional rendering of menu options
       this.setState(prevState => ({
-        [menuElementClass]: !prevState[menuElementClass]
+        [menuElementClass]: !prevState[menuElementClass],
       }));
+      
+      // toggle menu icon up/down
+      if(this.state.menuIcon === "fas fa-caret-down") {
+        this.setState({
+          menuIcon: "fas fa-caret-up"
+        });
+      } else if(this.state.menuIcon === "fas fa-caret-up") {
+        this.setState({
+          menuIcon: "fas fa-caret-down"
+        });
+      }
     }
     
     
   render() {
-
+    
     const {
       handleColorReset,
       handleColorStain,
@@ -57,6 +71,7 @@ class Menu extends Component {
       gamelineOptions,
       keyOptions,
       laneOptions,
+      menuIcon,
       practiceCourtOptions,
       sideCourtOptions,
       threePointOptions
@@ -79,6 +94,7 @@ class Menu extends Component {
                 handleMenuClick={this.handleMenuClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
+                menuIcon={menuIcon}
               />
               
               <BorderOptions 

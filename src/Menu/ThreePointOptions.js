@@ -29,12 +29,12 @@ class ThreePointOptions extends Component {
       <li className="threePointOptions">
       
         <section>
-          <span>3 Point Area</span>
           <a 
             className="menuOptionsLink"
             href="#threePointOptions"
             onClick={handleMenuClick}
           >
+            <span>3 Point Area</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

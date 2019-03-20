@@ -28,12 +28,12 @@ class GamelineOptions extends Component {
       <li className="gamelineOptions">
               
         <section>
-          <span>Game lines</span>
           <a 
             className="menuOptionsLink"
             href="#gamelineOptions"
             onClick={handleMenuClick}
           >
+            <span>Game lines</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

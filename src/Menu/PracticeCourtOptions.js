@@ -28,12 +28,12 @@ class PracticeCourtOptions extends Component {
       <li className="practiceCourtOptions">
               
         <section>
-          <span>Practice Courts</span>
           <a 
             className="menuOptionsLink"
             href="#practiceCourtOptions"
             onClick={handleMenuClick}
           >
+            <span>Practice Courts</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>

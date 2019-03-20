@@ -29,12 +29,12 @@ class LaneOptions extends Component {
       <li className="laneOptions">
       
         <section>
-          <span>Lanes</span>
           <a 
             className="menuOptionsLink"
             href="#laneOptions"
             onClick={handleMenuClick}
           >
+            <span>Lanes</span>
             <i className="fas fa-caret-down"></i>
           </a>
         </section>
