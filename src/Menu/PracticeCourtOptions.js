@@ -20,7 +20,8 @@ class PracticeCourtOptions extends Component {
       handleInputChange,
       handleMenuClick,
       handleShow,
-      practiceCourtOptions
+      practiceCourtOptions,
+      practiceCourtOptionsMenuIcon
     } = this.props;
 
     return (
@@ -34,7 +35,7 @@ class PracticeCourtOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Practice Courts</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={practiceCourtOptionsMenuIcon}></i>
           </a>
         </section>
         

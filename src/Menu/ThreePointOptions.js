@@ -17,11 +17,12 @@ class ThreePointOptions extends Component {
   render() {
 
     const {
-      threePointOptions,
       handleColorReset,
       handleColorStain,
       handleMenuClick,
-      handleInputChange
+      handleInputChange,
+      threePointOptions,
+      threePointOptionsMenuIcon
     } = this.props;
 
     return (
@@ -35,7 +36,7 @@ class ThreePointOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>3 Point Area</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={threePointOptionsMenuIcon}></i>
           </a>
         </section>
         

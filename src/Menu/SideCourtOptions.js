@@ -19,7 +19,8 @@ class SideCourtOptions extends Component {
     const {
       handleImage,
       handleMenuClick,
-      sideCourtOptions
+      sideCourtOptions,
+      sideCourtOptionsMenuIcon
     } = this.props;
 
     return (
@@ -33,7 +34,7 @@ class SideCourtOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Side Courts</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={sideCourtOptionsMenuIcon}></i>
           </a>
         </section>
         

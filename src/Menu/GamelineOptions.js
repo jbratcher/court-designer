@@ -18,6 +18,7 @@ class GamelineOptions extends Component {
 
     const {
       gamelineOptions,
+      gamelineOptionsMenuIcon,
       handleColorReset,
       handleMenuClick,
       handleInputChange
@@ -34,7 +35,7 @@ class GamelineOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Game lines</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={gamelineOptionsMenuIcon}></i>
           </a>
         </section>
         

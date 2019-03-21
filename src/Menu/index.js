@@ -16,13 +16,21 @@ class Menu extends Component {
       
       this.state = {
         borderOptions: false,
+        borderOptionsMenuIcon: "fas fa-caret-down",
         centerCircleOptions: false,
+        centerCircleOptionsMenuIcon: "fas fa-caret-down",
         gamelineOptions: false,
+        gamelineOptionsMenuIcon: "fas fa-caret-down",
         keyOptions: false,
+        keyOptionsMenuIcon: "fas fa-caret-down",
         laneOptions: false,
-        menuIcon: "fas fa-caret-down",
+        laneOptionsMenuIcon: "fas fa-caret-down",
+        practiceCourtOptions: false,
+        practiceCourtOptionsMenuIcon: "fas fa-caret-down",
         sideCourtOptions: false,
-        threePointOptions: false
+        sideCourtOptionsMenuIcon: "fas fa-caret-down",
+        threePointOptions: false,
+        threePointOptionsMenuIcon: "fas fa-caret-down",
       };
       
     }
@@ -36,20 +44,22 @@ class Menu extends Component {
       
       // set state key name to container classname (type + "options")
       let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
-      console.log(e.target.querySelector("i"));
+      let menuElementIcon = `${menuElementClass}MenuIcon`;
+      console.log(menuElementIcon);
+      console.log(this.state[menuElementIcon])
       // toggle state boolean tied to conditional rendering of menu options
       this.setState(prevState => ({
         [menuElementClass]: !prevState[menuElementClass],
       }));
       
       // toggle menu icon up/down
-      if(this.state.menuIcon === "fas fa-caret-down") {
+      if(this.state[menuElementIcon] === "fas fa-caret-down") {
         this.setState({
-          menuIcon: "fas fa-caret-up"
+          [menuElementIcon]: "fas fa-caret-up"
         });
-      } else if(this.state.menuIcon === "fas fa-caret-up") {
+      } else if(this.state[menuElementIcon] === "fas fa-caret-up") {
         this.setState({
-          menuIcon: "fas fa-caret-down"
+          [menuElementIcon]: "fas fa-caret-down"
         });
       }
     }
@@ -67,14 +77,21 @@ class Menu extends Component {
     
     const {
       borderOptions,
+      borderOptionsMenuIcon,
       centerCircleOptions,
+      centerCircleOptionsMenuIcon,
       gamelineOptions,
+      gamelineOptionsMenuIcon,
       keyOptions,
+      keyOptionsMenuIcon,
       laneOptions,
-      menuIcon,
+      laneOptionsMenuIcon,
       practiceCourtOptions,
+      practiceCourtOptionsMenuIcon,
       sideCourtOptions,
-      threePointOptions
+      sideCourtOptionsMenuIcon,
+      threePointOptions,
+      threePointOptionsMenuIcon
     } = this.state;
 
     return (
@@ -89,16 +106,17 @@ class Menu extends Component {
             
               <CenterCircleOptions 
                 centerCircleOptions={centerCircleOptions}
+                centerCircleOptionsMenuIcon={centerCircleOptionsMenuIcon}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
-                menuIcon={menuIcon}
               />
               
               <BorderOptions 
                 borderOptions={borderOptions}
+                borderOptionsMenuIcon={borderOptionsMenuIcon}
                 handleColorReset={handleColorReset}
                 handleColorStain={handleColorStain}
                 handleMenuClick={this.handleMenuClick}
@@ -107,6 +125,7 @@ class Menu extends Component {
               
               <GamelineOptions 
                 gamelineOptions={gamelineOptions}
+                gamelineOptionsMenuIcon={gamelineOptionsMenuIcon}
                 handleColorReset={handleColorReset}
                 handleMenuClick={this.handleMenuClick}
                 handleInputChange={handleInputChange}
@@ -118,6 +137,7 @@ class Menu extends Component {
                 handleMenuClick={this.handleMenuClick}
                 handleInputChange={handleInputChange}
                 threePointOptions={threePointOptions}
+                threePointOptionsMenuIcon={threePointOptionsMenuIcon}
               />
               
               <KeyOptions 
@@ -127,6 +147,7 @@ class Menu extends Component {
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
                 keyOptions={keyOptions}
+                keyOptionsMenuIcon={keyOptionsMenuIcon}
               />
               
               <LaneOptions 
@@ -136,12 +157,14 @@ class Menu extends Component {
                 handleImage={handleImage}
                 handleInputChange={handleInputChange}
                 laneOptions={laneOptions}
+                laneOptionsMenuIcon={laneOptionsMenuIcon}
               />
               
               <SideCourtOptions 
                 handleImage={handleImage}
                 handleMenuClick={this.handleMenuClick}
                 sideCourtOptions={sideCourtOptions}
+                sideCourtOptionsMenuIcon={sideCourtOptionsMenuIcon}
               />
               
               <PracticeCourtOptions 
@@ -149,6 +172,7 @@ class Menu extends Component {
                 handleMenuClick={this.handleMenuClick}
                 handleShow={handleShow}
                 practiceCourtOptions={practiceCourtOptions}
+                practiceCourtOptionsMenuIcon={practiceCourtOptionsMenuIcon}
               />
           
             </ul>

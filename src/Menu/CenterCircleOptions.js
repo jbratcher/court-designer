@@ -20,12 +20,12 @@ class CenterCircleOptions extends Component {
     
     const {
       centerCircleOptions,
+      centerCircleOptionsMenuIcon,
       handleColorReset,
       handleColorStain,
       handleMenuClick,
       handleImage,
       handleInputChange,
-      menuIcon
     } = this.props;
 
     return (
@@ -39,7 +39,7 @@ class CenterCircleOptions extends Component {
               onClick={handleMenuClick}
             >
               <span>Center Circle</span>
-              <i className={menuIcon}></i>
+              <i className={centerCircleOptionsMenuIcon}></i>
             </a>
           
           </section>

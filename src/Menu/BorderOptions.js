@@ -18,6 +18,7 @@ class BorderOptions extends Component {
 
     const {
       borderOptions,
+      borderOptionsMenuIcon,
       handleColorReset,
       handleColorStain,
       handleMenuClick,
@@ -35,7 +36,7 @@ class BorderOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Border</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={borderOptionsMenuIcon}></i>
           </a>
         </section>
         

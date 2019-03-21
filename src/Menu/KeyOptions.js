@@ -17,12 +17,13 @@ class KeyOptions extends Component {
   render() {
 
     const {
-      keyOptions,
       handleColorReset,
       handleColorStain,
       handleMenuClick,
       handleInputChange,
-      handleImage
+      handleImage,
+      keyOptions,
+      keyOptionsMenuIcon
     } = this.props;
 
     return (
@@ -36,7 +37,7 @@ class KeyOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Keys</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={keyOptionsMenuIcon}></i>
           </a>
         </section>
         

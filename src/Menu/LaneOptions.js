@@ -17,11 +17,12 @@ class LaneOptions extends Component {
   render() {
 
     const {
-      laneOptions,
       handleColorReset,
       handleColorStain,
       handleMenuClick,
-      handleInputChange
+      handleInputChange,
+      laneOptions,
+      laneOptionsMenuIcon
     } = this.props;
 
     return (
@@ -35,7 +36,7 @@ class LaneOptions extends Component {
             onClick={handleMenuClick}
           >
             <span>Lanes</span>
-            <i className="fas fa-caret-down"></i>
+            <i className={laneOptionsMenuIcon}></i>
           </a>
         </section>
         
