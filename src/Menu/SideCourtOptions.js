@@ -11,12 +11,12 @@ class SideCourtOptions extends Component {
     }
     
     componentDidMount() {
-      console.log(this.props)
     }
   
   render() {
 
     const {
+      handleImageReset,
       handleImage,
       handleMenuClick,
       sideCourtOptions,
@@ -50,6 +50,15 @@ class SideCourtOptions extends Component {
               accept="image/*">
             </input>
           </label>
+          
+          <button 
+            className="leftTopSideCourtImageReset"
+            name="leftTopSideCourtImage"
+            type="button"
+            onClick={handleImageReset}
+          >
+            Reset
+          </button>
         
           <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court
             <input 
@@ -59,6 +68,15 @@ class SideCourtOptions extends Component {
               accept="image/*">
             </input>
           </label>
+          
+          <button 
+            className="leftBottomSideCourtImageReset"
+            name="leftBottomSideCourtImage"
+            type="button"
+            onClick={handleImageReset}
+          >
+            Reset
+          </button>
         
           <label className="rightTopSideCourtImageInput"> Right Top Side Court
             <input 
@@ -68,6 +86,15 @@ class SideCourtOptions extends Component {
               accept="image/*">
             </input>
           </label>
+          
+          <button 
+            className="rightTopSideCourtImageReset"
+            name="rightTopSideCourtImage"
+            type="button"
+            onClick={handleImageReset}
+          >
+            Reset
+          </button>
         
         
           <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court
@@ -78,6 +105,15 @@ class SideCourtOptions extends Component {
               accept="image/*">
             </input>
           </label>
+          
+          <button 
+            className="rightBottomSideCourtImageReset"
+            name="rightBottomSideCourtImage"
+            type="button"
+            onClick={handleImageReset}
+          >
+            Reset
+          </button>
         
         </section>
         

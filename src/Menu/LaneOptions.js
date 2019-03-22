@@ -11,7 +11,6 @@ class LaneOptions extends Component {
     }
     
     componentDidMount() {
-      console.log(this.props)
     }
   
   render() {

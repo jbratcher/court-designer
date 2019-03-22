@@ -36,7 +36,7 @@ class Menu extends Component {
     }
     
     componentDidMount() {
-        console.log(this.props);
+      
     }
     
     // when caret is clicked to open/close menu
@@ -45,8 +45,7 @@ class Menu extends Component {
       // set state key name to container classname (type + "options")
       let menuElementClass = e.target.parentElement.parentElement.parentElement.className;
       let menuElementIcon = `${menuElementClass}MenuIcon`;
-      console.log(menuElementIcon);
-      console.log(this.state[menuElementIcon])
+      
       // toggle state boolean tied to conditional rendering of menu options
       this.setState(prevState => ({
         [menuElementClass]: !prevState[menuElementClass],
@@ -71,6 +70,7 @@ class Menu extends Component {
       handleColorReset,
       handleColorStain,
       handleImage,
+      handleImageReset,
       handleInputChange,
       handleShow
     } = this.props;
@@ -162,12 +162,14 @@ class Menu extends Component {
               
               <SideCourtOptions 
                 handleImage={handleImage}
+                handleImageReset={handleImageReset}
                 handleMenuClick={this.handleMenuClick}
                 sideCourtOptions={sideCourtOptions}
                 sideCourtOptionsMenuIcon={sideCourtOptionsMenuIcon}
               />
               
               <PracticeCourtOptions 
+                handleColorReset={handleColorReset}
                 handleInputChange={handleInputChange}
                 handleMenuClick={this.handleMenuClick}
                 handleShow={handleShow}

@@ -42,7 +42,13 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
+  }
+  
+  handleImageReset = e => {
+    let imageElement = e.target.name;
+    this.setState({
+      [imageElement]: null
+    });
   }
 
   handleInputChange = e => {
@@ -54,14 +60,13 @@ class App extends Component {
   handleColorReset = e => {
     let propertyNameColor = e.target.parentElement.firstElementChild.firstElementChild.name;
     let propertyNameOpacity = `${e.target.parentElement.firstElementChild.firstElementChild.name}Opacity`;
-    console.log(propertyNameColor);
-    
+
     if(propertyNameColor === "borderColor" || propertyNameColor === "mainGamelineColor") {
       this.setState({
         [propertyNameColor]: "black",
         [propertyNameOpacity]: 1
       });
-    } else if(propertyNameColor === "endBorderTextColor") {
+    } else if(propertyNameColor === "endBorderTextColor" || propertyNameColor === "volleyballLineColor") {
       this.setState({
         [propertyNameColor]: "white",
         [propertyNameOpacity]: 1
@@ -96,8 +101,6 @@ class App extends Component {
       [e.target.name]: window.URL.createObjectURL(image),  // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
       image: image
     }, e => window.URL.revokeObjectURL(image));
-    console.log(e.target.name);
-    console.log(image);
 }
   
   handleShow = e => {
@@ -155,6 +158,7 @@ class App extends Component {
           handleColorReset={this.handleColorReset}
           handleColorStain={this.handleColorStain}
           handleImage={this.handleImage}
+          handleImageReset={this.handleImageReset}
           handleInputChange={this.handleInputChange}
           handleShow={this.handleShow}
         />

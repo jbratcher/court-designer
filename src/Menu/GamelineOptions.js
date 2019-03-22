@@ -11,7 +11,6 @@ class GamelineOptions extends Component {
     }
     
     componentDidMount() {
-      console.log(this.props)
     }
   
   render() {

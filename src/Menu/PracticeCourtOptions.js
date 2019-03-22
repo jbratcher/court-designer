@@ -11,12 +11,12 @@ class PracticeCourtOptions extends Component {
     }
     
     componentDidMount() {
-      console.log(this.props)
     }
   
   render() {
 
     const {
+      handleColorReset,
       handleInputChange,
       handleMenuClick,
       handleShow,
@@ -43,7 +43,7 @@ class PracticeCourtOptions extends Component {
         
           <section className="expandedMenu" id="practiceCourtMenu">
           
-            <label class="volleyballSideCourt">Volleyball Line Color:
+            <label className="volleyballSideCourt">Volleyball Line Color:
               <input
                 className="volleyballLineColor"
                 name="volleyballLineColor"
@@ -60,6 +60,15 @@ class PracticeCourtOptions extends Component {
               >
               </input>
             </label>
+            
+            <button 
+              className="volleyballLineResetColor"
+              name="volleyballLineColor"
+              type="button"
+              onClick={handleColorReset}
+            >
+              Reset
+            </button>
             
           </section>
         
