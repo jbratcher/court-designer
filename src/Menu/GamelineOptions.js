@@ -40,9 +40,9 @@ class GamelineOptions extends Component {
         
         {gamelineOptions ?
         
-          <section className="expandedMenu">
+          <section className="expandedMenu input-group">
           
-            <label>Main Gameline:
+            <label className="input-group-text">Main Gameline:
               <input
                 className="mainGamelineColor"
                 name="mainGamelineColor"

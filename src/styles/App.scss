@@ -39,11 +39,11 @@ button[class*="Reset"] {
 
 .header {
   background: #eee;
-  border-bottom: 0.125rem solid black;
+  border-bottom: 0.25rem solid black;
   color: #000;
   display: flex;
   align-items: baseline;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 
     h1 {
@@ -110,6 +110,7 @@ button[class*="Reset"] {
   position: absolute;
   text-align: left;
   top: 58px;
+  width: inherit;
 
   button {
     width: 35%;
@@ -130,13 +131,17 @@ button[class*="Reset"] {
 
 }
 
+input[class*="Color"] {
+  max-width: 50%;
+}
+
 #sideCourtMenu {
  margin-right: 10px; 
  width: 20%;
 }
 
 #practiceCourtMenu {
-  margin-right: 10px;
+  right: 0;
 }
 
 .volleyballLineColor {

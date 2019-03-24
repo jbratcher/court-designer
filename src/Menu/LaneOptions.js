@@ -41,9 +41,9 @@ class LaneOptions extends Component {
         
         {laneOptions ?
         
-          <section className="expandedMenu">
+          <section className="expandedMenu input-group">
           
-            <label>Lane Color:
+            <label className="input-group-text">Lane Color:
               <input
                 className="laneColor"
                 name="laneColor"
@@ -52,9 +52,9 @@ class LaneOptions extends Component {
               </input>
             </label>
             
-            <label>Stain:
+            <label className="input-group-text">Stain:
               <input
-                className="laneColorOpacity"
+                className="laneColorOpacity form-control"
                 min="0.1"
                 max="1.0"
                 step="0.1"

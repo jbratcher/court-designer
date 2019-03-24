@@ -40,16 +40,16 @@ class SideCourtOptions extends Component {
         
         {sideCourtOptions ?
         
-        <section className="expandedMenu" id="sideCourtMenu">
+        <section className="expandedMenu input-group" id="sideCourtMenu">
         
-          <label className="leftTopSideCourtImageInput"> Left Top Side Court
-            <input 
-              onChange={handleImage}
-              name="leftTopSideCourtImage" 
-              type="file" 
-              accept="image/*">
-            </input>
-          </label>
+          <label for="leftTopSideCourtImage" className="leftTopSideCourtImageInput"> Left Top Side Court</label>
+          
+          <input 
+            onChange={handleImage}
+            name="leftTopSideCourtImage" 
+            type="file" 
+            accept="image/*">
+          </input>
           
           <button 
             className="leftTopSideCourtImageReset"
@@ -60,14 +60,14 @@ class SideCourtOptions extends Component {
             Reset
           </button>
         
-          <label className="leftBottomSideCourtImageInput"> Left Bottom Side Court
-            <input 
-              onChange={handleImage}
-              name="leftBottomSideCourtImage" 
-              type="file" 
-              accept="image/*">
-            </input>
-          </label>
+          <label for="leftBottomSideCourtImage" className="leftBottomSideCourtImageInput"> Left Bottom Side Court</label>
+          
+          <input 
+            onChange={handleImage}
+            name="leftBottomSideCourtImage" 
+            type="file" 
+            accept="image/*">
+          </input>
           
           <button 
             className="leftBottomSideCourtImageReset"
@@ -78,14 +78,21 @@ class SideCourtOptions extends Component {
             Reset
           </button>
         
-          <label className="rightTopSideCourtImageInput"> Right Top Side Court
-            <input 
-              onChange={handleImage}
-              name="rightTopSideCourtImage" 
-              type="file" 
-              accept="image/*">
-            </input>
-          </label>
+          <label for="rightTopSideCourtImage" className="rightTopSideCourtImageInput"> Right Top Side Court</label>
+          
+          <input 
+            onChange={handleImage}
+            name="rightTopSideCourtImage" 
+            type="file" 
+            accept="image/*">
+          </input>
+          
+          <input 
+            onChange={handleImage}
+            name="rightTopSideCourtImage" 
+            type="file" 
+            accept="image/*">
+          </input>
           
           <button 
             className="rightTopSideCourtImageReset"
@@ -97,14 +104,14 @@ class SideCourtOptions extends Component {
           </button>
         
         
-          <label className="rightBottomSideCourtImageInput"> Right Bottom Side Court
-            <input 
-              onChange={handleImage}
-              name="rightBottomSideCourtImage" 
-              type="file" 
-              accept="image/*">
-            </input>
-          </label>
+          <label for="rightBottomSideCourtImage" className="rightBottomSideCourtImageInput"> Right Bottom Side Court</label>
+          
+          <input 
+            onChange={handleImage}
+            name="rightBottomSideCourtImage" 
+            type="file" 
+            accept="image/*">
+          </input>
           
           <button 
             className="rightBottomSideCourtImageReset"

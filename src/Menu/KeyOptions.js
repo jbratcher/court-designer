@@ -42,9 +42,9 @@ class KeyOptions extends Component {
         
         {keyOptions ?
         
-          <section className="expandedMenu">
+          <section className="expandedMenu input-group">
           
-            <label>Key Color:
+            <label className="input-group-text">Key Color:
               <input
                 className="keyColor"
                 name="keyColor"
@@ -53,9 +53,9 @@ class KeyOptions extends Component {
               </input>
             </label>
             
-            <label>Stain:
+            <label className="input-group-text">Stain:
               <input
-                className="keyStain"
+                className="keyStain form-control"
                 min="0.1"
                 max="1.0"
                 step="0.1"

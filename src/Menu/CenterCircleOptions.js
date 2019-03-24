@@ -46,9 +46,9 @@ class CenterCircleOptions extends Component {
           
           {centerCircleOptions ?
           
-          <section className="expandedMenu">
+          <section className="expandedMenu input-group">
           
-            <label>Center Circle Paint Color:
+            <label className="input-group-text">Center Circle Paint Color:
               <input
                 className="centerCircleColor"
                 name="centerCircleColor"
@@ -57,9 +57,9 @@ class CenterCircleOptions extends Component {
               </input>
             </label>
             
-            <label>Stain:
+            <label className="input-group-text">Stain:
               <input
-                className="centerCircleStain"
+                className="centerCircleStain form-control"
                 min="0.1"
                 max="1.0"
                 step="0.1"
@@ -69,10 +69,10 @@ class CenterCircleOptions extends Component {
               </input>
             </label>
             
-            <label className="centerCirlceImageInput"> Upload File
+            <label className="centerCirlceImageInput input-group-text"> Upload File
               <input 
                 onChange={handleImage}
-                name="centerCirlceImage" 
+                name="centerCirlceImage form-control" 
                 type="file" 
                 accept="image/*">
               </input>

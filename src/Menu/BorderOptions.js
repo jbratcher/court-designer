@@ -41,9 +41,9 @@ class BorderOptions extends Component {
         
         {borderOptions ?
         
-        <section className="expandedMenu">
+        <section className="expandedMenu input-group">
         
-          <label>Border Color:
+          <label className="input-group-text">Border Color:
             <input
               className="borderColor"
               name="borderColor"
@@ -52,9 +52,9 @@ class BorderOptions extends Component {
             </input>
           </label>
           
-          <label>Stain:
+          <label className="input-group-text">Stain:
             <input
-              className="borderColorOpacity"
+              className="borderColorOpacity form-control"
               min="0.1"
               max="1.0"
               step="0.1"
@@ -73,9 +73,9 @@ class BorderOptions extends Component {
             Reset
           </button>
           
-          <label>End Border Size:
+          <label className="input-group-text">End Border Size:
             <input
-              className="borderEndSize"
+              className="borderEndSize form-control"
               min="0"
               max="120"
               name="borderEndSize"
@@ -85,9 +85,9 @@ class BorderOptions extends Component {
              (inches)
           </label>
           
-          <label>Side Border Size:
+          <label className="input-group-text">Side Border Size:
             <input
-              className="borderSideSize"
+              className="borderSideSize form-control"
               min="0"
               max="72"
               name="borderSideSize"
@@ -97,25 +97,25 @@ class BorderOptions extends Component {
             (inches)
           </label>
           
-          <label>Left End Border Lettering:
+          <label className="input-group-text">Left End Border Lettering:
             <input
-              className="leftEndBorderText"
+              className="leftEndBorderText form-control"
               name="leftEndBorderText"
               onChange={handleInputChange}
               type="text">
             </input>
           </label>
           
-          <label>Right End Border Lettering:
+          <label className="input-group-text">Right End Border Lettering:
             <input
-              className="rightEndBorderText"
+              className="rightEndBorderText form-control"
               name="rightEndBorderText"
               onChange={handleInputChange}
               type="text">
             </input>
           </label>
           
-          <label>End Border Text Color:
+          <label className="input-group-text">End Border Text Color:
             <input
               className="endBorderTextColor"
               name="endBorderTextColor"
@@ -124,7 +124,7 @@ class BorderOptions extends Component {
             </input>
           </label>
           
-          <label>Stain:
+          <label className="input-group-text">Stain:
             <input
               className="endBorderTextColorOpacity"
               min="0.1"
@@ -136,9 +136,9 @@ class BorderOptions extends Component {
             </input>
           </label>
           
-          <label>End Border Text Size:
+          <label className="input-group-text">End Border Text Size:
             <input
-              className="endBorderTextSize"
+              className="endBorderTextSize form-control"
               min="12"
               max="60"
               name="endBorderTextSize"
@@ -148,9 +148,9 @@ class BorderOptions extends Component {
             (inches)
           </label>
 
-          <label>End Border Letter Spacing:
+          <label className="input-group-text">End Border Letter Spacing:
             <input
-              className="endBorderLetterSpacing"
+              className="endBorderLetterSpacing form-control"
               min="0"
               name="endBorderLetterSpacing"
               onChange={handleInputChange}
