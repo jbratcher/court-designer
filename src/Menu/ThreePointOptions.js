@@ -43,35 +43,39 @@ class ThreePointOptions extends Component {
         
         <section className="expandedMenu">
         
-          <label>3 Point Area Color:
-            <input
-              className="threePointAreaColor"
-              name="threePointAreaColor"
-              onChange={handleInputChange}
-              type="color">
-            </input>
-          </label>
-          
-          <label>Stain:
-            <input
-              className="threePointStain"
-              min="0.1"
-              max="1.0"
-              step="0.1"
-              name="threePointAreaColor"
-              onChange={handleColorStain}
-              type="number">
-            </input>
-          </label>
-          
-          <button 
-            className="threePointAreaResetColor"
-            name="threePointAreaResetColor"
-            type="button"
-            onClick={handleColorReset}
-          >
-            Reset
-          </button>
+          <form className="form-group">
+        
+            <label>3 Point Area Color:
+              <input
+                className="threePointAreaColor"
+                name="threePointAreaColor"
+                onChange={handleInputChange}
+                type="color">
+              </input>
+            </label>
+            
+            <label>Stain:
+              <input
+                className="threePointStain"
+                min="0.1"
+                max="1.0"
+                step="0.1"
+                name="threePointAreaColor"
+                onChange={handleColorStain}
+                type="number">
+              </input>
+            </label>
+            
+            <button 
+              className="threePointAreaResetColor btn btn-danger"
+              name="threePointAreaResetColor"
+              type="button"
+              onClick={handleColorReset}
+            >
+              Reset
+            </button>
+            
+          </form>
         
         </section>
         

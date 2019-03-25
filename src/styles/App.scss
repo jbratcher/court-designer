@@ -108,9 +108,15 @@ button[class*="Reset"] {
   flex-direction: column;
   padding: 1rem 0;
   position: absolute;
-  text-align: left;
   top: 58px;
   width: inherit;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
   button {
     width: 35%;
@@ -119,6 +125,7 @@ button[class*="Reset"] {
 
   input {
     margin-left: 1rem;
+    max-width: 100%;
   }
 
   label {

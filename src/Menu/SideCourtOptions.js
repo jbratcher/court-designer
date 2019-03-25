@@ -40,88 +40,96 @@ class SideCourtOptions extends Component {
         
         {sideCourtOptions ?
         
-        <section className="expandedMenu input-group" id="sideCourtMenu">
+        <section className="expandedMenu" id="sideCourtMenu">
         
-          <label for="leftTopSideCourtImage" className="leftTopSideCourtImageInput"> Left Top Side Court</label>
+          <form className="form-group">
           
-          <input 
-            onChange={handleImage}
-            name="leftTopSideCourtImage" 
-            type="file" 
-            accept="image/*">
-          </input>
+            <label for="leftTopSideCourtImage" className="leftTopSideCourtImageInput"> Left Top Side Court</label>
+            
+            <input 
+              onChange={handleImage}
+              name="leftTopSideCourtImage" 
+              type="file" 
+              accept="image/*">
+            </input>
+            
+            <button 
+              className="leftTopSideCourtImageReset btn btn-danger"
+              name="leftTopSideCourtImage"
+              type="button"
+              onClick={handleImageReset}
+            >
+              Reset
+            </button>
           
-          <button 
-            className="leftTopSideCourtImageReset"
-            name="leftTopSideCourtImage"
-            type="button"
-            onClick={handleImageReset}
-          >
-            Reset
-          </button>
+          </form>
+          
+          <form className="form-group">
         
-          <label for="leftBottomSideCourtImage" className="leftBottomSideCourtImageInput"> Left Bottom Side Court</label>
+            <label for="leftBottomSideCourtImage" className="leftBottomSideCourtImageInput"> Left Bottom Side Court</label>
+            
+            <input 
+              onChange={handleImage}
+              name="leftBottomSideCourtImage" 
+              type="file" 
+              accept="image/*">
+            </input>
+            
+            <button 
+              className="leftBottomSideCourtImageReset btn btn-danger"
+              name="leftBottomSideCourtImage"
+              type="button"
+              onClick={handleImageReset}
+            >
+              Reset
+            </button>
+            
+          </form>
           
-          <input 
-            onChange={handleImage}
-            name="leftBottomSideCourtImage" 
-            type="file" 
-            accept="image/*">
-          </input>
-          
-          <button 
-            className="leftBottomSideCourtImageReset"
-            name="leftBottomSideCourtImage"
-            type="button"
-            onClick={handleImageReset}
-          >
-            Reset
-          </button>
+          <form className="form-group">
         
-          <label for="rightTopSideCourtImage" className="rightTopSideCourtImageInput"> Right Top Side Court</label>
+            <label for="rightTopSideCourtImage" className="rightTopSideCourtImageInput"> Right Top Side Court</label>
+            
+            <input 
+              onChange={handleImage}
+              name="rightTopSideCourtImage" 
+              type="file" 
+              accept="image/*">
+            </input>
+            
+            <button 
+              className="rightTopSideCourtImageReset btn btn-danger"
+              name="rightTopSideCourtImage"
+              type="button"
+              onClick={handleImageReset}
+            >
+              Reset
+            </button>
+            
+          </form>
           
-          <input 
-            onChange={handleImage}
-            name="rightTopSideCourtImage" 
-            type="file" 
-            accept="image/*">
-          </input>
-          
-          <input 
-            onChange={handleImage}
-            name="rightTopSideCourtImage" 
-            type="file" 
-            accept="image/*">
-          </input>
-          
-          <button 
-            className="rightTopSideCourtImageReset"
-            name="rightTopSideCourtImage"
-            type="button"
-            onClick={handleImageReset}
-          >
-            Reset
-          </button>
+          <form className="form-group">
         
-        
-          <label for="rightBottomSideCourtImage" className="rightBottomSideCourtImageInput"> Right Bottom Side Court</label>
+            <label for="rightBottomSideCourtImage" className="rightBottomSideCourtImageInput"> Right Bottom Side Court</label>
+            
+            <input 
+              onChange={handleImage}
+              name="rightBottomSideCourtImage" 
+              type="file" 
+              accept="image/*">
+            </input>
+            
+            <button 
+              className="rightBottomSideCourtImageReset btn btn-danger"
+              name="rightBottomSideCourtImage"
+              type="button"
+              onClick={handleImageReset}
+            >
+              Reset
+            </button>
           
-          <input 
-            onChange={handleImage}
-            name="rightBottomSideCourtImage" 
-            type="file" 
-            accept="image/*">
-          </input>
+          </form>
           
-          <button 
-            className="rightBottomSideCourtImageReset"
-            name="rightBottomSideCourtImage"
-            type="button"
-            onClick={handleImageReset}
-          >
-            Reset
-          </button>
-        
         </section>
         
         : null}

@@ -41,7 +41,9 @@ class PracticeCourtOptions extends Component {
         
         {practiceCourtOptions ?
         
-          <section className="expandedMenu input-group" id="practiceCourtMenu">
+        <section className="expandedMenu input-group" id="practiceCourtMenu">
+        
+          <form className="form-group">
           
             <label className="volleyballSideCourt input-group-text">Volleyball Line Color:
               <input
@@ -52,7 +54,7 @@ class PracticeCourtOptions extends Component {
               </input>
             </label>
             
-            <label className="input-group-text">Show
+            <label>Show
               <input 
                 className="volleyballShown form-control"
                 type="checkbox"
@@ -62,7 +64,7 @@ class PracticeCourtOptions extends Component {
             </label>
             
             <button 
-              className="volleyballLineResetColor"
+              className="volleyballLineResetColor btn btn-danger"
               name="volleyballLineColor"
               type="button"
               onClick={handleColorReset}
@@ -70,7 +72,9 @@ class PracticeCourtOptions extends Component {
               Reset
             </button>
             
-          </section>
+          </form>
+          
+        </section>
         
         : null}
         

@@ -42,7 +42,9 @@ class KeyOptions extends Component {
         
         {keyOptions ?
         
-          <section className="expandedMenu input-group">
+        <section className="expandedMenu input-group">
+        
+          <form className="form-group">
           
             <label className="input-group-text">Key Color:
               <input
@@ -75,15 +77,17 @@ class KeyOptions extends Component {
             </label>
             
             <button 
-              className="keyResetColor"
+              className="keyResetColor btn btn-danger"
               name="keyResetColor"
               type="button"
               onClick={handleColorReset}
             >
               Reset
             </button>
-          
-          </section>
+            
+          </form>
+        
+        </section>
         
         : null}
         

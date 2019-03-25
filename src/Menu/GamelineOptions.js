@@ -40,8 +40,10 @@ class GamelineOptions extends Component {
         
         {gamelineOptions ?
         
-          <section className="expandedMenu input-group">
-          
+        <section className="expandedMenu input-group">
+        
+          <form className="form-group">
+        
             <label className="input-group-text">Main Gameline:
               <input
                 className="mainGamelineColor"
@@ -52,7 +54,7 @@ class GamelineOptions extends Component {
             </label>
             
             <button 
-              className="mainGameLineResetColor"
+              className="mainGameLineResetColor btn btn-danger"
               name="mainGameLineResetColor"
               type="button"
               onClick={handleColorReset}
@@ -60,7 +62,9 @@ class GamelineOptions extends Component {
               Reset
             </button>
             
-          </section>
+          </form>
+            
+        </section>
         
         : null}
         

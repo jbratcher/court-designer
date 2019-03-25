@@ -41,7 +41,9 @@ class LaneOptions extends Component {
         
         {laneOptions ?
         
-          <section className="expandedMenu input-group">
+        <section className="expandedMenu input-group">
+        
+          <form className="form-group">
           
             <label className="input-group-text">Lane Color:
               <input
@@ -65,15 +67,17 @@ class LaneOptions extends Component {
             </label>
             
             <button 
-              className="laneResetColor"
+              className="laneResetColor btn btn-danger"
               name="laneResetColor"
               type="button"
               onClick={handleColorReset}
             >
               Reset
             </button>
-          
-          </section>
+            
+          </form>
+        
+        </section>
           
         : null}
         
