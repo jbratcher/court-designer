@@ -45,7 +45,7 @@ class ThreePointOptions extends Component {
         
           <form className="form-group">
         
-            <label>3 Point Area Color:
+            <label className="input-group-text">3 Point Area Color:
               <input
                 className="threePointAreaColor"
                 name="threePointAreaColor"
@@ -54,9 +54,9 @@ class ThreePointOptions extends Component {
               </input>
             </label>
             
-            <label>Stain:
+            <label className="input-group-text">Stain:
               <input
-                className="threePointStain"
+                className="threePointStain form-control"
                 min="0.1"
                 max="1.0"
                 step="0.1"

@@ -42,11 +42,12 @@ class SideCourtOptions extends Component {
         
         <section className="expandedMenu" id="sideCourtMenu">
         
-          <form className="form-group">
+          <form className="form-group ml-2">
           
-            <label for="leftTopSideCourtImage" className="leftTopSideCourtImageInput"> Left Top Side Court</label>
+            <label for="leftTopSideCourtImage" className="leftTopSideCourtImageInput my-2"> Left Top Side Court</label>
             
             <input 
+              className="my-2"
               onChange={handleImage}
               name="leftTopSideCourtImage" 
               type="file" 
@@ -54,7 +55,7 @@ class SideCourtOptions extends Component {
             </input>
             
             <button 
-              className="leftTopSideCourtImageReset btn btn-danger"
+              className="leftTopSideCourtImageReset btn btn-danger my-2"
               name="leftTopSideCourtImage"
               type="button"
               onClick={handleImageReset}
@@ -64,11 +65,12 @@ class SideCourtOptions extends Component {
           
           </form>
           
-          <form className="form-group">
+          <form className="form-group ml-2">
         
-            <label for="leftBottomSideCourtImage" className="leftBottomSideCourtImageInput"> Left Bottom Side Court</label>
+            <label for="leftBottomSideCourtImage" className="leftBottomSideCourtImageInput my-2"> Left Bottom Side Court</label>
             
             <input 
+              className="my-2"
               onChange={handleImage}
               name="leftBottomSideCourtImage" 
               type="file" 
@@ -76,7 +78,7 @@ class SideCourtOptions extends Component {
             </input>
             
             <button 
-              className="leftBottomSideCourtImageReset btn btn-danger"
+              className="leftBottomSideCourtImageReset btn btn-danger my-2"
               name="leftBottomSideCourtImage"
               type="button"
               onClick={handleImageReset}
@@ -86,11 +88,12 @@ class SideCourtOptions extends Component {
             
           </form>
           
-          <form className="form-group">
+          <form className="form-group ml-2">
         
-            <label for="rightTopSideCourtImage" className="rightTopSideCourtImageInput"> Right Top Side Court</label>
+            <label for="rightTopSideCourtImage" className="rightTopSideCourtImageInput my-2"> Right Top Side Court</label>
             
             <input 
+              className="my-2"
               onChange={handleImage}
               name="rightTopSideCourtImage" 
               type="file" 
@@ -98,7 +101,7 @@ class SideCourtOptions extends Component {
             </input>
             
             <button 
-              className="rightTopSideCourtImageReset btn btn-danger"
+              className="rightTopSideCourtImageReset btn btn-danger my-2"
               name="rightTopSideCourtImage"
               type="button"
               onClick={handleImageReset}
@@ -108,11 +111,12 @@ class SideCourtOptions extends Component {
             
           </form>
           
-          <form className="form-group">
+          <form className="form-group ml-2">
         
-            <label for="rightBottomSideCourtImage" className="rightBottomSideCourtImageInput"> Right Bottom Side Court</label>
+            <label for="rightBottomSideCourtImage" className="rightBottomSideCourtImageInput my-2"> Right Bottom Side Court</label>
             
             <input 
+              className="my-2"
               onChange={handleImage}
               name="rightBottomSideCourtImage" 
               type="file" 
@@ -120,7 +124,7 @@ class SideCourtOptions extends Component {
             </input>
             
             <button 
-              className="rightBottomSideCourtImageReset btn btn-danger"
+              className="rightBottomSideCourtImageReset btn btn-danger my-2"
               name="rightBottomSideCourtImage"
               type="button"
               onClick={handleImageReset}

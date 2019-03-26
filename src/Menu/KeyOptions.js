@@ -67,7 +67,7 @@ class KeyOptions extends Component {
               </input>
             </label>
             
-            <label className="keyImageInput"> Upload File
+            <label className="keyImageInput ml-5"> Upload File
               <input 
                 onChange={handleImage}
                 name="keyImage" 
